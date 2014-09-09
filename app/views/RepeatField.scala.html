@@ -1,0 +1,11 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper,field:String,child:String)
+@if(_helper.repeatMap.get(field).fieldMap.get(child).ctype.name == "control") {
+	@_helper.repeatMap.get(field).fieldMap.get(child).controls.control match {
+		case "visibility" => {
+			id='@("_field_" + _helper.repeatMap.get(field).formName +"_" + _helper.repeatMap.get(field).fieldMap.get(child).name)' class='@_helper.repeatMap.get(field).fieldMap.get(child).cssClass' @_helper.repeatMap.get(field).fieldMap.get(child).htmlAttrib data-bind="visible: @for(x <- _helper.repeatMap.get(field).fieldMap.get(child).controls.agents ){$root.@(field + "()")[$index()].@x}"
+		}
+	}
+	
+} else {
+	@UIFieldR(_helper.repeatMap.get(field).fieldMap.get(child),field,_helper.repeatMap.get(field).formName,"[]")
+}

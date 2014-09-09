@@ -1,0 +1,264 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td colspan="4" height="40" valign="middle" align="center">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 9 : ADDITIONAL MANDATORY SERVICES</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->
+        <div>
+          <fieldset style="margin: 5px;">
+            <table cellpadding="2" cellspacing="0" width="100%" border="0" class="normalbold">
+              <tbody>
+                <tr>
+                  <td colspan="4">
+                    <fieldset>
+                      <legend>
+                        <font class="normalbold">Additional Mandatory Services</font>
+                      </legend>
+                      <table class="normalbold" style="width:100%">
+                        <tbody>
+                          <tr>
+                            <td style="width:40%">
+                              Does your property have any mandatory additional services?
+                            </td>
+                            <td style="text-align:left;">
+                              @FieldGen(_helper,"isAdditionalMandatoryService")
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                      <div @FieldGen(_helper,"additionalService")>
+                        <div id="additionalServiceItem_{idx}">
+                          <input type="hidden" name="ads_relatedInfoCount_{idx}" id="relatedInfoCount_{idx}" value="1">
+                          <br>
+                          <table width="100%">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  @repeatStart(_helper,"repeatMandatorySections")
+                                <td>
+                                  <fieldset>
+                                    <legend>
+                                      <font class="normalbold">Additional Mandatory Service</font>
+                                    </legend>
+                                    <table class="normalbold" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class="header" style="text-align:left;width:10%">
+                                            Name: 
+                                          </td>
+                                          <td style="text-align:left">
+                                            @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServiceName")
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="header" style="text-align:left">
+                                            Validity: 
+                                          </td>
+                                          <td class="header">
+                                            <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                              <tbody>
+                                                <tr>
+                                                  <td colspan="2" id="error_2" class="error_block" style="display: none;"></td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>From:</td>
+                                                          <td>
+                                                            @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServiceValidityFrom")
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td>
+                                                    <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>To and include:</td>
+                                                          <td>
+                                                            @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServiceValidityTo")
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2" style="padding-top:5px;">
+                                            <table class="normalbold" width="100%" style="background-color:#FAFAFA; border: 1px solid #E8E8E8; padding-bottom:4px">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    Applies:
+                                                  </td>
+                                                  <td style="padding-bottom:5px;font-weight:normal">
+                                                    @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServiceIsApply")
+                                                  </td>
+                                                  <td style="width:15%;">
+                                                    &nbsp;
+                                                  </td>
+                                                  <td>
+                                                    Applicable on:
+                                                  </td>
+                                                  <td style="padding-bottom:5px;font-weight:normal">
+                                                    @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServiceisCheckin")
+                                                  </td>
+                                                </tr>
+                                                <tr @RepeatField(_helper,"repeatMandatorySections","perRoomDisplay")>
+                                                  <td>
+                                                    <div style="width:70px;" id="adultRateLabel_1">Rate: </div>
+                                                  </td>
+                                                  <td>
+                                                    @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServicePerRoomRate")
+                                                    <span style="font-weight: normal">THB</span>
+                                                  </td>
+                                                  <td style="width:15%;">
+                                                    &nbsp;
+                                                  </td>
+                                                </tr>
+                                                <tr @RepeatField(_helper,"repeatMandatorySections","perPersonDisplay")>
+                                                  <td>
+                                                    <div style="width:70px;" id="adultRateLabelDisplay">Adult Rate: </div>
+                                                  </td>
+                                                  <td>
+                                                    @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServicePerPersonAdultRate")
+                                                  </td>
+                                                  <td style="width:15%;">
+                                                    &nbsp;
+                                                  </td>
+                                                  <td>
+                                                    <div id="childRateLabelDisplay" style="display:">Child rate:</div>
+                                                  </td>
+                                                  <td>
+                                                    <div id="divChildRateDisplay_{idx}" style="display:">
+                                                      @RepeatField(_helper,"repeatMandatorySections","additionalMandatoryServicePerPersonChildRate")
+                                                      <span style="font-weight: normal">THB</span>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2" style="padding-top:5px;">
+                                            <fieldset style="background-color:#FAFAFA; border: 1px solid #E8E8E8">
+                                              <legend>
+                                                <font class="normalbold">Related Information</font>
+                                              </legend>
+                                              <table class="normalbold" style="width:100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="width:25%;font-weight:normal;vertical-align:top;padding-top:6px;">
+                                                      Related information required in booking:
+                                                    </td>
+                                                    <td style="text-align:left;padding-bottom:5px;font-weight:normal;vertical-align:top">
+                                                      @RepeatField(_helper,"repeatMandatorySections","isRelatedInfo")
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td colspan="2" style="padding-left:30px;padding-top:10px;" @RepeatField(_helper,"repeatMandatorySections","displayRelatedInfo")>
+                                                      <div id="relatedInfo">
+                                                        <div style="padding-bottom:5px; margin-bottom: 5px;" id="relatedInfoItem_{idx}_{idxIterate}">
+                                                          @render2Repeat(_helper,"repeatMandatorySections","repeatMandatorySections1")
+                                                        </div>
+                                                      </div>
+                                                      <div style="padding-top:10px"><img title="ADD NEW RELATED INFO" src="" align="right" style="cursor: pointer;">
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </fieldset>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </fieldset>
+                                </td>
+                                @repeatEnd(_helper,"repeatMandatorySections")
+                                @renderRepeat(_helper,"repeatMandatorySections")
+                                
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div style="text-align:right">
+                            <button type="button" style="border: none; background-color:transparent; cursor:pointer; text-decoration: none; " title="" ><img src="" vspace="0" hspace="0" border="0" align="absmiddle">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="loopAdditionalService" style="display:none"></div>
+                      <div style="text-align:left; padding-top:10px;display:none" id="addNewAdditionalServiceButton">
+                        <button type="button" style="border: none; background-color:transparent; cursor:pointer; text-decoration: none; " title="">
+                        <img src="" vspace="0" hspace="0" border="0" align="absmiddle">
+                        </button>
+                      </div>
+                    </fieldset>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </div>
+        <!-- end content-->
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+      </div>
+    </div>
+    <input type="submit">
+  </form>
+  	@repeat2Start(_helper,"repeatMandatorySections","repeatMandatorySections1")
+  	<table class="normalbold" style="font-weight: normal;">
+       <tbody>
+         <tr>
+           <td style="width:100%;background-color:white;border:1px solid #ADADAD;">
+             <div style="padding-bottom: 5px; font-weight: bold; background-color: rgb(239, 239, 239);">
+               @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","isRelatedSelection")
+             </div>
+             <div style="padding-left:20px;padding-bottom:5px;padding-top:10px;">
+               Info: 
+               @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","relatedSelectionInfo")
+             </div>
+             <div @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","answerOptions") style="padding-bottom:5px;padding-left:20px;display:none">
+               Answer Options: 
+               @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","radioSelectionAnswerOptionYes")
+               @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","radioSelectionAnswerOptionNo")
+             </div>
+             <div @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","multipleAnswer") style="padding-bottom:5px;padding-left:20px;">
+               <div id="loopAnswerChoices_{idx}_{idxIterate}">
+                 <div style="padding-bottom:3px; margin-bottom: 3px;" id="multipleChoiceItem_{idx}_{idxIterate}_1">	
+                   Answer Choice: 
+                   @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","multipleSelectionAnswerChoice1")
+                   @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","multipleSelectionAnswerChoice2")
+                   @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","multipleSelectionAnswerChoice3")
+                   @Repeat2Field(_helper,"repeatMandatorySections","repeatMandatorySections1","multipleSelectionAnswerChoice4")
+                 </div>
+               </div>
+             </div>
+           </td>
+         </tr>
+       </tbody>
+     </table>
+  @repeat2End(_helper,"repeatMandatorySections","repeatMandatorySections1")
+  
+</td>

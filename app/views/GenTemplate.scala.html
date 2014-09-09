@@ -1,0 +1,54 @@
+@(fieldMap:java.util.Map[String,com.mnt.core.ui.component.FieldType],_parent:String,_namespace:String,notation:String)
+
+
+@for(field <- fieldMap.values.iterator){
+	@field.ctype.name match{
+		     		
+		     		case "checkbox" => {
+		     			<script type="text/html" id="@field.name-template">
+							<input type="checkbox"  class='@field.cssClass' @field.htmlAttrib data-bind="attr: {name : '@(_parent)' +'['+ $parentContext.$index() + '].' + '@(field.name)'+ '[]'},  value: code , checked: $root.@(_parent + "()")[$parentContext.$index()].@field.name">	
+							<label data-bind="text: name"> </label>
+						</script>
+		     		}
+		     		
+		     		case "radio" => {
+		     			
+		     			<script type="text/html" id="@field.name-template">
+							<input type="radio"    class='@field.cssClass' @field.htmlAttrib  data-bind="attr: {name : '@(_parent)' +'['+ $parentContext.$index() + '].' + '@(field.name)'}, value: code , checked: $root.@(_parent + "()")[$parentContext.$index()].@field.name">	
+							<label data-bind="text: name"> </label>
+						</script>
+		     		}
+		     		
+		     		case "text" => {
+		     		}
+		     		
+		     		case "password" => {
+		     		}
+		     		case "file" => {
+		     		}
+		     		case "repeat" => {
+		     		}
+		     		case "hidden" => {
+		     		}
+		     		
+		     				     		
+		     		case "button" => {
+		     		}
+		     		
+		     				     		
+		     		case "textarea" => {
+		     		}
+		     		
+		     		case "control" => {
+		     		}
+		     			     		
+		     		case "select" => {
+		     		}
+		     		
+		     		case "multiselect" => {
+ 
+                    }
+		     		
+	}		     		
+}
+

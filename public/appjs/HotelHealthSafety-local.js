@@ -1,0 +1,2 @@
+HotelHealthSafety.customPostBind = function(){
+}

@@ -1,0 +1,20 @@
+year:
+   - !!models.Year 
+    id: 1
+    code: 1
+    name: 2013
+   
+   - !!models.Year
+    id: 2
+    code: 2
+    name: 2014
+   
+   - !!models.Year
+    id: 3
+    code: 3
+    name: 2015
+   
+   - !!models.Year
+    id: 4
+    code: 4
+    name: 2016

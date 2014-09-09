@@ -1,0 +1,50 @@
+hotelDescriptionOptions:
+   - !!models.HotelDescriptionOptions 
+    id: 1
+    code: AA
+    name: Airport Appartment
+
+   - !!models.HotelDescriptionOptions 
+    id: 2
+    code: AH
+    name: Airport Hotel
+
+   - !!models.HotelDescriptionOptions 
+    id: 3
+    code: AS
+    name: All Suite
+
+   - !!models.HotelDescriptionOptions
+    id: 4
+    code: AD
+    name: Art Decor
+      
+   - !!models.HotelDescriptionOptions
+    id: 5
+    code: BA    
+    name: Beach Apartment
+    
+   - !!models.HotelDescriptionOptions
+    id: 6
+    code: BR    
+    name: Beach Resort
+    
+   - !!models.HotelDescriptionOptions
+    id: 7
+    code: BO    
+    name: Boutique
+    
+   - !!models.HotelDescriptionOptions
+    id: 8
+    code: BU    
+    name: Business
+        
+   - !!models.HotelDescriptionOptions
+    id: 9
+    code: CS    
+    name: Camp Site
+        
+   - !!models.HotelDescriptionOptions
+    id: 10
+    code: CF    
+    name: Child Friendly

@@ -1,0 +1,50 @@
+hotelAmenities:
+   - !!models.HotelAmenities 
+    id: 1
+    code: 1
+    name: 24-hour food and beverage outlet
+
+   - !!models.HotelAmenities 
+    id: 2
+    code: 2    
+    name: Adjoining rooms
+
+   - !!models.HotelAmenities 
+    id: 3
+    code: 3
+    name: Air Conditioning
+
+   - !!models.HotelAmenities
+    id: 4
+    code: 4
+    name: Airport Shuttle - Free
+      
+   - !!models.HotelAmenities
+    id: 5
+    code: 5    
+    name: Airport Shuttle - Paid
+    
+   - !!models.HotelAmenities
+    id: 6
+    code: 6    
+    name: ATM Machine
+    
+   - !!models.HotelAmenities
+    id: 7
+    code: 7    
+    name: Baby Sitting
+    
+   - !!models.HotelAmenities
+    id: 8
+    code: 8
+    name: Banquet Hall
+        
+   - !!models.HotelAmenities
+    id: 9
+    code: 9
+    name: Bar
+        
+   - !!models.HotelAmenities
+    id: 10
+    code: 10    
+    name: Barber shop

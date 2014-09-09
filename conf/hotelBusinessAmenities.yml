@@ -1,0 +1,32 @@
+hotelBusinessAmenities:
+   - !!models.HotelBusinessAmenities 
+    id: 1
+    code: 1
+    name: AV Equipment available
+
+   - !!models.HotelBusinessAmenities 
+    id: 2
+    code: 2    
+    name: Conference Rooms
+
+   - !!models.HotelBusinessAmenities 
+    id: 3
+    code: 3
+    name: Lounge Access for Club/Executive Rooms
+
+   - !!models.HotelBusinessAmenities
+    id: 4
+    code: 4
+    name: Meeting Rooms
+      
+   - !!models.HotelBusinessAmenities
+    id: 5
+    code: 5    
+    name: Post/Courier services
+    
+   - !!models.HotelBusinessAmenities
+    id: 6
+    code: 6    
+    name: Video Conference
+    
+  

@@ -1,0 +1,323 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+
+<td colspan="4" align="center">
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+<div class="boxWrapper" style="margin-left: 10px;  float: left; ; text-align: center; width: 750px" id="mainProfile">
+	<div class="vertical_gradient_80px_content_div" style="width:748px;  _width:750px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	<div id="destination_seleted_div" style=" width: 750px;_width:750px; height: 26px; text-align: left">
+		<div class="left_bar2_26px" style="">&nbsp;</div> 
+		<div class="center_bar2_26px" style="width: 738px; _width:738px">
+			<div class="top_bar_titlu" id="" style="">ADD ROOM TYPE</div>
+		 </div>		 			
+		 <div class="right_bar2_26px" style=""></div>
+	</div>
+	
+	<!-- content-->
+	
+	<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tbody>
+			<tr>
+				<td valign="top" align="center">
+					<table width="100%" border="0">
+						<tbody>
+							<tr>
+								<td colspan="2">
+									<div id="success" style="display:none">
+										<font class="normalbold" style="font-size:12px;color:red">Room Type Added Successfully.</font>
+										<div>
+											<br><br>
+											<button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; ">
+											<img src="../new_button.php?height=23&amp;verspace=9&amp;text=BACK TO MAIN MENU&amp;fromcolor=D1ADD0&amp;tocolor=A1749D&amp;btmcolor=C288BC&amp;height=23&amp;fontsize=8&amp;horspace=50&amp;textcolor=FFFFFF" vspace="0" hspace="0" border="0"></button>				
+										</div>
+									</div>
+									<div id="errorr" style="display:none">
+										<font class="normalbold" style="font-size:12px;color:#FF0000">An error ocurred while adding room type</font>
+										<div>
+											<br><br>
+											<button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; ">
+											<img src="../new_button.php?height=23&amp;verspace=9&amp;text=BACK TO MAIN MENU&amp;fromcolor=D1ADD0&amp;tocolor=A1749D&amp;btmcolor=C288BC&amp;height=23&amp;fontsize=8&amp;horspace=50&amp;textcolor=FFFFFF" vspace="0" hspace="0" border="0"></button>				
+										</div>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td height="10"></td>
+							</tr>
+							
+							<tr>
+								<td colspan="2" valign="top" align="left"></td>
+							</tr>
+		 					
+		 					<tr>
+		  						<td align="center" valign="top" height="100%" width="100%">
+									<div id="RoomTypeContent" style="width:720px">
+											<table cellpadding="3" cellspacing="0" border="0" width="100%" class="addhotel">
+												<tbody>
+													<tr>
+														<td valign="top" align="left" style="border-top: #d4d4d4 1px solid;border-left: #d4d4d4 1px solid;border-bottom: #d4d4d4 1px solid;border-right: #d4d4d4 1px solid" bgcolor="#F7F3FF">
+															<font class="subtitlu" style="font-size:10px;">THAILAND - BANGKOK - BANGKOK HOTEL LOTUS SUKHUMVIT</font><br>
+															<font class="subtitlu" style="font-size:10px;">Add Room Type</font>
+														</td>
+													</tr>
+													
+													<tr>
+														<td valign="top" align="left" width="100%" style="border-left: #d4d4d4 1px solid;border-right: #d4d4d4 1px solid;border-bottom: #d4d4d4 1px solid;">
+															<font class="normal"><b>Please enter all details that apply to this room type:</b></font>
+															<br>
+																<table cellpadding="1" cellspacing="3" border="0" width="100%">
+																	<tbody>
+																		<tr>
+																			<td></td>
+																		</tr>
+																		
+																		<tr>
+																			<td align="center">
+																				<font class="normalbold" style="font-size:14px;">Room Name:</font>
+																				@FieldGen(_helper,"roomName")
+																			</td>
+																		</tr>
+																		
+																		<tr>
+																			<td></td>
+																		</tr>
+					 													
+					 													<tr>
+					   														<td valign="top" nowrap="" width="100%">
+																				<table cellpadding="1" cellspacing="3" border="0" width="100%" class="mainTable">
+																					<tbody>
+																						<tr>
+																							<td>
+																								<font class="normalbold" style="color: #2B5B8B">
+																									*What is the maximum occupancy level for this Room?
+																								</font>
+																								@FieldGen(_helper,"maxOccupancy")
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>
+																				<font class="normalbold" style="color: #2B5B8B">						
+																					*What is the maximum Adult occupancy for this Room?
+																				</font>
+																				@FieldGen(_helper,"maxAdultOccupancy")
+																			</td>
+																		</tr>
+																						
+																		<tr>
+																			<td>
+																				<font class="normalbold" style="color: #2B5B8B">						
+																					*What is the maximum Adult occupancy if sharing with Children in this Room ?
+																				</font>
+																				@FieldGen(_helper,"maxAdultChildOccupancy")
+																				<br>
+																				<font style="color: #2B5B8B">						
+																					&nbsp;(If room does not allow Child occupancy, please select "No Child Allowed")
+																				</font>
+																			</td>
+																		</tr>	
+																		
+																		<tr>
+																				<td>
+																					<div id="twinBedDiv">
+																						<font class="normal">
+																						<font class="normalbold" style="color: #2B5B8B">*Does this Room Type also have Twin Beds?</font>
+																						@FieldGen(_helper,"isTwinBeds")
+																						</font>
+																					</div>
+																				</td>
+																		 </tr>	
+																		 
+																		 <tr>
+																				<td>
+																					<div id="childrenpolicy">
+																						<fieldset>
+																							<legend>
+																							<font class="normalbold">Child Policy</font>
+																							</legend>
+																							<table width="100%">
+																								<tbody>
+																									<tr>
+																										<td>
+																										<font class="normalbold">*How many free children sharing with adults are allowed for this room?</font>
+																											@FieldGen(_helper,"childSharingWithAdult")
+																										</td>
+																									</tr>
+																											
+																									<tr>
+																										<td>
+																										<font class="normalbold">*Does your hotel charge for children?</font>
+																											@FieldGen(_helper,"isChildChargeable")
+																										</td>
+																									</tr>
+																									
+																									<tr>
+																									  <td>
+																									  	<div @FieldGen(_helper,"childrenPolicyDisplay") style="text-align: left;">
+    																										<br>
+    																										<font class="normalbold">Please define your children policy:</font>
+																											@renderRepeat(_helper,"repeatChildrenPolicy")
+																										</div>
+																									  </td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</fieldset>
+																					</div>
+																				</td>
+																			</tr>
+																			
+																			<tr>
+																				<td>
+																					<table cellspacing="0" cellpadding="0" border="0">
+																						<tbody>
+																							<tr>
+																								<td>
+																									<font class="normalbold" style="color: #2B5B8B">*Can you fit an EXTRA BED to this room type?</font>
+																									@FieldGen(_helper,"isExtraBed")
+																								</td>
+																								
+																								<td>
+																									<div style="display: none;" id="extrachargediv">
+																										<font class="normalbold" style="color: #2B5B8B">&nbsp; Is there a charge? </font> 
+																										@FieldGen(_helper,"isExtraBedCharge")
+																									</div>
+																								</td>
+																							</tr>	
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																			
+																			<tr>
+																				<td align="center">
+																					<div style="display: none;" id="extrachargediv2">
+																						<table>
+																							<tbody>
+																								<tr>
+																									<td>
+																										<b>Charge:</b>
+																									</td>
+																								</tr>
+																											
+																								<tr>
+																									<td>
+																										<table>
+																											<tbody>
+																												<tr>
+																													<td align="right">Amount:</td>
+																														<td>
+																															@FieldGen(_helper,"extraBedAmount")
+																														</td>
+																														<td>
+																															@FieldGen(_helper,"netRate") net rate
+																														</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</div>
+																				</td>
+																			</tr>
+																			
+																			<tr>
+																				<td>
+																					<font class="normalbold">*Is this room a suite?</font>
+																					@FieldGen(_helper,"isRoomSuite")
+																				</td>
+																			</tr>
+																	
+																		<tr>
+																			<td>&nbsp;</td>
+																		</tr>
+																		
+																		<tr>
+																			<td valign="top" align="left">
+																				<font class="normalbold" style="color:#2B5B8B">*In Room Amenities:</font>
+																				<font class="normalbold"> (please tick the boxes that are applicable)</font>
+																			</td>
+																		</tr>
+																			
+																		<tr>
+																			<td align="center" style="padding:5px">
+																				<table border="0" align="center">
+																					<tbody id="add_Room_type_cb">
+																						 <tr>
+																					    	<td colspan="4" align="center">
+																						  		<div align="left" style="padding-left:15px;">
+																						  			@FieldGen(_helper,"roomAmenities")
+																								</div>
+																					    	</td>
+																					    </tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>	
+	            													</tbody>
+	            												</table>
+	            											</td>
+	            										</tr>
+	            									</tbody>
+	            								</table>
+	            							</div>
+											
+											<div id="RoomTypeSubmit" style="width: 720px;">
+												<table align="center">
+													<tbody>
+														<tr>
+															<td align="left" valign="bottom">
+																<input type="submit" id="submitRoomType">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+		  							</td>
+		 						</tr>
+							</tbody>
+						</table>	
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- end content-->	
+		
+		</div>
+		
+			<div class="footer_bottom_wrapper">
+	 			<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+					<div class="center_wrapper" style="float: left; width: 740px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+						<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+			</div>
+</div>
+
+</form>
+
+@repeatStart(_helper,"repeatChildrenPolicy")
+
+<table id="interval1" border="0" width="100%" align="center">
+  <tbody>
+     <tr>
+  	   <td align="right">
+          From: 
+          @RepeatField(_helper,"repeatChildrenPolicy","fromAge")
+          To: 
+    	  @RepeatField(_helper,"repeatChildrenPolicy","toAge")
+       </td>
+       <td><font class="normal"> years:</font></td>
+       <td>@RepeatField(_helper,"repeatChildrenPolicy","childtext") enter zero if free</td>
+       <td>
+        @RepeatField(_helper,"repeatChildrenPolicy","netRate")
+        <font class="normal">net rate</font>
+       </td>
+	</tr>
+  </tbody>
+</table>
+@repeatEnd(_helper,"repeatChildrenPolicy")

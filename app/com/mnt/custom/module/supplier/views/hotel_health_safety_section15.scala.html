@@ -1,0 +1,1051 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td align="center" valign="top" width="100%">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 15 HOTEL HEALTH &amp; SAFETY COMPLIANCE</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->								
+        <table cellpadding="1" cellspacing="1" border="0" width="100%" align="center">
+          <tbody>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div id="healthSafetyComplianceDiv" style="width:715">
+                  <div id="categoryStep1" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold"></font>  DOCUMENTATION</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="liabilityInsuranceHighLight">
+                                Public Liability or indemnity insurance:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="1">
+                                <div >
+                                  @FieldGen(_helper,"isDocumetationPublicLiability")
+                                </div>
+                              </td>
+                              <td style="padding-left:0px;" id="liabilityInsuranceExpiryDateHighLight">
+                                &nbsp;&nbsp;Expiry date:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="1">
+                                <div>
+                                  <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                        <td>
+                                          @FieldGen(_helper,"documetationPublicLiabilityExpiryDate")
+                                          <img align="absmiddle" src="http://us.dotwconnect.com/lib/calendar/images/calendar.gif" vspace="0" hspace="0" border="0" alt="Select Date">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireRiskHighLight">
+                                Fire Risk Assessment / Certificate:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="1">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationFireAssesment")
+                                </div>
+                              </td>
+                              <td style="padding-left:0px;" id="fireRiskExpiryDateHighLight">
+                                &nbsp;&nbsp;Expiry date:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="1">
+                                <div>
+                                  <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                        <td>
+                                          @FieldGen(_helper,"documetationFireAssesmentExpiryDate")
+                                          <img align="absmiddle" src="http://us.dotwconnect.com/lib/calendar/images/calendar.gif" vspace="0" hspace="0" border="0" alt="Select Date">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="localTouristHighLight">
+                                Local Tourist authority license:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationAuthorityLicense")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireAlarmHighLight">
+                                Internal fire alarm testing logs:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationInternalFireAlarm")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="haccpHighLight">
+                                HACCP certificate:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationHACCP")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireEvacuationHighLight">
+                                Staff training records for fire evacuation procedures:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationStaffTrainingForFire")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="healthHygeneHighLight">
+                                Staff training records for health &amp; hygiene:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isDocumetationStaffTrainingForHealth")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '1','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep2" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">1.</font>  Fire Precautions and Procedures</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="workingFireAlarmHighLight">
+                                Does the hotel have a working fire alarm:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionWorkingAlarm")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="smokeDetectorsPublicAreasHighLight">
+                                Are there smoke detectors in public areas:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionSmokeDetectorinPublicArea")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="smokeDetectorsGuestBedroomsHighLight">
+                                Are there smoke detectors in guest bedrooms:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionSmokeDetectorinGuestRoom")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="smokeDetectorsApartmentsHighLight">
+                                Are there smoke detectors in apartments (where applicable):
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionSmokeDetectorinAppartment")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="supplierServiceHighLight">
+                                Does the supplier service the system at least annually:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionServiceAnnually")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireAlarmTestsHighLight">
+                                Do you carry out regular internal fire alarm tests:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionInternalFireAlarmTest")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireExtinguishersHighLight">
+                                Are there fire extinguishers in all public areas:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionExtinguisherinPublicArea")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="emergencyLightingHighLight">
+                                Is emergency lighting installed in the property:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionEmergencyLighting")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="limitedWalkingAccessHighLight">
+                                Can a person of limited walking abilities access the hotel and grounds:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isFirePrecautionForPWD")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '2','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep3" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">2.</font>  Exits and Corridors</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="howManyExistsHighLight">
+                                How many exits does the property have? (Including the main door and emergency exits):
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"noOfExits")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="existsUnlockedHighLight">
+                                Are these exits unlocked at all times:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isExitUnlocked")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="existsClearlySignedHighLight">
+                                Are exits clearly signed as such? I.e. FIRE EXIT:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isExitClearlySigned")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="exitsIlluminatedHighLight">
+                                Are exit routes illuminated by emergency lighting:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isExitRoutesIlluminated")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="moreStaircaseHighLight">
+                                Is there more than one usable staircase from all floors:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isExitMoreStaircase")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '3','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep4" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">3.</font>  Air Conditioning / Heating (if applicable)</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="airConditioningCentralHighLight">
+                                What type of air conditioning does the property have?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Central:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isACCentral")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="airConditioningIndependentHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Independent units:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isACIndependent")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '4','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep5" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">4.</font>  Lifts (if applicable)</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="accessibleViaLiftHighLight">
+                                Are ALL floors accessible via lift:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftAllFloor")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="liftDoorsHighLight">
+                                <br>Do all lifts have internal closing doors:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftInternalClosingDoor")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="liftDoorsSignageHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If NO, is there relevant signage displayed to warn guests:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftRelevantSign")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="liftSignageNoSmokingHighLight">
+                                <br>Do all lifts display the following signage:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Smoking:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftNoSmoking")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="liftSignageChildrenHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Unaccompanied Children:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftNoUnaccompaniedChildren")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="liftSignageNotFireHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do Not Use In The Event of Fire:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isLiftEventOfFire")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '5','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep6" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">5.</font>  Bedrooms and Balconies</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="fireSafetyHighLight">
+                                Are there fire safety instructions posted in guest rooms:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomFireSafetyInstruction")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="electricsDisconnectHighLight">
+                                Do electrics automatically disconnect when guests leave the room:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomElectricDisconnect")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="balconiesHighLight">
+                                Do any rooms have balconies?:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomBalcony")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="balconiesHeightHighLight">
+                                If YES, are all balconies at least 1m in height:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomBalconyHeight")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="gapsHighLight">
+                                Are any gaps greater than 10cm:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomBalconyGaps")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="haveAdjoiningRoomsHighLight">
+                                Does the hotel have any adjoining rooms:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isBedRoomAdjoiningRooms")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="adjoiningRoomsHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If YES, how many:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"adjoiningRoomsNumber")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '6','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep7" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">6.</font>  Kitchen's and Hygiene</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="selfCateringHighLight">
+                                Self-Catering Accommodation:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isKitchenSelfCatering")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="selfCateringRegularlyHighLight">
+                                Where self-catering is available, are all kitchen appliances regularly serviced:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isKitchenRegularlyServiced")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="selfCateringFullUsageHighLight">
+                                Do ALL appliances in self-catering accommodation have full usage instructions:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isKitchenSelfCateringUsageInstruction")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="mainKitchenHighLight">
+                                Main Kitchen:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isMainKitchen")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="temperatureChecksHighLight">
+                                Do kitchen staff carry out temperature checks during all stages of food preparation:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isKitchenTemperatureCheck")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="proofedPestsHighLight">
+                                Are premises adequately proofed against pests:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isKitchenPestsProofed")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '7','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep8" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">7.</font>  Children's Facilities (if applicable)</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="internalPlayAreaHighLight">
+                                Is there an internal children's play area:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildInternalPlayArea")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="externalPlayAreaHighLight">
+                                Is there an external children's play area:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildExternalPlayArea")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="superviseHighLight">
+                                Does a fully qualified person supervise the kid's club:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildSupervise")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="equipmentCheckHighLight">
+                                Are regular quality checks of all equipment and furniture carried out:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildEquipmentCheck")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="kidClubOperationalHighLight">
+                                During which months is the kid's club fully operational:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  <table>
+                                    <tbody>
+                                      @FieldGen(_helper,"isChildOperationalMonths")
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '8','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep9" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">8.</font>  Swimming Pool (if applicable)</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolNoticeHighLight">
+                                Is there a pool rules &amp; regulations notice board clearly visible in the pool area:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingRules")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolOpenedHighLight">
+                                Does this board contain information / instructions about the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opening / closing times:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingTiming")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolDepthHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depth information:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingDepth")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolDivingHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No diving:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingDiving")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolChildrenHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No unaccompanied children:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingUnaccompaniedChildren")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolLifeguardHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location of visible lifesaving equipment / lifeguard information:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingLifeGuardInfo")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolGlassHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No glass around the pool area:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingNoGlass")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolLifeguardAreaHighLight">
+                                Is there a lifeguard or qualified person around the pool area during opening times:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingLifeGuardAtOpeningTime")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="childrenPoolHighLight">
+                                Is there a children's pool:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildrenPool")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="childrenPoolSeparatedHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If YES, is this separated from the adult pool, away from the deep end:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isChildrenPoolSeperated")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolDepthsMarkingHighLight">
+                                Are there sufficient depth markings around the pool:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingDepthMarking")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolCleanedHighLight">
+                                Is the pool cleaned daily:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingPoolCleaned")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolCleanedRecordsHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If YES, are records kept:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingPoolCleanedRecords")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolHeatedHighLight">
+                                Is there a heated pool in the property:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isSwimmingHeatedPool")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="poolHeatedMonthsHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If YES, during which months is this operational:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  <table>
+                                    <tbody>
+                                      @FieldGen(_helper,"isSwimmingHeatedPoolMonths")
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '9','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep10" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">9.</font>  Internal / External Gas Water Heaters</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="gasWaterHeatersHighLight">
+                                Do you have any Gas Water Heaters in your property:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isGasHeaters")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="gasWaterHeatersInternalHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If YES, are they:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isInternalGasHeaters")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="gasWaterHeatersExternalHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;External:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isExternalGasHeaters")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="servicingDocumentaionHighLight">
+                                Do you have all relevant documentation on file regarding:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicing:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isServicingDocumentation")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="maintenanceDocumentationHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maintenance:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"isMaintainanceDocumentation")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '10','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep11" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">10.</font>  CCTV Status</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="cctvHighLight">
+                                CCTV is used on a 24 hour basis in the following areas of the hotel:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div><span class="normalbold">
+                                  @FieldGen(_helper,"cctvStatus")
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '11','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep12" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">11.</font>  Additional information, your name and designation</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="additionalInformationHighLight">
+                                Please use this space to provide any additional information or comments you may have. Please make clear which question(s) your comment is related to:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"additionalInformationCommnets")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="hscNameHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAME:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"additionalInformationName")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left:0px;" id="designationHighLight">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESIGNATION:
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  @FieldGen(_helper,"additionalInformationDesignation")
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '12','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <div id="categoryStep13" style="padding-top:10px;display:">
+                    <fieldset>
+                      <legend style="background-color:#93b8f3;color:white;font-weight:bold;text-align:left"><font class="normalbold">12.</font>  Health &amp; Safety Compliance Documents</legend>
+                      <br>
+                      <div>
+                        <table class="normalbold" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding-left:0px;" id="HighLight">
+                              </td>
+                              <td style="padding-left:10px;vertical-align:bottom" colspan="3">
+                                <div>
+                                  <br><a name="editMessage"></a>
+                                  <table width="675" align="center" border="0" id="Doc_HSC_Table">
+                                    <tbody>
+                                      <tr align="center" class="myheader_HSC">
+                                        <td height="20" width="1%">#</td>
+                                        <td width="24%">Date/Time</td>
+                                        <td width="10%">Actions</td>
+                                      </tr>
+                                      <tr align="center" id="doc_HSC_x">
+                                        <td height="20" colspan="3" class="error"> There are no documents uploaded.</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!--- End Supplier Documentation -->
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div style="text-align:right;padding-right:20px;">
+                        <img title="EDIT" src="../new_button.php?text=EDIT&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" style="cursor: pointer;" onclick="openHealthSafetyCompliancePopup(1, 27254, '1', '13','0');">
+                      </div>
+                      <div style="height:10px;">&nbsp;</div>
+                    </fieldset>
+                  </div>
+                  <br>
+                  <div style="text-align:right;padding-right:20px;">
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end content-->	
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+      </div>
+    </div>
+    <input type="submit">
+  </form>
+</td>

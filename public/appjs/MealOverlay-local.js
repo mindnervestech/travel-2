@@ -1,0 +1,3 @@
+MealOverlay.customPostBind = function(){
+							
+}

@@ -1,0 +1,2353 @@
+BODY, INPUT, TEXTAREA, SELECT {
+
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	font-size: 10px !important; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+tdul { border: #1C1D7F;  border-bottom: 1px solid #1C1D7F;  border-left: 1px solid #1C1D7F;  border-right-style: solid;  border-right-color: #1C1D7F;  border-right-width: 1px;  border-top-color: #1C1D7F;  border-top-style: solid;  border-top-width: 1px;         }
+
+.titlu_umbra {
+	COLOR: #c8c8c8;
+	FONT-FAMILY: Verdana, Tahoma; 
+	FONT-SIZE: 24px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	font-smooth: always;
+	MARGIN-LEFT:0px;
+	letter-spacing: 0px;
+	MARGIN-TOP:0px;
+	CURSOR: default;
+}
+
+button {
+    padding:0px;
+    width: auto;
+    overflow: visible;
+}
+
+.sortDiv, .sortDivActive {
+	display: inline; 
+	cursor: pointer;
+	color: #517194;
+	font-size: 8pt;
+	font-weight: bold;
+	
+}
+
+.sortDivActive {
+	text-decoration: underline;
+}
+
+.titlu_text {
+	color: #0082BD;
+	font-family: Verdana, Tahoma; 
+	font-size: 24px; 
+	font-weight: bold; 
+	font-smooth: always;
+	text-decoration: none;
+	margin-left:0px;
+	letter-spacing: 0px;
+	margin-top:-50px;
+	cursor: default;
+}
+
+
+
+
+.copyright {
+	COLOR: #FFFDF0;
+	FONT-FAMILY: Verdana, Times, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 4px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.copyright {
+	COLOR: #FFFDF0;
+	FONT-FAMILY: Verdana, Times, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 4px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.copyright:visited {
+	COLOR: #FFFDF0;
+	FONT-FAMILY: Verdana, Times, Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 4px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.copyright:hover {
+	COLOR: #FFFDF0;
+	FONT-FAMILY: Verdana, Times, Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 4px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	CURSOR: default;
+}
+
+a.meniusus {
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.meniusus {
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.meniusus:visited {
+	COLOR: #FFFFFF; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.meniusus:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.meniujos {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.meniujos {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.meniujos:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.meniujos:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.webartwiz {
+	COLOR: #4f4b8d;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.webartwiz {
+	COLOR: #4f4b8d;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.webartwiz:visited {
+	COLOR: #4f4b8d;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}	
+.smallRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.smallNavy {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color:navy;
+}
+
+A.webartwiz:hover {
+	COLOR: #fc3300;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.portocaliu {
+	COLOR: #FF8A31;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: underline;
+	 
+}
+
+.blue {
+	COLOR: blue;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+}
+
+A.portocaliu {
+	COLOR: #FF8A31;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.portocaliu:visited {
+	COLOR: #FF8A31; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.portocaliu:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.galben {
+	COLOR: #EFAE00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.albastru {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	cursor : pointer;
+}
+
+
+.albastruMare {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.albastruHuge {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastru {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastru10px{
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastruMare {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastru:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastru:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastruMare:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.albastruMare:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.linkhilight {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 14px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.linkhilight:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 14px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.linkhilight:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 14px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.albastru {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.print {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.print:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.print:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.banner {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	TEXT-DECORATION: none;
+}
+
+A.banner {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	TEXT-DECORATION: none;
+}
+
+A.banner:visited {
+	COLOR: #0079BD; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	TEXT-DECORATION: none;
+}
+
+A.banner:hover {
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	TEXT-DECORATION: underline;
+}
+
+
+
+.limbi {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+A.limbi {
+	COLOR: black;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.limbi:visited {
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+A.limbi:hover {
+	COLOR: #9CCB00;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.webartwiz {
+	COLOR: #2D759F;
+	FONT-FAMILY: Verdana, Arial, Tahoma,  Verdana,  Times New Roman,  Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+FONT.meniujos {
+	COLOR: #0079BD;
+	FONT-FAMILY: Verdana, Cursive, Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+FONT.subtitlu {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.orase {
+	COLOR: #1F889E;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.orase_mari {
+	COLOR: #CE1818;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+
+.dest-text2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+.dest-text3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+FONT.welcome {
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 9px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.normal,
+table.normal td
+{
+	
+	color: #517395; 
+	font-weight: normal;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	
+}
+FONT.albastrunou {
+	COLOR: #6A8AC7;
+	FONT-FAMILY: Arial; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: underline;
+}
+
+FONT.normalnegru {
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+FONT.normal1 {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.normalSupp {
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	LINE-HEIGHT: 16px;
+}
+
+FONT.normal2 {
+	COLOR: #2B5B8B;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+/*FONT.normalbold,
+TD.normalbold*/
+.normalbold
+{
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.normalnegrubold {
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.normalmare {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+FONT.suppName {
+	COLOR: #4552DF;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 16px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.mesajupdate {
+	COLOR: #800080;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.mesajupdatehilight {
+	COLOR: #800080;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 13px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.mesajremove {
+	COLOR: #CB2221;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.mesajeroare {
+	COLOR: #ff0000;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+FONT.mesajeroaremare {
+	COLOR: #ff0000;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 14px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+FONT.mesajremovehilight {
+	COLOR: #CB2221;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 13px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+FONT.copyrights {
+	COLOR: #949A94;
+	FONT-FAMILY: Verdana, Times, Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.casute_signup {
+	BACKGROUND-COLOR: #f7efe7;
+	BORDER-BOTTOM: #d4d4d4 1px solid;
+	BORDER-LEFT: 0; 
+	BORDER-RIGHT: 0; 
+	BORDER-TOP: #d4d4d4 1px solid; 
+}
+
+.casute {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	HEIGHT: 16px;
+	width: 118px;
+}
+
+.casute2 {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	HEIGHT: 16px;
+	width: 118px;
+}
+
+.casuteCustomHeight {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	width: 118px;
+}
+
+.casute3 {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;	
+}
+
+.casute3error {
+	
+	BACKGROUND-COLOR: #EF7777;
+	BORDER-BOTTOM: #CF3333 2px solid;
+	BORDER-LEFT: #CF3333 2px solid; 
+	BORDER-RIGHT: #CF3333 2px solid; 
+	BORDER-TOP: #CF3333 2px solid; 
+	COLOR: #FFFFFF; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;	
+	
+}
+
+.casute6 {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	
+}
+
+
+.casute33 {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	
+}
+
+.casute34 {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+
+
+.casute34disabled {
+	color: #B0B0B0;
+	background-color: #E0E0E0;
+	border: 2px solid #D8D8D8;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+
+*[disabled=disabled]{
+	color: #000000;
+	background-color: #D8D8D8;
+	border: 1px solid #E0E0E0;
+}
+
+.buton {
+	BACKGROUND-COLOR: #FFFFFF;
+	COLOR: #4f4b8d; 
+	FONT-FAMILY:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	HEIGHT : 21PX;
+	WIDTH  : 60PX;
+	PADDING : 0PX;
+	PADDING-BOTTOM : 0PX;
+	PADDING-LEFT : 0PX;
+	PADDING-RIGHT : 0PX;
+	PADDING-TOP : 0PX;
+	MARGIN : 0PX;
+	BORDER: 0;
+	CURSOR: pointer;
+}
+
+
+input.radiobut1{
+	color: red;
+	border: 1px solid red;
+	background-color: #E7F3F7;
+}
+
+.cuvinte_mici {
+	FONT-SIZE: 1px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+FONT.normalalb {
+	COLOR: white;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+} 
+A.tab {
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	line-height: 1.1;
+	text-indent: 0;
+}
+
+A.tab:visited {
+	COLOR: #FFFFFF; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	line-height: 1.1;
+	text-indent:0;	
+}
+
+A.tab:hover {
+	COLOR: black;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: underline;
+	line-height: 1.1;
+	text-indent:0
+}
+
+.mytable {
+  border-collapse:collapse;
+	border: thin solid #0079BD;
+}
+
+P.breakhere {
+	page-break-before: always;
+}
+
+
+.butonul{
+	COLOR: #4f4b8d; 
+	FONT-FAMILY:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	text-align: center;
+	width: auto;
+	cursor: pointer;
+	background-color: lightblue;
+	padding-top: 2px;
+	padding-bottom: 2px;	
+}
+
+
+
+
+.buttonDeSubmit{
+	border: none;
+	background-color:#FFFFFF; 
+	cursor:pointer; 
+	text-decoration: none;
+}
+
+.buttonShaddow{
+	background-color: #C8C8C8;
+	height: 15pt;
+	float: left;
+}
+
+.buttonWhiteSurface{
+	background-color: #FFFFFF;
+	height: 15pt;
+	float: left;
+	margin-left: 1px;
+	margin-top: -1px;
+	margin-right: -2px;
+
+}
+
+.buttonGraySurface{
+	background-color: #CCCCCC;
+	height: 16px;
+	margin-left: 2px;
+	margin-top:  -2px;
+	float: left;
+	color: #FFFFFF;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;	
+}
+
+
+.buttonGreenSurface{
+	background-color: #9CCF00;
+	height: 14pt;
+	margin-left: 1pt;
+	margin-top:  0pt;
+	float: left;
+	color: #FFFFFF; 
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonBlueSurface{
+	background-color: #0079BD;
+	height: 16px;
+	margin-left: 2px;
+	margin-top:  -2px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 4px;
+	float: left;
+	color: #E7F3F7;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonRedSurface{
+	background-color: #FF0000;
+	height: 14pt;
+	margin-left: 1pt;
+	margin-top:  0pt;
+	float: left;
+	color: #FFFFFF; 
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonPurpleSurface{
+	background-color: #800080;
+	height: 14pt;
+	margin-left: 1pt;
+	margin-top:  0pt;
+	float: left;
+	color: #FFFFFF; 
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+}
+
+.buttonYellowSurface{
+	background-color: #FFFF00;
+	height: 14pt;
+	margin-left: 1pt;
+	margin-top:  0pt;
+	float: left;
+	color: #FFFFFF; 
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+
+.but1{
+	background-color: yellow;
+	width: 17px;
+	height: 14px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 14px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: green;
+}
+.butdisabled{
+	background-color: #CCCCCC;
+	width: 17px;
+	height: 14px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 14px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: default;
+	color: green;
+}
+
+.but2{
+	background-color: yellow;
+	width: 17px;
+	height: 14px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 14px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: red;
+}
+
+#forma{
+	border: 0px solid green;
+}
+
+.titluCol{
+	background-color: #F7F3FF;
+	color: red;
+}
+
+.contacte
+{
+	background-color: white;
+}
+
+.butonas{
+	background-color: #9CCF00;
+	width: 80px;
+	height: 13px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: green;
+}
+
+.butonasul{
+	background-color: #9CCF00;
+	width: 60px;
+	height: 13px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: green;
+	margin: 2px auto;
+}
+
+
+.butonasRemove{
+	background-color: #FF3333;
+	width: 80px;
+	height: 13px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+}
+
+
+.butonasulRemove{
+	background-color: #FF3333;
+	width: 60px;
+	height: 13px;
+	border: 1px solid green;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	margin: 2px auto;
+}
+
+
+
+#contactsTable td{
+	color:#9f4b59;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	text-align: center;
+	
+	
+}
+#contactsTable th{
+	color:#0079bd;
+	font-family:  Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	font-size: 10px; 
+	font-weight: bold; 
+	text-decoration: none;
+	background: #f7f3ff;
+	/*border-bottom: 1px dashed #f7f3ff;*/
+}
+
+#contactsTable tr{
+	
+}
+
+.mytdl {
+	BORDER-RIGHT:0px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:0px solid #d4d4d4 ; 
+	BORDER-LEFT:1px solid   #d4d4d4 ; 
+	FONT-SIZE: 10px; 	
+	COLOR: #6B6908; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.mytdr {
+	BORDER-RIGHT:1px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:0px solid #d4d4d4 ; 
+	BORDER-LEFT: 1px solid  #d4d4d4 ; 
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.mytdrb {
+	BORDER-RIGHT:1px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:1px solid #d4d4d4 ; 
+	BORDER-LEFT: 1px solid  #d4d4d4 ; 
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.tdColoredGray {
+	BORDER-RIGHT:0px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:1px solid #d4d4d4 ; 
+	BORDER-LEFT:1px solid   #d4d4d4 ; 
+	BACKGROUND-COLOR: #CCCCCC;
+	
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.tdl {
+	BORDER-RIGHT:0px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:1px solid #d4d4d4 ; 
+	BORDER-LEFT:1px solid   #d4d4d4 ; 
+	BACKGROUND-COLOR: #EAEAEA;
+	
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+.tdr {
+	BORDER-RIGHT:1px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:1px solid #d4d4d4 ; 
+	BORDER-LEFT: 1px solid  #d4d4d4 ; 
+	
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.tdrr {
+	BORDER-RIGHT:1px solid  #d4d4d4 ; 
+	BORDER-TOP:  1px solid  #d4d4d4 ; 
+	BORDER-BOTTOM:1px solid #d4d4d4 ; 
+	BORDER-LEFT: 1px solid  #d4d4d4 ; 
+	BACKGROUND-COLOR: #EAEAEA;
+	FONT-SIZE: 10px; 	
+	COLOR: #517395; 	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+
+
+.table_header {
+	
+	border :1px solid #d4d4d4;	 
+
+	FONT-SIZE: 10px; 	
+	COLOR: #ffffff;
+	font-weight: bold;  	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background: #478FB3;
+}
+
+.table_rights {
+border :1px dashed #000000;
+	
+}
+
+
+.tr_rights{	
+	background: #478FB3;
+	FONT-SIZE: 10px; 	
+	COLOR: #ffffff;
+	font-weight: bold;  	
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.bt{
+	background-color: #E7F3F7;
+	width: 100px;
+	padding: 1px;
+	height: 15px;
+	color: #6B6908;
+	border: 2px solid #0079BD;
+	text-align: center; 
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.customertable{
+	border-collapse:collapse;
+	border:solid 1px #FFFFFF;
+	font-family:Arial;
+	font-size:12px;
+}
+.customertable td{
+	border:solid 1px #FFFFFF;
+}
+
+#currencyTable{
+	background-color: white;
+}
+
+#currencyTable td{
+	text-align: center;
+	border: 1px solid #F7F3FF;
+}
+.addhotel td
+{
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+.myheader0 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #809BB5;
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+	
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+.myheader1 {
+	
+	border-top: 2px solid #4ba2b2;
+	border-bottom: 2px solid #4ba2b2;
+	
+}
+
+.myheader2 {
+	
+	border-top: 2px solid #6388A6;
+	border-bottom: 2px solid #6388A6;
+	
+}
+
+.pageBreakPrint{
+	page-break-before: always;
+}
+
+.myheader_HSC {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #809BB5;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	border-top: 1px solid #d4d4d4;
+	
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+.myheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #809BB5;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	border-top: 1px solid #d4d4d4;
+	
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+
+.myheader2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align:center;
+	background-color: #93B8F3;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+.myheader3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align:center;
+	background-color: #444444;
+	border: 1px solid #d4d4d4;
+	
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+TD.mytd {
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	border: 1px solid #d4d4d4;
+	background-color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+TD.mytd2 {
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	background-color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+TD.mytd3 {
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	background-color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+.normalText {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.normalTextBold {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+}
+
+.normalText2 {
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+
+.normalTextBlack {
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+fieldset
+{
+	border: 1px solid #adadad;
+}
+
+legend
+{
+	background: #f7f3ff;
+	border: 1px solid #adadad;
+	padding: 2px 6px;
+	color:#2B5B8B ;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+
+.header{
+	background-color:#EFEFEF;
+	color:#2B5B8B;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+table .supplierPage{
+	border: 1px solid gray;
+}
+
+.supplierPage_NameRow{
+	background-color: #F7F3FF;
+
+}
+#cautare{
+	width:100%;
+	height:100%;
+	z-index:99;
+}
+
+.suppLeft{
+	border-top: 3px solid #808080;
+	border-left: 3px solid #808080;
+}
+
+.suppRight{
+	border-top: 3px solid #808080;
+	border-right: 3px solid #808080;
+}
+.error{
+	border:solid 1px red;
+	color:red;
+	font-size:12px;
+	text-align:center;
+	padding:5px;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	margin:5px;
+}
+a.curpage,
+a.curpage:visited,
+a.curpage:active
+{
+	color:#93B8F3;
+	font-weight:bold;
+	text-decoration:underline;
+	cursor:pointer;
+}
+a.normalpage,
+a.normalpage:visited,
+a.normalpage:active
+{
+	color:#000000;
+	font-weight:normal;
+	cursor:pointer;
+}
+a.normalpage:hover{
+	color:red;
+	cursor:pointer;
+}
+
+
+*.casute3[disabled="disabled"]
+{
+
+	BACKGROUND-COLOR: #d1d6dF;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	HEIGHT: 16px;
+
+}
+
+dt.Day{
+	color: #0079BD;
+	background-image:url('images/bullet2.gif');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;	
+}
+
+dd.Service{
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	margin-top: -15px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#theApartments tr,
+#theHotels tr
+{
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	text-align:center;
+}
+#theApartments  tr td,
+#theHotels tr td
+{
+	padding:3px;
+}
+.message{
+	border:solid 1px #93B8F3;
+	color:#000000;
+	font-weight:bold;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	text-align:center;
+	padding:4px;
+	margin-top:5px;
+}
+.report tr td{
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+}
+.reporttable{
+	border-collapse:collapse;
+}
+.reporttable tr td{
+	COLOR: #6B6908;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	border:solid 1px #D4D4D4;
+	text-align:center;
+}
+.reporttd
+{
+	background-color:#478FB3;
+	COLOR: #FFFFFF !important;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px !important; 
+	FONT-WEIGHT: bold !important; 
+	TEXT-DECORATION: none;
+	padding:3px;
+
+}
+
+.progressBar
+{
+	font-size: 11px;
+}
+
+td.stepDone{
+	background-color: green;
+	color: yellow;
+}
+
+td.stepNotDone{
+	color: gray;
+}
+
+
+td.lineTd{
+	background-image: url('images/line.gif');
+	background-position: center center;
+	background-repeat: repeat-x;
+}
+
+.stepOn{
+	font-weight: bold;
+}
+
+.stepOff{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.accordionHotelTabTitleBar 
+{
+	padding             : 4px 6px 4px 26px;
+	
+	border: 2px solid #1f669b;
+	
+	background-image: url('images/Itinerary/myhtl2.gif');
+	background-position: 3px center; 
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.accordionHotelTabTitleBarHover 
+{
+	border: 1px solid #1f669b;
+}
+
+.accordionHotelTabContentBox 
+{
+   border           : 1px solid #1f669b;
+   border-top-width : 0px;
+   padding          : 0px 2px 3px 2px;
+   font-size: 10px;
+   text-align: left;
+   
+   margin-bottom: 5px;
+}
+
+
+
+
+
+
+.accordionApartmentTabTitleBar 
+{
+	padding             : 4px 6px 4px 36px;
+	
+	border: 2px solid #1f669b;
+	
+	background-image: url('images/Itinerary/apt.gif');
+	background-position: 3px center; 
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+.accordionApartmentTabTitleBarHover 
+{
+	color            : #000000;
+}
+
+.accordionApartmentTabContentBox 
+{
+   border           : 1px solid #1f669b;
+   border-top-width : 0px;
+   padding          : 0px 2px 3px 2px;
+   font-size: 10px;
+   text-align: left;
+   
+   margin-bottom: 5px;
+}
+
+
+
+
+
+.accordionTourTabTitleBar 
+{
+	padding             : 4px 6px 4px 36px;
+	
+	border: 2px solid #1f669b;
+	
+	background-image: url('images/Itinerary/bus2.gif');
+	background-position: 3px center; 
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.accordionTourTabTitleBarHover 
+{
+	color            : #000000;
+}
+
+.accordionTourTabContentBox {
+   border           : 1px solid #1f669b;
+   border-top-width : 0px;
+   padding          : 0px 2px 3px 2px;
+   font-size: 10px;
+   text-align: left;
+   
+   margin-bottom: 5px;
+}
+
+
+
+
+
+      
+.accordionTransferTabTitleBar 
+{
+	padding             : 4px 6px 4px 36px;
+	
+	border: 2px solid #1f669b;
+	
+	background-image: url('images/Itinerary/car.gif');
+	background-position: 3px center; 
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.accordionTransferTabTitleBarHover 
+{
+	color            : #000000;
+}
+
+.accordionTransferTabContentBox 
+{
+   border           : 1px solid #1f669b;
+   border-top-width : 0px;
+   padding          : 0px 2px 3px 2px;
+   font-size: 10px;
+   text-align: left;
+   
+   margin-bottom: 5px;
+}
+      
+    
+
+
+.accordionVisaTabTitleBar 
+{
+	padding             : 4px 6px 4px 36px;
+	
+	border: 2px solid #1f669b;
+	
+	background-image: url('images/Itinerary/myvisa.gif');
+	background-position: 3px center; 
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.accordionVisaTabTitleBarHover 
+{
+	color            : #000000;
+}
+
+.accordionVisaTabContentBox 
+{
+   border           : 1px solid #1f669b;
+   border-top-width : 0px;
+   padding          : 0px 2px 3px 2px;
+   font-size: 10px;
+   text-align: left;
+   
+   margin-bottom: 5px;
+}
+
+
+
+
+
+.accordionCarTabTitleBar {
+padding             : 4px 6px 4px 26px;
+border-style        : solid none solid none;
+border-top-color    : #BDC7E7;
+border-bottom-color : #182052;
+border-width        : 1px 0px 1px 0px;
+background-image: url('images/Itinerary/myhtl2.gif');
+background-position: 3px center; 
+background-repeat: no-repeat;
+font-size: 11px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.accordionCarTabTitleBarHover {
+	border: 1px solid #1f669b;
+}
+
+.accordionCarTabContentBox {
+   border           : 1px solid #1f669b;
+   border-bottom: 5px solid red;
+   border-top-width : 0px;
+   padding          : 0px 2px 0px 2px;
+   font-size: 10px;
+   text-align: left;
+}
+
+.smallAutocomplete_loading{
+	background-image:url('images/loading5.gif');
+	background-color:#ffffff ;
+	background-repeat:no-repeat;
+	background-position:top right;
+	border:solid 2px #0079BD;
+}
+.casute3disabled
+{
+
+	background-color: #EFEFEF;
+	BORDER-BOTTOM: #0079BD 2px solid;
+	BORDER-LEFT: #0079BD 2px solid; 
+	BORDER-RIGHT: #0079BD 2px solid; 
+	BORDER-TOP: #0079BD 2px solid; 
+	COLOR: gray; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	HEIGHT: 18px;
+
+}
+.searchbox{
+	opacity:1 !important;
+	-moz-opacity:1  !important;
+}
+
+.mybookings,
+.wevents
+{
+	width:100%;
+	text-transform: uppercase;
+	margin:0px;
+	padding:0px;
+}
+.mybookings a,
+.wevents a
+{
+	color:#6087A5;
+	padding:0px;
+	margin:0px;
+	text-decoration: none !important;
+	font-family:Verdana;
+	FONT-WEIGHT: bold; 
+	font-size:10px;
+}
+.mybookings td,
+.wevents td
+{
+	padding:0px;
+	padding-top:6px;
+	padding-bottom:6px;
+	margin:0px;
+	border:0px;
+}
+.mybookings hr{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	border-top:solid 1px #A3B6C8;
+}
+
+a.divHeader{
+	color:#FFFFFF;
+	text-decoration: none !important;
+}
+
+.myBorder{
+	border-left: 1px solid #A3B6C8; 
+	border-right: 1px solid #A3B6C8; 
+	background-image: url(images/new_design/gradient_bk_hor_220px.gif); 
+	background-repeat: repeat-y; 
+	color: rgb(81, 113, 148); 
+	font-size: 8pt; 
+	font-weight: bold; 
+	margin-top: -7px; 
+	text-align: left; 
+	width:220px;
+	_width: 198px;	
+}
+
+.layoutBorder{
+	border-left:solid 1px #A3B6C8;
+	border-right:solid 1px #A3B6C8;
+	background-image:url(images/topback.gif);
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;
+}
+.div_footer_menu{
+	color: #ffffff;
+	margin-right:5px; 
+	text-align:right;
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	float:right;
+}
+.div_footer { 
+	background-image: url(images/footer_blue.png);
+ 	width: 981px;
+ 	height:17px;
+ 	clear: both;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	text-decoration:none;
+	color:#ffffff;	
+	text-align:center;
+
+}
+.div_copyright{
+	color: #ffffff; 
+	text-align:left;
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	float:left;
+}
+A.link_footer{
+	color: #ffffff; 
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	text-decoration:none;
+}
+A.link_footer:visited{
+	color: #ffffff; 
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	text-decoration:none;
+}
+A.link_footer:hover{
+	color: #77B9EF; 
+	font-weight: bold;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	text-decoration:none;
+}
+
+.periodTable{
+	background-color:#FFFFFF;
+}
+
+.perOccupancyTd{
+	background-color:#EFEFEF;
+	border-bottom:solid 1px #D4D4D4;
+	border-top:solid 1px #CFCFCF;
+	border-left:solid 1px #D4D4D4;
+	text-align:center;
+}
+
+.calendarDay{
+	width: 70px;
+	height: 55px;
+	background-image: url('images/activeCal4.PNG');
+	background-repeat: no-repeat;
+	font-size: 10px;
+	color: #005D9A;
+	font-weight: bold;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+.inactiveCalendarDay{
+	width: 70px;
+	height: 55px;
+	background-image: url('images/inactiveCal3.PNG');
+	background-repeat: no-repeat;
+	font-size: 10px;
+	color: #4D4D4D;
+	font-weight: bold;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.casute3yield {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	HEIGHT: 16px;
+	width:80px;
+}
+.normalboldhint
+{
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-STYLE: italic; 
+}
+
+label{
+	cursor:pointer;
+}
+.casute33RateYield,
+.casute32RateYield
+{
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	width:300px;
+	min-width:300px;
+	height:150px;
+	margin:0px;
+}
+.yieldLegendRate,
+.yieldLegendAllotment,
+.yieldLegendPeriod
+{
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 11px; 
+	FONT-STYLE: italic; 
+	FONT-WEIGHT:bold;
+
+}
+.yieldLegendPeriod
+{
+	FONT-SIZE: 13px; 
+}
+
+/*
+.calendarDay{
+	width: 60px;
+	height: 50px;
+	border: 1px solid blue;
+	background-color: yellow;
+	font-size: 10px;
+	color: green;
+	font-weight: bold;
+	padding-top: 3px;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+.inactiveCalendarDay{
+	width: 60px;
+	height: 50px;
+	border: 1px solid black;
+	background-color: gray;
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+	padding-top: 3px;
+	text-align: center;
+}
+*/
+
+.table_yield_header{
+	width:100%;
+}
+
+ul#tabnav { /* general settings */
+	text-align: left; /* set to left, right or center */
+	margin: 1em 0 1em 0; /* set margins as desired */
+	font: bold 10px verdana, arial, sans-serif; /* set font as desired */
+	border-bottom: 1px solid #517395; /* set border COLOR as desired */
+	list-style-type: none;
+	padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+}
+
+ul#tabnav li { /* do not change */
+	display: inline;
+}
+
+ul#tabnav li.tabSelected a, li.tabSelected { /* settings for selected tab */
+	border-bottom: 1px solid #fff; /* set border color to page background color */
+	background-color: #fff; /* set background color to match above border color */
+	color: #517395;
+}
+
+li.tabSelected a { /* settings for selected tab link */
+	background-color: #fff; /* set selected tab background color as desired */
+	color: #000; /* set selected tab link color as desired */
+	position: relative;
+	top: 1px;
+	padding-top: 4px; /* must change with respect to padding (X) above and below */
+}
+
+ul#tabnav li a { /* settings for all tab links */
+	padding: 2px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+	border: 1px solid #517395; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+	background-color: #93b8f3; /* set unselected tab background color as desired */
+	color: #fff; /* set unselected tab link color as desired */
+	margin-right: 0px; /* set additional spacing between tabs as desired */
+	text-decoration: none;
+	border-bottom: none;
+}
+
+ul#tabnav a:hover { /* settings for hover effect */
+	background: #fff; /* set desired hover color */
+	color: #517395;
+}
+
+.frameworkHotels {
+	BACKGROUND-COLOR: #d1d6da;
+	BORDER-BOTTOM: #517395 1px solid;
+	BORDER-LEFT: #517395 1px solid; 
+	BORDER-RIGHT: #517395 1px solid; 
+	BORDER-TOP: #517395 1px solid; 
+	COLOR: #39455A; 
+	FONT-FAMILY: Verdana, Tahoma, Arial, Times New Roman, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	width: 320px;
+	*margin: 10px;
+}
+.normalDiv {
+	color: #517395; 
+	font-weight: normal;
+	font-family: Verdana, Century Gothic, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+}
+
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+
+.myHidden{
+display:none;
+}
+
+.myHiddenPrint{
+display:block;
+}
+
+.ammendedText
+{
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;	
+	text-align:middle; 
+	padding:5px;
+}
+
+.yellowbk{
+	COLOR: #517395;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none;
+	background-color: #FFFF00;
+	text-align:middle; 
+	padding:1px;
+	width:230px;	
+}
+
+
+/*Reports area*/
+/*Allotment Utilisation*/
+.serviceRow{		
+	COLOR: #FFFFFF;
+	background-color:#4F81BD;
+	FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; 
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: normal; 
+	TEXT-DECORATION: none;
+	border-bottom: #000000 1px solid;
+	border-top: #000000 1px solid;
+	border-left: #d4d4d4 1px solid;
+	border-right: #d4d4d4 1px solid; 
+}
+.marketRow{
+	color:#E00000;
+	background-color:#93b8f3;
+	width:865px;
+	text-align:center;
+	font-size:10px;
+}
+.marketRow0{
+	color:#E00000;
+	background-color:#93b8f3;	
+	text-align:center;
+	font-size:10px;
+}
+
+.monthRow1
+{
+color:black; 
+background-color:#FFD700;
+}
+
+.monthRow2
+{
+color:black;
+background-color:#FFD700;
+width:865px;
+text-align:center;
+}
+
+.rName
+{
+	color:black;
+	background-color:#E6E6FA;
+}
+
+.day{
+width:25px;
+text-align:center;
+color:black;
+background-color:#E6E6FA;
+FONT-WEIGHT: bold; 
+}
+
+.RR
+{
+width:25px;
+text-align:center;
+color:black;
+background-color:#E8E8E8;
+}
+
+.RRed
+{
+width:25px;
+text-align:center;
+color:#FF0000;
+background-color:#E8E8E8;
+FONT-WEIGHT: bold; 
+cursor: pointer;
+}
+
+.RN
+{
+width:25px;
+text-align:center;
+color:black;
+
+}
+ul#nav0 {
+
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+} 
+
+
+ ul#nav1 {
+
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+} 
+
+
+
+ul#nav1 li { 	
+	margin: 0 0 0 30px;	
+	
+}
+
+
+
+
+
+
+ul#nav1 li a:hover { color: #5E89C2; }
+
+/*END Allotment Utilisation*/
+
+/* ratePlanCodes */
+/* @author Adrian Pop */
+	table.tablesorter thead tr .header {
+		background-image: url('images/bg.gif');
+		background-repeat: no-repeat;
+		background-position: center right;
+		cursor: pointer;
+	}
+	table.tablesorter thead tr .headerSortUp {
+		background-image: url('images/asc.gif');
+	}
+	table.tablesorter thead tr .headerSortDown {
+		background-image: url('images/desc.gif');
+	}
+	.hdr {
+		background-color: #EFEFEF;
+		color: #2B5B8B;
+		text-align: center;
+		font-weight: bold;
+		font-size: 10px !important;
+	}
+/* END ratePlanCodes */
+
+
+/* START XML Markup Customers */
+#selectedCustomers 
+{ 
+	width: 440px; 
+	float: left; 
+	display: none; 
+	margin-top: 10px; 
+}
+/* END XML Markup Customers */

@@ -1,0 +1,20 @@
+currency:
+   - !!models.Currency 
+    id: 1
+    code: THB
+    name: Thailand THB
+   
+   - !!models.Currency
+    id: 2
+    code: INR
+    name: Indian Rupee
+   
+   - !!models.Currency
+    id: 3
+    code: USD
+    name: US Dollar
+   
+   - !!models.Currency
+    id: 4
+    code: PD
+    name: Pound

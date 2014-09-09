@@ -1,0 +1,21 @@
+#shoppingFacility
+
+
+
+shoppingFacility:
+   - !!models.ShoppingFacility 
+    id: 1
+    code: RD
+    name: Right Next Door
+   
+   - !!models.ShoppingFacility
+    id: 2
+    code: BUS
+    name: By Bus
+   
+   - !!models.ShoppingFacility
+    id: 3
+    code: TX
+    name: By Taxi
+   
+  

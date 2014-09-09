@@ -1,0 +1,666 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td colspan="4" align="center">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 8 : TAXES, FEES, SUPPLEMENTS AND ADDITIONAL INFORMATION</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->
+        <table cellspacing="0" cellpadding="3" width="100%">
+          <tbody>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <fieldset>
+                  <legend><b>Room Tax</b></legend>
+                  <table style="width:100%;padding:0px;margin:0px;">
+                    <tbody>
+                      <tr>
+                        <td align="right" valign="middle">
+                          <font class="normalbold" style="color:#2B5B8B">*Room Tax: </font>
+                        </td>
+                        <td colspan="3">
+                          @FieldGen(_helper,"roomTax")
+                        </td>
+                      </tr>
+                      <tr @FieldGen(_helper,"taxContainer")>
+                        <td>
+                          @repeatStart(_helper,"repeatTaxSections")
+                        <td colspan="4">
+                          <input type="hidden" name="taxNo" id="taxNo" value="">
+                          <div style="width: 100%; padding: 0px; margin: 0px; ">
+                            <div id="tax1" style="width:100%;float:right;padding:0px;padding-top:5px;padding-bottom:5px">
+                              <fieldset>
+                                <legend>Tax details</legend>
+                                <input type="hidden" name="TaxID1" value="0">
+                                <div style="float:left;width:100%;clear:right;margin:0px;padding:0px;padding-top:5px">
+                                  <table border="0" width="100%" style="border:solid 1px #CCCCCC">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" style="background-color:#EFEFEF">
+                                          <font class="normal"><b>*Period</b></font>
+                                        </td>
+                                        <td style="background-color:#FAFAFA">
+                                          <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                            <tbody>
+                                              <tr>
+                                                <td colspan="2" id="error_102" class="error_block" style=""></td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>From: &nbsp;</td>
+                                                        <td>
+                                                          @RepeatField(_helper,"repeatTaxSections","taxPeriodFrom")
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                                <td>
+                                                  <table cellpadding="1" cellspacing="0" border="0" class="normalbold">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>to and include: &nbsp;</td>
+                                                        <td>
+                                                          @RepeatField(_helper,"repeatTaxSections","taxPeriodFrom")
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="background-color:#EFEFEF">
+                                          <font class="normal"><b>*Tax Name</b></font>
+                                        </td>
+                                        <td style="background-color:#FAFAFA" align="left">
+                                          @RepeatField(_helper,"repeatTaxSections","taxName")
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="background-color:#EFEFEF">
+                                          <font class="normal"><b>*Tax is</b></font>
+                                        </td>
+                                        <td style="background-color:#FAFAFA" align="left">
+                                          <div style="width:180px">
+                                            @RepeatField(_helper,"repeatTaxSections","taxIs")
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="background-color:#EFEFEF">
+                                          <font class="normal"><b>*Tax amount</b></font>
+                                        </td>
+                                        <td style="background-color:#FAFAFA" align="left" valign="middle">
+                                          <div style="float:left">
+                                            <div style="float:left">
+                                              @RepeatField(_helper,"repeatTaxSections","taxAmount")
+                                            </div>
+                                            <div @RepeatField(_helper,"repeatTaxSections","taxcurrency1") style="margin-left: 5px; float: left; width: 240px;">
+                                              @RepeatField(_helper,"repeatTaxSections","currency")												
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div style="valign:middle;width:100%;text-align:right;padding:10px">
+                                  <button type="button" style="border: none; background-color:transparent; cursor:pointer; text-decoration: none; " title="">
+                                  <img src="../button.php?titlu=Remove Tax&amp;bullet=images/cancel2.gif&amp;txtcol=FF0000&amp;col=FFFF00" vspace="0" hspace="0" border="0" align="absmiddle">
+                                  </button>
+                                </div>
+                              </fieldset>
+                            </div>
+                          </div>
+                          <div id="addTaxButton" style="margin-top: 10px;">
+                            <button type="button" style="border: none; background-color:transparent; cursor:pointer; text-decoration: none; " title="">
+                            <img src="" vspace="0" hspace="0" border="0" align="absmiddle"></button>					
+                          </div>
+                        </td>
+                        @repeatEnd(_helper,"repeatTaxSections")
+                        @renderRepeat(_helper,"repeatTaxSections")
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <br><br>
+                <font class="normalbold" style="color:#2B5B8B">Additional Mandatory Government Surcharges:</font>&nbsp;<br>
+                <font class="normal">
+                You may also add any Additional Mandatory Government Surcharges per room/per night, that have not already been included in your Net Room Rate or in the Room Taxes above.<br><br>
+                <b>Please be advised</b> Government Surcharges will be added on to the net rates after deducting any taxes already included.
+                <br><br>
+                @FieldGen(_helper,"isMandatoryCharges")
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center" valign="middle" width="100%">
+                <table id="AdditioanlM" name="AdditioanlM" width="100%">
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        <font class="normal">Additional mandatory surcharges per room per night: </font>
+                        @FieldGen(_helper,"surchargePerRoom")
+                        <font class="normalbold" style="font-size:12px;">.00</font>
+                        <font class="normal">&nbsp;&nbsp;(use whole numbers e.g. 100)</font>
+                        <br>
+                        @FieldGen(_helper,"currencyMandatory")
+                        <font class="normal"><b>Or</b> advise a </font>
+                        @FieldGen(_helper,"surchargePerRoomPerctntage")
+                        <font class="normal"> <b>%</b> as a charge.</font>
+                        <br>
+                        <font class="normal">
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="10"></td>
+                      <td valign="top" align="center">
+                        <font class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xx.xx)</font>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <fieldset>
+                  <legend>
+                    <font class="normalbold">Tariff Notes:</font>
+                  </legend>
+                  <table width="100%" border="0">
+                    <tbody>
+                      <tr>
+                        <td align="left" valign="middle">
+                          <font class="normal"><br>
+                          General tariff notes that apply to all room types and periods can be entered and will be displayed along with the rates at the time of booking. Do not enter tariff notes that are specific to a particular Room Type or Period.
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input disabled="disabled" type="radio" id="hasTarrifNotesYes" name="hasTariffNotes" value="t" checked="" ><font class="normal">Yes I like to add notes</font>
+                          <input disabled="disabled" type="radio" id="hasTarrifNotesNo" name="hasTariffNotes" value="f" ><font class="normal"><b>No, have none at this time</b></font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td id="tariffNotesDetails" align="left" valign="middle">
+                          <table width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td align="left">
+                                  <font class="normal">
+                                  The Tariff notes entered are accessible on the Customer interface.   Please use correct spelling and no short cuts of words to avoid any misunderstanding. If you need to use dates, please use this format: Month Day Year: example: July 08,2007.
+                                  <br><br>
+                                  Please enter your tariff notes:<br>  </font>
+                                  @FieldGen(_helper,"tariffNotes")
+                                  <br>
+                                  <font class="normal">(please limit to maximum 1000 characters - written: </font>
+                                  <font class="normal" name="tariffNumar" id="tariffNumar">44</font><font class="normal">)</font>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <font class="normalbold" style="color:#2B5B8B">*Does this hotel require mandatory transfers to be booked with a hotel reservation?: </font>
+                @FieldGen(_helper,"isMandatoryTransfers")
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <font class="normalbold" style="color:#2B5B8B">*Guest age must be </font>
+                @FieldGen(_helper,"guestAgeValidity")
+                <font class="normalbold" style="color:#2B5B8B">years or older to check in to the hotel.</font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="middle" align="left">
+                <font class="normalbold" style="color:#2B5B8B">*Hotel Check In Time:</font>
+                @FieldGen(_helper,"checkInTime")
+                <font class="normalbold" style="color:#2B5B8B">*Hotel Check Out Time:</font>
+                @FieldGen(_helper,"checkOutTime")
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <input type="hidden" name="_periods" id="_periods" value="1">
+            <tr>
+              <td align="left" valign="middle" colspan="4">
+                <fieldset>
+                  <legend>
+                    <font class="normalbold">Supplements</font>
+                  </legend>
+                  <table width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font class="normalbold">Does your property have any mandatory supplements Example: New Year's Eve Gala Dinner? </font>
+                          @FieldGen(_helper,"isMandatorySupplement")
+                          <br>
+                          Example: December 24 one night you will define from / To December 24 as to date we Included that date then if you also need to define December 31, one night, then in total you have 2 periods December 24 and December 31).
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table width="100%" @FieldGen(_helper,"supplementPeriod")>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <br><font class="normal">The Payable Rates for this Supplements will apply in  <i><u>THB - Thai Baht</u></i>.</font>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          @repeatStart(_helper,"repeatSupplementSections")
+                                        <td id="period1">
+                                          <fieldset>
+                                            <legend style="cursor:pointer" title="Click to Show/Hide Period data"  class="legend">Supplement </legend>
+                                            <table width="100%" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td colspan="2" align="left" valign="top">
+                                                    <font class="normalbold" style="color:#2B5B8B">*Please define the period of time: </font>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td colspan="2" height="5">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="right" valign="middle">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="top" align="center">
+                                                            <font class="normal" style="font-size:3px"><br></font>
+                                                            <font class="normal"><b>From</b>&nbsp;</font>
+                                                          </td>
+                                                          <td valign="top" align="center">
+                                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td valign="middle" align="center">
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementFromMonth")
+                                                                  </td>
+                                                                  <td valign="middle" align="center">-</td>
+                                                                  <td valign="middle" align="right">
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementFromDay")
+                                                                  </td>
+                                                                  <td valign="middle" align="center">-</td>
+                                                                  <td valign="middle" align="center">  
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementFromYear")
+                                                                  </td>
+                                                                  <td valign="middle" align="center">&nbsp;&nbsp;
+                                                                    <a href="javascript:show_calendar('document.hotelprofile.a1', '308', '308');">
+                                                                    <img src="../images/calendar.gif" width="14" height="14" border="0" alt="Select Date">
+                                                                    </a>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Month</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Day</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Year</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                  <td align="left" valign="middle">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="top" align="center">
+                                                            <font class="normal"><b>To and Include Date</b>&nbsp;</font>
+                                                          </td>
+                                                          <td valign="top" align="center">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td valign="middle" align="center">  
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementToMonth")
+                                                                  </td>
+                                                                  <td valign="middle" align="center">-</td>
+                                                                  <td valign="middle" align="right">  
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementToDay")
+                                                                  </td>
+                                                                  <td valign="middle" align="center">-</td>
+                                                                  <td valign="middle" align="center"> 
+                                                                    @RepeatField(_helper,"repeatSupplementSections","supplementToYear") 
+                                                                  </td>
+                                                                  <td valign="middle" align="center">&nbsp;&nbsp;
+                                                                    <a href="javascript:show_calendar('document.hotelprofile.d1', '308', '458');">
+                                                                    <img src="../images/calendar.gif" width="14" height="14" border="0" alt="Select Date">
+                                                                    </a>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Month</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Day</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                  <td valign="middle" align="center">
+                                                                    <font class="normal">
+                                                                    <b>Year</b>
+                                                                    </font>
+                                                                  </td>
+                                                                  <td valign="middle" align="center"></td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td colspan="4">
+                                                    <table id="HotelSupplementtable1" class="normal">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="right">
+                                                            <font class="normalbold">*Name of this Supplement:</font>
+                                                          </td>
+                                                          <td align="left">
+                                                            @RepeatField(_helper,"repeatSupplementSections","supplementName")
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="right">
+                                                            <font class="normalbold">*Short description:</font>
+                                                          </td>
+                                                          <td align="left">
+                                                            @RepeatField(_helper,"repeatSupplementSections","supplementDescription")
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td align="right">
+                                                            <font class="normalbold">*Apply</font>
+                                                          </td>
+                                                          <td>
+                                                            @RepeatField(_helper,"repeatSupplementSections","isApply")
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td colspan="3">
+                                                            <div @RepeatField(_helper,"repeatSupplementSections","perroom") style="">
+                                                              <table>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td align="right">
+                                                                      <font class="normalbold">*Rate:</font>
+                                                                    </td>
+                                                                    <td>
+                                                                      @RepeatField(_helper,"repeatSupplementSections","supplementPerRoomRate")
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td align="left">
+                                                                      <font class="normalbold">*Rate include Tax?</font>
+                                                                    </td>
+                                                                    <td>
+                                                                      @RepeatField(_helper,"repeatSupplementSections","isPerRoomRate")
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td colspan="2">
+                                                                      <table @RepeatField(_helper,"repeatSupplementSections","perRoomRateDiv")>
+                                                                        <tbody>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Tax</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perRoomRateTax")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perRoomRateTaxPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Discount</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perRoomRateDiscount")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perRoomRateDiscountPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                            </div>
+                                                            <div @RepeatField(_helper,"repeatSupplementSections","perperson")>
+                                                              <table>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td colspan="2" align="left" class="header">
+                                                                      <b>Adult</b>
+                                                                    </td>
+                                                                    <td style="border-right:solid 1xp #CCCCCC">&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td colspan="2" class="header" align="left">
+                                                                      <b>Children (3-18)</b>
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td align="right">
+                                                                      <font class="normalbold">*Adult Rate:</font>
+                                                                    </td>
+                                                                    <td>
+                                                                      @RepeatField(_helper,"repeatSupplementSections","supplementPerPersonAdultRate")
+                                                                    </td>
+                                                                    <td style="border-right:solid 1xp #CCCCCC">&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td align="right">
+                                                                      <font class="normalbold">*Child Rate:</font>
+                                                                    </td>
+                                                                    <td>
+                                                                      @RepeatField(_helper,"repeatSupplementSections","supplementPerPersonChildRate")
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td align="left">
+                                                                      <font class="normalbold">*Rate include Tax?</font>
+                                                                    </td>
+                                                                    <td>
+                                                                      @RepeatField(_helper,"repeatSupplementSections","isPerPersonAdultRate")
+                                                                    </td>
+                                                                    <td style="border-right:solid 1xp #CCCCCC">&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td align="left">     
+                                                                      <font class="normalbold">*Rate include Tax?</font>                              
+                                                                    </td>
+                                                                    <td>  
+                                                                      @RepeatField(_helper,"repeatSupplementSections","isPerPersonChildRate")                            
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td colspan="2">
+                                                                      <table @RepeatField(_helper,"repeatSupplementSections","perPersonAdultTax")>
+                                                                        <tbody>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Tax:</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonAdultRateTax")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonAdultRateTaxPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Discount:</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonAdultRateDiscount")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonAdultRateDiscountPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </td>
+                                                                    <td style="border-right:solid 1xp #CCCCCC">&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td colspan="2">
+                                                                      <table @RepeatField(_helper,"repeatSupplementSections","perPersonChildTax")>
+                                                                        <tbody>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Tax:</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonChildRateTax")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonChildRateTaxPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td align="right">
+                                                                              <font class="normalbold">*Discount:</font>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonChildRateDiscount")
+                                                                              @RepeatField(_helper,"repeatSupplementSections","perPersonChildRateDiscountPercent")
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="right" colspan="4">
+                                                    <div id="HotelSupplementremoverow1" style="padding:0px;margin:0px;">
+                                                      <button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; ">
+                                                      <img src="" vspace="0" hspace="0" border="0">
+                                                      </button>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </fieldset>
+                                        </td>
+                                        @repeatEnd(_helper,"repeatSupplementSections")
+                                        @renderRepeat(_helper,"repeatSupplementSections")
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; ">
+                                          <img src="" vspace="0" hspace="0" border="0">
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </fieldset>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end content-->	
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+      </div>
+    </div>
+    <input type="submit">
+  </form>
+</td>

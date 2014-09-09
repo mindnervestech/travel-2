@@ -1,0 +1,68 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td colspan="4" align="center">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 3 : HOTEL LOCATION</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->
+        <table cellspacing="0" cellpadding="3" width="100%">
+          <tbody>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normal"><b>Please enter 3 words ONLY that will give the user an idea of where your Property is located. .</b></font>
+                <br>
+                <font class="normal">For example, a London hotel may use: </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <table align="center" colspan="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td><font class="normalbold" style="font-weight:normal;color:#2B5B8B"></font></td>
+                      <td align="center"><font class="subtitlu" style="font-size:10px;font-weight:normal;">Hyde Park</font></td>
+                      <td align="center"><font class="subtitlu" style="font-size:10px;font-weight:normal;">Piccadilly</font></td>
+                      <td align="center"><font class="subtitlu" style="font-size:10px;font-weight:normal;">Buckingham Palace</font></td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" height="10"></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td align="center"><font class="normalbold" style="color:#2B5B8B">1</font></td>
+                      <td align="center"><font class="normalbold" style="color:#2B5B8B">2</font></td>
+                      <td align="center"><font class="normalbold" style="color:#2B5B8B">3</font></td>
+                    </tr>
+                    <tr>
+                      <td><font class="normalbold" style="color:#2B5B8B">*Enter Here: </font></td>
+                      <td align="center">@FieldGen(_helper,"hotelLocation1")</td>
+                      <td align="center">@FieldGen(_helper,"hotelLocation2")</td>
+                      <td align="center">@FieldGen(_helper,"hotelLocation3")</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end content-->	
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <input type="submit">
+  </form>
+</td>

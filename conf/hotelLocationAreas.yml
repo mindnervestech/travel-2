@@ -1,0 +1,24 @@
+#hotelLocationAreas
+
+
+
+hotelLocationAreas:
+   - !!models.HotelLocationArea 
+    id: 1
+    code: MG
+    name: Magarpatta
+   
+   - !!models.HotelLocationArea
+    id: 2
+    code: KH
+    name: kahradi
+   
+   - !!models.HotelLocationArea
+    id: 3
+    code: SW
+    name: Swargate
+   
+   - !!models.HotelLocationArea
+    id: 4
+    code: HD
+    name: Hadapsar

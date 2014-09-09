@@ -1,0 +1,3 @@
+HotelLeisureAmenities.customPostBind = function(){
+							
+}

@@ -1,0 +1,82 @@
+#countries
+
+countries:
+   - &IN !!models.Country 
+    id: 1
+    code: IN
+    name: India
+   
+   - &TH !!models.Country
+    id: 2
+    code: TH
+    name: Thailand
+   
+   - &SL !!models.Country
+    id: 3
+    code: SL
+    name: Sri Lanka
+   
+   - &BD !!models.Country
+    id: 4
+    code: BD
+    name: Bangladesh
+   
+   - &NP !!models.Country
+    id: 5
+    code: NP
+    name: Nepal
+   
+   - &PAK !!models.Country
+    id: 6
+    code: PAK
+    name: Pakistan
+   
+   - &DUB !!models.Country
+    id: 7
+    code: DUB
+    name: Dubai
+
+#provinces
+ 
+provinces:
+   - !!models.Province 
+    id: 1
+    code: MH
+    name: Maharashtra
+    country:  *IN
+   
+   - !!models.Province
+    id: 2
+    code: HR
+    name: Harayana
+    country:  *IN
+   
+   - !!models.Province
+    id: 3
+    code: PB
+    name: Punjab
+    country:  *IN
+   
+   - !!models.Province
+    id: 4
+    code: IS
+    name: Islamabad
+    country:  *PAK
+   
+   - !!models.Province
+    id: 5
+    code: KR
+    name: Karachi
+    country:  *PAK
+   
+   - !!models.Province
+    id: 6
+    code: HYP
+    name: Hyderabad
+    country:  *PAK
+   
+   - !!models.Province
+    id: 7
+    code: PBP
+    name: Punjab
+    country:  *PAK           

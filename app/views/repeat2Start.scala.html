@@ -1,0 +1,6 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper, _parent:String, _this:String)
+@Repeat2Template(_helper.repeatMap.get(_parent).repeatMap.get(_this).fieldMap, _parent, _this, _helper.repeatMap.get(_parent).repeatMap.get(_this).formName,"[]")
+
+<script type="text/html" id='@(_helper.repeatMap.get(_parent).repeatMap.get(_this).formName + "-template")' >
+	<table>
+		<tr>

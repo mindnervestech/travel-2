@@ -1,0 +1,27 @@
+@main("Welcome to Play 2.1") {
+<body style="background-color: white;">
+  <div class="container">
+    <div class="heading">
+      <br>
+      <br>
+      <br>
+      <div class="alignment">
+            <div class="well" id="registerPage"
+              data-sectionloader 
+              data-loaderurl="/supplier-status-info"
+              data-server-script="/generateStatusInfoScript"
+              data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+              data-remote="false"
+              >
+            </div>
+      </div>
+    </div>
+  </div>
+</body>
+}
+<style>
+  .alignment{
+  float: left;
+  width: 62%;
+  }
+</style>

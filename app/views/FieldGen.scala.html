@@ -1,0 +1,12 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper,field:String)
+
+@if(_helper.fieldMap.get(field).ctype.name == "control") {
+	@_helper.fieldMap.get(field).controls.control match {
+		case "visibility" => {
+			id='@("_field_" + _helper.formName +"_" + _helper.fieldMap.get(field).name)' class='@_helper.fieldMap.get(field).cssClass' @_helper.fieldMap.get(field).htmlAttrib data-bind="visible:  @for(x <- _helper.fieldMap.get(field).controls.agents ){@x}"
+		}
+	}
+	
+} else {
+ @UIField(_helper.fieldMap.get(field),_helper.formName,"")
+}

@@ -1,0 +1,90 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td colspan="4" align="center">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 2 : HOTEL DESCRIPTION</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->
+        <table cellspacing="0" cellpadding="3" width="100%">
+          <tbody>
+            <tr>
+              <td colspan="4" valign="middle" align="left">
+                <font class="normalbold" style="color:#2B5B8B">Hotel Description:</font>
+                <br>
+                <font class="normal">
+                Please enter a short description of your property to highlight the main features and facilities.
+                The text should be limited to a maximum of 1000 characters.
+                The description in English is mandatory and other languages are optional. <br>
+                The text will be displayed the way it is entered and therefore avoid typing the entire description in capital letters.
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <table cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td valign="middle">
+                        
+                      </td>
+                      <td valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">*English Version:</font>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center"><br>
+                <font class="normal">Profile description to be entered here:<br></font>
+                @FieldGen(_helper,"profileDescription")
+                <br>
+                <font class="normal">(please limit to maximum 1000 characters - written: </font>
+                <font class="normal" id="numar1">0</font><font class="normal">)</font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normalbold">The <i>
+                <font class="normalbold" style="color:#000000 !important">
+                BANGKOK HOTEL LOTUS SUKHUMVIT</font></i> is a 
+                </font>
+                <font class="normalbold">(Please tick the boxes that are applicable)</font>
+                <font class="normalbold"> : </font>
+                <br>
+                <table align="center">
+                  <tbody id="hotel_type_cb">
+                    @FieldGen(_helper,"hotelDescriptionOptions")
+                  </tbody>
+                </table>
+                <font class="normalbold">Hotel<br>Located in </font>
+                @FieldGen(_helper,"locationArea")					
+                <font class="normalbold"> area.	
+                <br><font class="normalbold">Shopping is </font>
+                @FieldGen(_helper,"shoppingFacility")
+                <font class="normalbold"> and<br>the nightlife/restaurants are </font>
+                @FieldGen(_helper,"nightLife")
+                <font class="normalbold"> the hotel.</font></font>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end content-->	
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+      </div>
+    </div>
+    <input type="submit">			
+  </form>
+</td>
+<script type="text/javascript"></script>

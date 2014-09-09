@@ -1,0 +1,60 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+  <div style="width:100%; float:left;">
+  	<h4>Supplier Details</h4>
+  	<div class= "textSpacing"><h5><span class= "textResponse">Supplier Code</span></h5><span class= "fieldResponse">@FieldGen(_helper,"code")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Property/Hotel Name</span></h5><span class= "fieldResponse">@FieldGen(_helper,"propertyName")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Company/Management/ Supplier Name</span></h5><span class= "fieldResponse">@FieldGen(_helper,"name")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Hotel Street Address</span></h5><span class= "fieldResponse">@FieldGen(_helper,"address")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Country</span></h5><span class= "fieldResponse">@FieldGen(_helper,"country")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">City</span></h5><span class= "fieldResponse">@FieldGen(_helper,"city")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Pin</span></h5><span class= "fieldResponse">@FieldGen(_helper,"pin")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Currency</span></h5><span class= "fieldResponse">@FieldGen(_helper,"currency")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Property Rating</span></h5><span class= "fieldResponse">@FieldGen(_helper,"rating")</span></div>
+    <h4 style="margin-top: 64%!important;">Accounting Details</h4>
+    <div class= "textSpacing"><h5><span class= "textResponse">First Name</span></h5><span class= "fieldResponse">@FieldGen(_helper,"accountingCntctFirstName")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Last Name</span></h5><span class= "fieldResponse">@FieldGen(_helper,"accountingCntctLastName")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Title</span></h5><span class= "fieldResponse">@FieldGen(_helper,"accountingCntctTitle")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Contact E-Mail</span></h5><span class= "fieldResponse">@FieldGen(_helper,"accountingCntctEmail")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Contact Number</span></h5><span class="codeAlignment">@FieldGen(_helper,"accountingCntctTelCode")</span>-<span class="numberAlignment">@FieldGen(_helper,"accountingCntctTelNumber")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Fax Number</span></h5><span class="codeAlignment">@FieldGen(_helper,"accountingCntctFaxCode")</span>-<span class="numberAlignment">@FieldGen(_helper,"accountingCntctFaxNumber")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Extension</span></h5><span class= "fieldResponse">@FieldGen(_helper,"accountingCntctExt")</span></div>
+    <div class= "textSpacing"><h5><span class= "textResponse">Status</span></h5><span class= "fieldResponse">@FieldGen(_helper,"status")</span></div>
+  </div>
+  <input type="submit" class="buttonAlign btn btn-success" >
+</form>
+<style>
+  .textResponse
+  {
+ 	 float:left;
+ 	 width:54%;
+  }
+  .fieldResponse
+  {
+ 	float:left;
+  }
+  .textSpacing
+  {
+  	margin-top:1%;
+  	float:left;
+  	width:100%;
+  	text-align: left;
+  }
+  .numberAlignment input{
+ 	
+  	width: 22% !important;
+  }
+  .codeAlignment input{
+ 	float:left;
+  	width: 10% !important;
+  }
+  .buttonAlign{
+    margin-top: 3%;
+    margin-left: 15%;
+  }
+  
+</style>
+
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap-responsive.css")">
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap-select.min.css")">

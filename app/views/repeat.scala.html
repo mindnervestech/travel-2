@@ -1,0 +1,20 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper,field:String)
+
+<script type="text/html" id='@(_helper.formName + "-template")' >
+<tr>
+	@for(_field <- _helper.fieldMap.values.iterator){
+		<td>
+			@UIField(_field,_helper.formName,"[]")
+		</td>
+		
+	}
+	
+		<td>
+            <a href="#" data-bind='click: $root.@(_helper.formName + "removeItem").bind($root)'> Remove </a>
+        </td>
+</tr>
+</script>
+<table>
+    <tbody data-bind="template: { name: '@_helper.formName-template', foreach: @field }"></tbody>
+</table>
+<a href="#" data-bind='click: @(_helper.formName + "addItem")'>Add Item</a>

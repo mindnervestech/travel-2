@@ -1,0 +1,30 @@
+roomAmenities:
+  - !!models.RoomAmenity
+    id: 1
+    code: 24HRS
+    name: 24 Hour Room Service
+
+  - !!models.RoomAmenity 
+    id: 2
+    code: APC
+    name: Adaptor available for telephone PC use
+
+  - !!models.RoomAmenity 
+    id: 3
+    code: AR
+    name: Adjoining rooms
+
+  - !!models.RoomAmenity
+    id: 4
+    code: ACICR    
+    name: Air conditioning individually controlled in room
+
+  - !!models.RoomAmenity
+    id: 5
+    code: ALCK    
+    name: Alarm Clock
+
+  - !!models.RoomAmenity
+    id: 6
+    code: ALFR   
+    name: Allergen Friendly

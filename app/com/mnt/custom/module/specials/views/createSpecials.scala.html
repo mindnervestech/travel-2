@@ -1,0 +1,361 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+
+<td align="center">
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+  <div class="boxWrapper" style="text-align: center; width: 720px" id="Box6">
+    <div id="destination_seleted_div" style="width: 720px; _width: 720px; height: 26px; text-align: left">
+      <div class="left_bar1_26px" style="">&nbsp;</div>
+      <div class="center_bar1_26px" style="width: 701px; _width: 701px">
+        <div class="top_bar_titlu" id="" style="">SPECIAL PROMOTION:STAY XX DAYS PAY YY DAYS</div>
+      </div>
+      <div class="right_bar1_26px" style=""></div>
+    </div>
+    <div class="vertical_gradient_80px_content_div"
+      style="width: 718px; _width: 720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+      <!-- content-->
+      
+      <table border="0" cellspacing="0" cellpadding="3" width="100%"
+        align="center" class="normalText">
+        <tbody>
+          <tr>
+          	<td>
+          		@renderRepeat(_helper,"repeatPeriodSection")
+          		@repeatStart(_helper,"repeatPeriodSection")
+          			
+          	<td colspan="2">
+              <table id="mainperiods" width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td id="period1">
+                      <fieldset>
+                        <legend style="cursor: pointer"
+                          id="legend1">Period 1 </legend>
+                        <table width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td colspan="2" align="left" valign="top">
+                                <font class="normalbold" style="color: #2B5B8B">*Please define the period:</font>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" height="5"></td>
+                            </tr>
+                            <tr>
+                              <td align="right" valign="middle">
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td valign="top" align="center"><font
+                                        class="normal" style="font-size: 3px"><br>
+                                        </font><font class="normal"><b>From</b>&nbsp;</font>
+                                      </td>
+                                      <td valign="top" align="center">
+                                        <table border="0" cellspacing="0" cellpadding="0"
+                                          width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td>
+                                              	@RepeatField(_helper,"repeatPeriodSection","fromDate")
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td align="left" valign="middle">
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td valign="top" align="center"><font
+                                        class="normal" style="font-size: 3px"><br>
+                                        </font><font class="normal"><b>To</b>&nbsp;</font>
+                                      </td>
+                                      <td valign="top" align="center">
+                                      	 @RepeatField(_helper,"repeatPeriodSection","toDate")
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+ 
+ 							<tr>
+                              <td colspan="2" align="center" valign="middle"
+                                id="periodtable1">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td colspan="3" height="5"></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3" height="5" align="center">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="2" height="10"></td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="2"><font class="normal">Please
+                                                provide a name for this Special, this name will
+                                                be displayed to the Customer and also appear in
+                                                the Booking Forms. Please use names like <i>Stay
+                                                3 nights and pay for 2 nights only</i> </font>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td><font class="normalbold">Please
+                                                enter the promotion name here :</font>
+                                              </td>
+                                              <td>
+                                              		@RepeatField(_helper,"repeatPeriodSection","promotionName")
+                                     		  </td>
+                                     </tr>
+                                     <tr>
+                                       <td colspan="2" height="10"></td>
+                                     </tr>
+                                   </tbody>
+                                 </table>
+                                 <tr>
+                                	  <td colspan="3" height="5"></td>
+                                 </tr>
+                                 <tr>
+                                   <td colspan="3" align="center" valign="top">
+                                     <table border="0" cellspacing="0" cellpadding="0">
+                                       <tbody>
+                                          <tr>
+                                            <td valign="top">
+                                              <table border="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="background-color: #EFEFEF; border-bottom: solid 1px #D4D4D4; border-right: solid 1px #D4D4D4"
+                                                      colspan="2"><font class="normalbold">Please choose your Room types:</font>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="right">
+                                                        @RepeatField(_helper,"repeatPeriodSection","roomTypes")
+                                                      </td>
+                                                      
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                              <td valign="top"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                                <table id="markettable1" name="markettable1"
+                                  width="100%" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td id="market1_1">
+                                      	<fieldset>
+                                      		<legend style="cursor: pointer" id="marketlegend1_1">Market 1</legend>
+                                        	@render2Repeat(_helper,"repeatPeriodSection","repeatMarkets")
+                                        </fieldset>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" height="40">
+                                <hr>
+                              </td>
+                            </tr>
+                            <input type="hidden" name="_period1_markets" id="_period1_markets" value="1">
+                            <tr>
+                              <td colspan="3" align="left">
+                                <table cellpadding="0"
+                                  cellspacing="0" border="0" style="margin-top: 10px">
+                                  <tbody>
+                                    <tr>
+                                      <td valign="middle"><font class="normalbold"
+                                        style="color: #2B5B8B">Active:</font>
+                                      </td>
+                                      <td>
+                                      	@RepeatField(_helper,"repeatPeriodSection","isActive")
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" height="40">
+                                <hr>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </fieldset>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            
+          		@repeatEnd(_helper,"repeatPeriodSection")
+      		</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <hr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- end content-->
+      
+      
+    </div>
+    
+    <div id="specialSubmit" style="width: 720px;">
+		<table align="center">
+			<tbody>
+				<tr>
+					<td align="left" valign="bottom">
+						<input type="submit" id="submitspecial">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    <div class="footer_bottom_wrapper">
+      <div class="margin_wrapper" style="float: left; width: 5px;">
+        <img
+          src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif"
+          alt="">
+      </div>
+      <div class="center_wrapper"
+        style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+      <div class="margin_wrapper" style="float: left; width: 5px;">
+        <img
+          src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif"
+          alt="">
+      </div>
+    </div>
+  </div>
+  </form>
+</td>
+
+
+@repeat2Start(_helper,"repeatPeriodSection", "repeatMarkets")
+  
+  <table cellspacing="4" cellpadding="4" border="0"
+    id="markettable1_1" align="center" width="100%">
+    <tbody>
+      <tr>
+        <td valign="middle">
+          <table width="100%"
+            cellspacing="4" border="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="40%"
+                  style="background-color: #EFEFEF; border-bottom: solid 1px #D4D4D4; border-right: solid 1px #D4D4D4"
+                  align="center"><font
+                  class="normalbold">Rule</font>
+                </td>
+                <td align="center"
+                  style="background-color: #EFEFEF; border-bottom: solid 1px #D4D4D4; border-right: solid 1px #D4D4D4"
+                  width="60%"><font class="normalbold">Applicable Markets</font>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left"
+                  style="border-right: solid 1px #D4D4D4">
+                  <table
+                    cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                      <tr>
+                        <td colspan="5">
+                          <font
+                            class="normal">
+                          Stay 
+                          @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "stayDays")
+                          Day/s Pay 
+                          @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "payDays")
+                          Day/s 
+                          </font>
+                          <br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="5" valign="middle"><br>
+                          <font class="normal"
+                            style="color: #2B5B8B"></font>
+                        </td>
+                      </tr>
+                      <!-- <tr><td><input type="radio" id="FirstLast1_10" name="FirstLast1_1" value="1" /></td><td><font class="normal">first nights</font></td><td><input type="radio" name="FirstLast1_1" id="FirstLast1_11" checked="checked" value="0"/></td><td><font class="normal">last nights</font></td><td width="20%">&nbsp;</td></tr> -->
+                    </tbody>
+                  </table>
+                </td>
+                <td valign="top">
+                  <font class="normal">Apply to all Markets?&nbsp;
+                  @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "isApplyAllMarkets")
+                  </font>
+                  <div id="market_1_1">
+                    <table align="center">
+                      <tbody>
+                        <tr>
+                          <td align="right">
+                            @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "applyToCountries")
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr>
+                  <font
+                    class="normal">
+                  Please select the
+                  type of Free Stay: 
+                  @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "freeStayType")
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <font class="normal">
+                  Do you allow this special to be applicable
+                  multiple times under the same booking?
+                  @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "isApplicableMultipleTimes")
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><font class="normal">
+                  Do you allow this special to be combined
+                  with other specials under the same
+                  booking?
+                  @Repeat2Field(_helper,"repeatPeriodSection", "repeatMarkets", "isCombinedWithSpecials")
+                  </font>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+@repeat2End(_helper,"repeatPeriodSection", "repeatMarkets")

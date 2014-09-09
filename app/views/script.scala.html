@@ -1,0 +1,183 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+@import play.templates._
+
+//<script>
+var @(_helper.formName) = {
+		
+		@(_helper.formName)_self:this,
+		_parsed:'hi',
+		bind:function(){
+			_this = this;
+			$.ajax({
+				url:'@_helper.bindUrl',
+				datatype:"json",
+				success: function(data){
+					console.log(data);
+					var parsed = JSON.parse(data);
+					_parsed = parsed;
+					
+					var mapping = {
+							
+					}
+					
+					 @if(_helper.repeatMap.size > 0 ){
+						mapping = {
+							@for(_repeateHelper <- _helper.repeatMap.values.iterator){
+									'@_repeateHelper.formName' : {
+										key : function(data) {
+											return ko.utils.unwrapObservable(data._key);
+										}
+									},
+									
+									@if(_repeateHelper.repeatMap.size > 0 ){
+										@for(_repeate2Helper <- _repeateHelper.repeatMap.values.iterator){
+											'@_repeate2Helper.formName' : {
+												key : function(data) {
+													return ko.utils.unwrapObservable(data._key);
+												}
+											},
+										}
+									}
+							}
+						}
+						
+					} 
+					@(_helper.formName)_self = ko.mapping.fromJS(JSON.parse(data),mapping);
+					
+					@if(_helper.repeatMap.size > 0 ){
+						@for(_repeateHelper <- _helper.repeatMap.values.iterator) {
+							@( _helper.formName + "_self." + _repeateHelper.formName + "addItem=function()"){
+							     var toBeAddedItem = $.extend({},ko.mapping.fromJS(parsed.@(_repeateHelper.formName)[0]),{_key : new Date().getTime()});
+								 @(_helper.formName + "_self." + _repeateHelper.formName).push(toBeAddedItem);
+							}
+						
+							@(_helper.formName + "_self." + _repeateHelper.formName + "removeItem=function(_item)"){
+								@(_helper.formName + "_self." + _repeateHelper.formName).mappedRemove({_key: _item._key})		
+							}
+							
+							@if(_repeateHelper.repeatMap.size > 0 ){
+								@for(_repeate2Helper <- _repeateHelper.repeatMap.values.iterator){
+									@( _helper.formName + "_self." + _repeate2Helper.formName + "addItem=function(_index)"){
+										 var toBeAddedItem = $.extend({},ko.mapping.fromJS(parsed.@(_repeateHelper.formName)[0].@(_repeate2Helper.formName)[0]),{_key : new Date().getTime()});
+										 @(_helper.formName + "_self." + _repeateHelper.formName)()[_index].@(_repeate2Helper.formName).push(toBeAddedItem);
+									}
+								
+									@(_helper.formName + "_self." + _repeate2Helper.formName + "removeItem=function(_parent, _this)"){
+										var _item = @(_helper.formName + "_self." + _repeateHelper.formName)()[_parent].@(_repeate2Helper.formName)()[_this];
+										@(_helper.formName + "_self." + _repeateHelper.formName)()[_parent].@(_repeate2Helper.formName).remove(function(item){return item._key === _item._key});		
+									}
+								}
+							}
+							
+						}
+					}
+					
+					ko.applyBindings(@(_helper.formName)_self,document.getElementById('@("_form_"+_helper.formName)'));
+					_this.postBind();
+				}
+			});
+		},
+		postBind:function(){
+			this.postBindRegister();
+			$.getScript('@routes.Assets.at("appjs/" + _helper.formName + "-local.js")',function(scriptFromLocal){
+				@(_helper.formName).customPostBind();
+			});
+		},
+		postBindRegister:function(){
+			@for(_js <- _helper.actorMap.values.iterator){
+				@Html(_js.get(0))	
+			}
+			
+		},
+		submit:function(){
+			
+			$('#@("_form_"+_helper.formName)').submit(function(){
+				if($('#@("_form_"+_helper.formName)').valid()){
+					$('#@("_form_"+_helper.formName)').block({ 
+		                message: '<h1>UPDATING</h1>', 
+		                css: { border: '3px solid #a00' } 
+		            });
+					$('#@("_form_"+_helper.formName)').ajaxSubmit({
+														type: "POST",
+														url: '@_helper.formAction',
+														success:function(data){
+															$('#@("_form_"+_helper.formName)').unblock();
+															@(_helper.formName).postSucessSubmit(data);
+															$.pnotify({
+																history:false,
+														        text: data
+														    });
+															
+														},
+														error:function(){
+														}
+													});
+				}
+				return false;
+				
+			});			
+		},
+		postSucessSubmit: function(data){
+			
+		},
+		validate:function(){
+			$('#@("_form_"+_helper.formName)').validate({
+				rules: {
+				    		 @for(fieldType<-_helper.fieldMap.values.iterator){
+				    			 @if(fieldType.validation !=null ){
+					    			 	 @(fieldType.name) :{
+						    				 minlength: @fieldType.validation.minlength,
+						    				 required : @fieldType.validation.required,
+						    				 email: @fieldType.validation.email,
+						    				 maxlength: @fieldType.validation.maxlength,
+						    				 date: @fieldType.validation.date,
+						    				 digits: @fieldType.validation.digits,
+											 @if(!"".equals(fieldType.validation.remote)){
+												 remote: {
+													 url: '@fieldType.validation.remote',
+													 type: "post",
+													 data:{
+														 q: function(){
+															return $('#@(_helper.formName + fieldType.name)').val(); 
+														 }
+															 
+													 }
+												 },
+											 }
+					    			 		 number: @fieldType.validation.number
+										 
+						    			 },
+					    			 
+					    			 
+				    		 	}
+				    		 }
+			    	 },
+			     messages: {
+			    	 	
+			    		 @for(fieldType<-_helper.fieldMap.values.iterator){
+			    			 @if(fieldType.validation !=null ){
+			    				 @if(!fieldType.validation.messages.equals("")){
+				    				 @fieldType.name :  '@fieldType.validation.messages',
+			    				 }
+				    		 }
+			    		  }
+			    		 
+			    	 },
+			});//end of validate
+		},//end of validate
+		register:function(){
+			
+			
+		},
+		
+		init:function(){
+			this.bind();
+			this.validate();
+			this.register();
+			this.submit();
+		}
+}
+
+@(_helper.formName).init();
+
+//</script>

@@ -1,0 +1,758 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+
+<td colspan="4" align="center">
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+<fieldset style="margin: 5px;">
+         @repeatStart(_helper,"repeatRateSections")
+            <table style="border:solid 1px #FFFFFF" cellpadding="2">
+               <tbody>
+                  <tr>
+                     <td class="td_yield_header">Adults</td>
+                     <td class="td_yield_header">Net Payable Rates</td>
+                     <td class="td_yield_header">Rate Basis</td>
+                  </tr>
+                  <tr style="background-color:#EFF8FF">
+                     <td valign="middle" align="center"><b>1 Adult</b></td>
+                     <td valign="middle" align="center">
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdult1")
+                     </td>
+                     <td width="250" valign="top">
+                        <font class="">*Include Meals?<br>
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdultInclude1")
+                        </font>
+                        <div @RepeatField(_helper,"repeatRateSections","mealInclude1") style="">
+                        <table border="0">
+                           <tbody>
+                              <tr>
+                                 <td nowrap="nowrap">
+                                    <div style="padding:2px">
+                                       <div style="float:left;width:75px">*Rate Basis:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateBasis1")
+                                       </div>
+                                    </div>
+                                    <div style="clear:left;padding:2px">
+                                       <div style="float:left;width:75px">Type:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateType1")
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr style="background-color:#E0E9EF">
+                     <td valign="middle" align="center"><b>2 Adults</b></td>
+                     <td valign="middle" align="center">
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdult2")
+                     </td>
+                     <td width="250" valign="top">
+                        <font class="">*Include Meals?<br>
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdultInclude2")
+                        </font>
+                        <div @RepeatField(_helper,"repeatRateSections","mealInclude2") style="">
+                        <table border="0">
+                           <tbody>
+                              <tr>
+                                 <td nowrap="nowrap">
+                                    <div style="padding:2px">
+                                       <div style="float:left;width:75px">*Rate Basis:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateBasis2")
+                                       </div>
+                                    </div>
+                                    <div style="clear:left;padding:2px">
+                                       <div style="float:left;width:75px">Type:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateType2")
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr style="background-color:#EFF8FF">
+                     <td valign="middle" align="center"><b>3 Adults</b></td>
+                     <td valign="middle" align="center">
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdult3")
+                     </td>
+                     <td width="250" valign="top">
+                        <font class="">*Include Meals?<br>
+                        @RepeatField(_helper,"repeatRateSections","generalRateAdultInclude3")
+                        </font>
+                        <div style="" @RepeatField(_helper,"repeatRateSections","mealInclude3")>
+                        <table border="0">
+                           <tbody>
+                              <tr>
+                                 <td nowrap="nowrap">
+                                    <div style="padding:2px">
+                                       <div style="float:left;width:75px">*Rate Basis:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateBasis3")
+                                       </div>
+                                    </div>
+                                    <div style="clear:left;padding:2px">
+                                       <div style="float:left;width:75px">Type:</div>
+                                       <div style="float:left">
+                                          @RepeatField(_helper,"repeatRateSections","generalAdultRateType3")
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table cellspacing="0" cellpadding="5" border="0" width="100%">
+               <tbody>
+                  <tr>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td valign="middle">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                           <tbody>
+                              <tr>
+                                 <td valign="middle"><font class="normalbold" style="color: #2B5B8B">Do you have different net rates during specific weekdays/weekends:</font></td>
+                                 <td valign="middle">
+                                    @RepeatField(_helper,"repeatRateSections","differentNetRates")
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td valign="middle" @RepeatField(_helper,"repeatRateSections","differentNetRatesRequired")>
+                     <table id="weekendid1_1" style="border: 1px solid rgb(224, 233, 239);" cellpadding="5" cellspacing="0" border="0" align="center">
+                        <tbody>
+                           <tr>
+                              <td align="center" style="padding-top:10px">   <font class="normalboldhint" style="color: #2B5B8B">Please define the applicable day/s by ticking the respective boxes below and enter the net payable rates:</font></td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table align="center" cellpadding="3" cellspacing="3" border="0">
+                                    <tbody>
+                                       <tr>
+                                          <td valign="middle">
+                                             @RepeatField(_helper,"repeatRateSections","applicableDays")
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="center">
+                                 <table border="0" align="center">
+                                    <tbody>
+                                       <tr>
+                                          <td class="td_yield_header">Adults</td>
+                                          <td class="td_yield_header">Net Payable Rates</td>
+                                          <td class="td_yield_header">Rate Basis</td>
+                                          <td class="td_yield_header"></td>
+                                       </tr>
+                                       <tr>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td width="350" align="center" rowspan="7" valign="top">
+                                             <div style="padding:5px">
+                                                <div style="text-align:left">
+                                                   <div id="othercancel21_1" style="width:100%;text-align:left"></div>
+                                                </div>
+                                                <div style="width:100%;height:20px">
+                                                   <table width="100%" style="border-collapse:collapse;border:0;padding:0;margin:0px" height="100%">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td></td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                                <div style="text-align:left">  </div>
+                                                <div id="penaltyCharges21_1_percentage" style="display:none;text-align:right"></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                       <tr style="background-color:#EFF8FF">
+                                          <td valign="middle" align="center"><b>1 Adult</b></td>
+                                          <td valign="middle" align="center">
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdult1")
+                                          </td>
+                                          <td width="200">
+                                             <font class="">*Include Meals?<br>
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdultInclude1")
+                                             </font>
+                                             <div @RepeatField(_helper,"repeatRateSections","differenrMealInclude1")>
+                                             <table>
+                                                <tbody>
+                                                   <tr>
+                                                      <td nowrap="nowrap">*Rate Basis:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateBasis1")
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="right">Type:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateType1")
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                       <tr style="background-color:#E0E9EF">
+                                          <td valign="middle" align="center"><b>2 Adults</b></td>
+                                          <td valign="middle" align="center">
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdult2")
+                                          </td>
+                                          <td width="200">
+                                             <font class="">*Include Meals?<br>
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdultInclude2")
+                                             </font>
+                                             <div @RepeatField(_helper,"repeatRateSections","differenrMealInclude2")>
+                                             <table>
+                                                <tbody>
+                                                   <tr>
+                                                      <td nowrap="nowrap">*Rate Basis:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateBasis2")
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="right">Type:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateType2")
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                       <tr style="background-color:#EFF8FF">
+                                          <td valign="middle" align="center"><b>3 Adults</b></td>
+                                          <td valign="middle" align="center">
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdult3")
+                                          </td>
+                                          <td width="200">
+                                             <font class="">*Include Meals?<br>
+                                             @RepeatField(_helper,"repeatRateSections","differentRateAdultInclude3")
+                                             </font>
+                                             <div @RepeatField(_helper,"repeatRateSections","differenrMealInclude3")>
+                                             <table>
+                                                <tbody>
+                                                   <tr>
+                                                      <td nowrap="nowrap">*Rate Basis:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateBasis3")
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="right">Type:</td>
+                                                      <td>
+                                                         @RepeatField(_helper,"repeatRateSections","differentAdultRateType3")
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td>                                        </td>
+                           </tr>
+                           <tr>  </tr>
+                           <tr>
+                              <td>&nbsp;</td>
+                           </tr>
+						   <tr>
+                           	 <td>
+                              <fieldset>
+							  <legend>Cancellation Policy and Charges</legend>
+							  <div id="currentData111"></div>
+                              	@render2Repeat(_helper,"repeatRateSections","repeatCancellations1")
+                              </fieldset>
+                             </td>
+                           </tr>
+                           <tr>
+                              <td align="right">
+                                 <button type="button" style="border: medium none ; background-color: transparent; cursor: pointer; text-decoration: none;" >
+                                 <img src="http://us.dotwconnect.com/new_button.php?height=20&amp;verspace=7&amp;text=ADD NEW RULE&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" align="absmiddle" border="0" hspace="0" vspace="0">
+                                 </button>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div style="float: left;">
+                           <b>Apply to all Markets?</b>&nbsp;<br>
+                           <font class="yieldMarketBasedOn">(Based on Passenger Nationality)</font>
+                           @RepeatField(_helper,"repeatRateSections","isPassengerNationality")
+                           <div style="" @RepeatField(_helper,"repeatRateSections","marketRate")>
+                           <table border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                 <tr>
+                                    <td align="right">
+                                       @RepeatField(_helper,"repeatRateSections","rateMarketType")
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="3">&nbsp;</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">
+                        <table class="table_yield_header">
+                           <tbody>
+                              <tr>
+                                 <td align="left" valign="middle">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                       <tbody>
+                                          <tr>
+                                             <!--<td valign="top" nowrap><font class="normalbold">--&gt;</font><input type="checkbox" name="minStayUpdate1_1" value="t" /><font class="normal">&nbsp;</font></td>-->  
+                                             <td colspan="2" valign="top">
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td valign="middle">
+                                                            <table id="minStayID1_1" cellpadding="0" cellspacing="0" border="0">
+                                                               <tbody>
+                                                                  <tr>
+                                                                     <td>   <font class="normalbold" style="color: #2B5B8B">Please define the applicable day/s for the Minimum Stay by ticking the respective boxes below:</font></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td>
+                                                                        <table align="center" cellpadding="3" cellspacing="3" border="0">
+                                                                           <tbody>
+                                                                              <tr>
+                                                                                 <td valign="middle" nowrap="">
+                                                                                    @RepeatField(_helper,"repeatRateSections","minimumStayDays")
+                                                                                 </td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                     </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td>
+                                                                        <font class="normalbold" style="color: #2B5B8B">Please enter the Minimum Night/s Stay and Period for this Room Type: </font>
+                                                                        @RepeatField(_helper,"repeatRateSections","noOfMinNights")
+                                                                        <font class="normalbold">&nbsp;nights</font>
+                                                                     </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                  	 <td>
+                                                                  	 <fieldset>
+																	  <legend>Cancellation Policy and Charges</legend>
+																	  <div id="currentData111"></div>
+                                                                  	 	@render2Repeat(_helper,"repeatRateSections","repeatCancellations")
+                                                                  	  </fieldset>
+                                                                  	 </td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="3" height="10"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+      </tbody>
+   </table>
+
+@repeatEnd(_helper,"repeatRateSections")
+@renderRepeat(_helper,"repeatRateSections")
+</fieldset>
+
+
+
+<fieldset style="margin: 5px;">
+<table style="border:solid 1px #FFFFFF" cellpadding="2">
+      <tbody>
+         @renderRepeat(_helper,"allottmentMarkets")
+      </tbody>
+   </table>
+
+</fieldset>
+
+<input type="submit">
+</form>
+</td>
+
+<!-- Allottment Markets -->
+@repeatStart(_helper,"allottmentMarkets")
+
+
+<table id="markettable1" name="markettable1" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td id="market1_1">
+        <fieldset style="margin: 5px;">
+          <legend style="cursor:pointer" onclick="ExpandContract('market',1,1);" title="Click to Show/Hide Market" id="marketlegend1_1" class="yieldLegendAllotment">Allotment Market 1</legend>
+          <input type="hidden" name="allotmentnoremove_1_1" id="allotmentnoremove_1_1" value="">                    <input type="hidden" name="ratenoremove_1_1" id="ratenoremove_1_1" value="">                    
+          <table width="100%" cellspacing="0" cellpadding="0" border="0" id="markettable1_1">
+            <tbody>
+              <tr>
+                <td align="left">
+                  <b>Apply to all defined rates?</b>
+                  		@RepeatField(_helper,"allottmentMarkets", "isApplyToRates")           
+                  <div style="" id="applytoallratesdiv_1_1">
+                    <table border="0" cellspacing="0" cellpadding="0" align="left">
+                      <tbody>
+                        <tr>
+                          <td align="right" @RepeatField(_helper,"allottmentMarkets", "market_1_1")>
+                           		@RepeatField(_helper,"allottmentMarkets", "allotmentMarketRates")  
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td valign="middle">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                      <tr>
+                        <td valign="middle"><font class="normalbold" style="color: #2B5B8B">How do you want to specify allotment?:</font></td>
+                        <td valign="middle">@RepeatField(_helper,"allottmentMarkets", "isSpecifyAllotment")</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td valign="middle">
+                  <div @RepeatField(_helper,"allottmentMarkets", "specifyAllotment") style="">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td width="20%" class="perOccupancyTd">Allocation</td>
+                          <td width="20%" class="perOccupancyTd">Release Period</td>
+                          <td class="perOccupancyTd" width="60%">Applicable Markets <br><font class="yieldMarketBasedOn">(Based on Passenger Nationality)</font></td>
+                        </tr>
+                        <tr>
+                          <td valign="top" align="center" style="border-right:solid 1px #D4D4D4">
+                            <b>Free Sell</b><br>
+                            	@RepeatField(_helper,"allottmentMarkets","isFreeSell")
+                            <div @RepeatField(_helper,"allottmentMarkets", "stopsell_market_div")>
+                            <div id="stopsell_market" style="border-top-style: solid; border-top-width: 1px; border-top-color: rgb(212, 212, 212);"><b>Stop Sell/On request</b>
+                            <br>
+                            	@RepeatField(_helper,"allottmentMarkets","isStopSellOnReq")	
+                           	</div>
+                            <div @RepeatField(_helper,"allottmentMarkets", "stopsell_market_choose") >
+                              <font class="normalbold" style="color:#2B5B8B;">Please choose:<br></font>
+                              <select class="casute3" onchange="return verifyHotelRights(this,getVars(this.name),2);" id="newAllotment1_1" name="newAllotment1_1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected="">5</option>
+                                <option value="6">6</option>
+                              </select>
+                            </div>
+                           </div>
+                          </td>
+                          <td align="center" valign="top" style="border-right:solid 1px #D4D4D4">
+                            &nbsp;
+                            <div id="freesell_market_1_1_release" style="">
+                              <div style="float:left">
+                                <select name="cutOffHours1_1" id="cutOffHours1_1" class="casute3" onchange="if(verifyHotelRights(this,getVars(this.name),1)) if(this.value==-1) document.getElementById('othercutoff1_1').style.display=''; else document.getElementById('othercutoff1_1').style.display='none';">
+                                  <option value="0">-- Choose One --</option>
+                                  <option value="1">Same day up to check-in</option>
+                                  <option value="20">Same day up to 8 PM</option>
+                                  <option value="23">Same day up to 11 PM</option>
+                                </select>
+                              </div>
+                              <div id="othercutoff1_1" style="display: none; float: right; width: 100%;">
+                                <select class="casute3" onchange="return verifyHotelRights(this,getVars(this.name),1);" name="otherCutoff1_1" id="otherCutoff1_1">
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                </select>
+                                &nbsp;days
+                              </div>
+                            </div>
+                          </td>
+                          <td align="center">
+                            <b>Apply to all Markets?</b>&nbsp;
+                            	@RepeatField(_helper,"allottmentMarkets","isApplyToAllMarkets")
+                            <div style="" id="perroommarket_1_1">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td @RepeatField(_helper,"allottmentMarkets", "applyToAllMarket") align="right">
+                                    	@RepeatField(_helper,"allottmentMarkets","applyToAllMarkets")
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div @RepeatField(_helper,"allottmentMarkets", "allotmentOccupacy") style="display: none;">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td valign="top" width="50%">
+                                    <table border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class="perOccupancyTd" width="20%">Adults</td>
+                                          <td width="40%" class="perOccupancyTd">Allocation</td>
+                                          <td width="40%" class="perOccupancyTd">Release Period</td>
+                                        </tr>
+                                        <tr style="background-color:#EFF8FF">
+                                          <td width="10%" style="text-align:center">1 Adult</td>
+                                          <td valign="top" width="40%" align="center" style="border-right:solid 1px #D4D4D4">
+				                            <b>Free Sell</b><br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isFreeSellOccAdult1")
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_div_adult1") >
+				                            <div id="stopsell_market" style="border-top-style: solid; border-top-width: 1px; border-top-color: rgb(212, 212, 212);"><b>Stop Sell/On request</b>
+				                            <br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isStopSellOnReqAdult1")	
+				                           	</div>
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_choose_adult1") >
+				                              <font class="normalbold" style="color:#2B5B8B;">Please choose:<br></font>
+				                              @RepeatField(_helper,"allottmentMarkets","cutoff_occupancy1")
+				                            </div>
+				                           </div>
+				                          </td>
+                                          <td width="40%" style="border-bottom:solid 1px #D4D4D4;border-right:solid 1px #D4D4D4" align="center">
+                                            <div id="freesell_market_1_1_release_0">
+                                              <div style="float:left">
+                                                @RepeatField(_helper,"allottmentMarkets","releasePeriod1")
+                                              </div>
+                                              <div id="othercutoff_occupancy1_1_0" style="display:none;float:right;width:100%">
+                                                <select onchange="return verifyHotelRights(this,getVars(this.name),1);" class="casute3" name="otherCutoff_occupancy1_1_0">
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                  
+                                                </select>
+                                                &nbsp;days
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr style="background-color:#E0E9EF">
+                                          <td width="10%" style="text-align:center">2 Adults</td>
+                                          <td valign="top" width="40%" align="center" style="border-right:solid 1px #D4D4D4">
+				                            <b>Free Sell</b><br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isFreeSellOccAdult2")
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_div_adult2")>
+				                            <div id="stopsell_market" style="border-top-style: solid; border-top-width: 1px; border-top-color: rgb(212, 212, 212);"><b>Stop Sell/On request</b>
+				                            <br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isStopSellOnReqAdult2")	
+				                           	</div>
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_choose_adult2") >
+				                              <font class="normalbold" style="color:#2B5B8B;">Please choose:<br></font>
+				                              @RepeatField(_helper,"allottmentMarkets","cutoff_occupancy2")
+				                            </div>
+				                           </div>
+				                          </td>
+                                          <td width="40%" style="border-bottom:solid 1px #D4D4D4;border-right:solid 1px #D4D4D4" align="center">
+                                            <div id="freesell_market_1_1_release_1">
+                                              <div style="float:left">
+                                                @RepeatField(_helper,"allottmentMarkets","releasePeriod2")
+                                              </div>
+                                              <div id="othercutoff_occupancy1_1_1" style="display:none;float:right;width:100%">
+                                                <select onchange="return verifyHotelRights(this,getVars(this.name),1);" class="casute3" name="otherCutoff_occupancy1_1_1">
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                </select>
+                                                &nbsp;days
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr style="background-color:#EFF8FF">
+                                          <td width="10%" style="text-align:center">3 Adults</td>
+                                           <td valign="top" width="40%" align="center" style="border-right:solid 1px #D4D4D4">
+				                            <b>Free Sell</b><br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isFreeSellOccAdult3")
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_div_adult3") >
+				                            <div id="stopsell_market" style="border-top-style: solid; border-top-width: 1px; border-top-color: rgb(212, 212, 212);"><b>Stop Sell/On request</b>
+				                            <br>
+				                            	@RepeatField(_helper,"allottmentMarkets","isStopSellOnReqAdult3")	
+				                           	</div>
+				                            <div @RepeatField(_helper,"allottmentMarkets","stopsell_market_choose_adult3") >
+				                              <font class="normalbold" style="color:#2B5B8B;">Please choose:<br></font>
+				                              @RepeatField(_helper,"allottmentMarkets","cutoff_occupancy3")
+				                            </div>
+				                           </div>
+				                          </td>
+                                          <td width="40%" style="border-bottom:solid 1px #D4D4D4;border-right:solid 1px #D4D4D4" align="center">
+                                            <div id="freesell_market_1_1_release_2">
+                                              <div style="float:left">
+                                                @RepeatField(_helper,"allottmentMarkets","releasePeriod3")
+                                              </div>
+                                              <div id="othercutoff_occupancy1_1_2" style="display:none;float:right;width:100%">
+                                                <select onchange="return verifyHotelRights(this,getVars(this.name),1);" class="casute3" name="otherCutoff_occupancy1_1_2">
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                                  <option value="7">7</option>
+                                                  <option value="8">8</option>
+                                                  <option value="9">9</option>
+                                                </select>
+                                                &nbsp;days
+                                              </div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td valign="top" align="left" width="50%">
+                                    <table border="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class="perOccupancyTd" align="center">Applicable Market <br><font class="yieldMarketBasedOn">(Based on Passenger Nationality)</font></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <b>Apply to all Markets?</b>&nbsp;@RepeatField(_helper,"allottmentMarkets","isApplyToAllMarketsOccupancy")
+                                            <div style="display:none;" @RepeatField(_helper,"allottmentMarkets","market_1_1_occupancy") >
+                                              <table>
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="right">@RepeatField(_helper,"allottmentMarkets","applyToAllMarketsOccupancy")</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="removemarket1_1" style="display: none; float: right;"><button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; " onclick="Removemarket(1,1,1);"><img src="../new_button.php?height=23&amp;verspace=9&amp;text=REMOVE THIS ALLOTMENT MARKET&amp;fromcolor=A87DA5&amp;tocolor=A87DA5&amp;btmcolor=A87DA5&amp;height=23&amp;fontsize=8&amp;horspace=50&amp;textcolor=FFFFFF" vspace="0" hspace="0" border="0"></button></div>
+          <input type="hidden" name="marketid_1_1" id="marketid_1_1" value="">
+        </fieldset>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+@repeatEnd(_helper,"allottmentMarkets")
+
+@repeat2Start(_helper,"repeatRateSections", "repeatCancellations")
+  <table cellspacing="3" cellpadding="3" id="cancelationTable11">
+    <tbody>
+      <tr id="rowId1_0">
+        <td style="display: none;"></td>
+        <td>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations","cancellationTime")
+        </td>
+        <td><span>The penalty charges will be: </span></td>
+        <td>
+        	@Repeat2Field(_helper,"repeatRateSections","repeatCancellations","penaltyCharge")
+        </td>
+        <td style="width: 90px;"@Repeat2Field(_helper,"repeatRateSections","repeatCancellations","nightsDisplay") ><span> Percentage of total stay </span></td>
+        <td @Repeat2Field(_helper,"repeatRateSections","repeatCancellations","percentagesDisplay")>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations","percentages")
+        </td>
+        <td>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations","nights")
+        </td>
+      </tr>
+    </tbody>
+  </table>
+@repeat2End(_helper,"repeatRateSections", "repeatCancellations")
+
+@repeat2Start(_helper,"repeatRateSections", "repeatCancellations1")
+  <table cellspacing="3" cellpadding="3" id="cancelationTable11">
+    <tbody>
+      <tr id="rowId1_0">
+        <td style="display: none;"></td>
+        <td>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","cancellationTime1")
+        </td>
+        <td><span>The penalty charges will be: </span></td>
+        <td>
+        	@Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","penaltyCharge1")
+        </td>
+        <td style="width: 90px;"@Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","nightsDisplay1") ><span> Percentage of total stay </span></td>
+        <td @Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","percentagesDisplay1")>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","percentages1")
+        </td>
+        <td>
+          @Repeat2Field(_helper,"repeatRateSections","repeatCancellations1","nights1")
+        </td>
+      </tr>
+    </tbody>
+  </table>
+@repeat2End(_helper,"repeatRateSections", "repeatCancellations1")

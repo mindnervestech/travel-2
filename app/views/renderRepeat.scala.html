@@ -1,0 +1,3 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper,field:String)
+<div data-bind="template: { name: '@(_helper.repeatMap.get(field).formName)-template', foreach: @field, as: '_1'  }"></div>
+<a href="#" data-bind='click: @(_helper.repeatMap.get(field).formName + "addItem")'>Add Item</a>

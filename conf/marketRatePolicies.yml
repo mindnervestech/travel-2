@@ -1,0 +1,20 @@
+marketRatePolicies:
+   - !!models.MarketRatePolicy 
+    id: 1
+    code: AL
+    name: Based on Travel Agent Location
+
+   - !!models.MarketRatePolicy 
+    id: 2
+    code: PR
+    name: Based on Passenger Residency
+
+   - !!models.MarketRatePolicy 
+    id: 3
+    code: PN
+    name: Based on Passenger Nationality
+
+   - !!models.MarketRatePolicy
+    id: 4
+    code: NA    
+    name: Not Applicable	

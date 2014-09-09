@@ -1,0 +1,3 @@
+HotelAdditionalMandatoryInfo.customPostBind = function(){
+							
+}

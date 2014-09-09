@@ -1,0 +1,3 @@
+ProfileGeneralInformation.customPostBind = function(){
+							
+}

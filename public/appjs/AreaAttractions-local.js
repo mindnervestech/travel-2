@@ -1,0 +1,3 @@
+AreaAttractions.customPostBind = function(){
+							
+}

@@ -1,0 +1,98 @@
+<style type="text/css">
+.fontSize{
+	font-size: 10px;
+}
+
+#supplier_search{
+	padding: 6px 10px;
+	border-radius: 5px;
+}
+</style>
+
+<table id="supplier_list"><tr><td/></tr></table> 
+<p id="lastSelectedSupplierID" style="display: none;">0</p>
+<script>
+
+$(document).ready(function(){
+		supplierSearch = SupplierSearch.initialise("/supplierSearch");
+	 		$(".supplierSearchEnter").keypress(function(e){
+	 		if(e.which==13)
+	 			supplierSearch.doSearch();
+		});
+	 		$("#supplier_search").click(function(){
+	 			supplierSearch.doSearch();
+	 			 });
+	 		
+});
+
+var SupplierSearch = {
+		_searchURL: "",
+		initialise: function (searchUrl){
+			this._searchURL = searchUrl;
+			$("#supplier_list").jqGrid({
+				   url:this._searchURL,
+				   height:121,
+				   width:1200,
+				   datatype: 'json',
+				   mtype: 'GET',
+				   colNames:['Code','Name','Status'],
+				   colModel :[ 
+				     {name:'code', index:'code', width:200, searchoptions:{sopt:['eq']}},
+				     {name:'name', index:'name', width:100, searchoptions:{sopt:['eq']}},
+				     {name:'status', index:'status', width:100, searchoptions:{sopt:['eq']}},
+				   ],
+				   pagination : true,
+				   pager: '#supplier_pager',
+				   
+				   rowNum:5,
+				   rowList:[5,10,15],
+				   sortname: 'code',
+				   sortorder: 'desc',
+				   viewrecords: true,
+				   gridview: true,
+				   caption: 'Supplier Status',
+				   
+				   onSelectRow: function(id){
+						$("#lastSelectedSupplierID").val(id);
+				   },
+				   loadComplete:function (data){
+					   console.log(data);
+				   }
+				});
+				jQuery("#supplier_list").jqGrid('bindKeys');
+				jQuery("#supplier_list").jqGrid('navGrid','#supplier_pager',{del:false,add:false,edit:false,search:false,refresh:false});
+				return this;
+			},
+			doSearch: function(){
+				
+				var name = $("#supplier_name").val();
+				var code = $("#supplier_code").val();
+				
+				jQuery("#supplier_list").setGridParam({
+					mtype:'GET',
+					url:this._searchURL +"?"+"name="+name+"&code="+code
+				}).trigger("reloadGrid");
+			}
+	
+}
+</script>
+
+<script>
+
+$(document).ready(function(){
+	$("#supplier_edit").click(function(){
+		var id = $("#lastSelectedSupplierID").val();
+		$.ajax({
+			type: "POST",
+			data: {id: id},
+			url: "/supplier-status",
+			success: function(data){
+				window.location.replace("/supplierStatusIndex?id="+id);
+			}
+		});
+	});
+});
+
+
+</script>
+

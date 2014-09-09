@@ -1,0 +1,2 @@
+HotelTransportatin.customPostBind = function(){
+}

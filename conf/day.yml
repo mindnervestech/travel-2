@@ -1,0 +1,50 @@
+day:
+   - !!models.Day
+    id: 1
+    code: 1
+    name: 1
+
+   - !!models.Day 
+    id: 2
+    code: 2
+    name: 2
+
+   - !!models.Day 
+    id: 3
+    code: 3
+    name: 3
+
+   - !!models.Day
+    id: 4
+    code: 4
+    name: 4
+      
+   - !!models.Day
+    id: 5
+    code: 5    
+    name: 5
+    
+   - !!models.Day
+    id: 6
+    code: 6   
+    name: 6
+    
+   - !!models.Day
+    id: 7
+    code: 7    
+    name: 7
+    
+   - !!models.Day
+    id: 8
+    code: 8 
+    name: 8
+        
+   - !!models.Day
+    id: 9
+    code: 9    
+    name: 9
+        
+   - !!models.Day
+    id: 10
+    code: 10    
+    name: 10

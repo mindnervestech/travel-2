@@ -1,0 +1,190 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           		controllers.Application.index()
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /meal                           		com.mnt.custom.module.supplier.controllers.Suppliers.mealSection()
+
+GET     /test                           		controllers.Application.testPage()
+GET     /logout                           		controllers.Application.logout()
+
+GET     /loginUser                         		controllers.Application.loginUser()
+POST    /loginUser                     			controllers.Application.authenticate() 	
+GET     /showInfo                         		controllers.Application.showInformation()
+GET		/getImageById/:imageId					com.mnt.custom.module.hotelimage.controllers.HotelImages.getWebPageImage(imageId : String)
+
+
+
+
+
+
+#Supplier
+GET     /supplier-edit                  		com.mnt.custom.module.supplier.controllers.Suppliers.showProfile()
+GET		/supplier-profile						com.mnt.custom.module.supplier.controllers.Suppliers.profile()
+GET 	/generateGeneralInformationScript		com.mnt.custom.module.supplier.controllers.Suppliers.generateGeneralInformationScript()
+GET		/supplier-general-information			com.mnt.custom.module.supplier.controllers.Suppliers.getGeneralInformation()
+GET		/supplier-general-information-as-json  	com.mnt.custom.module.supplier.controllers.Suppliers.getGeneralInformationJson() 
+POST	/save-supplier-general-information		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierGeneralInformation()
+GET		/get-province							com.mnt.custom.module.commons.controllers.Commons.getProvince(country: Long)
+
+
+#Hotel Description
+POST	/save-supplier-hotel-description		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelDescription()
+GET		/supplier-hotel-description				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelDescriptionInformationPage()
+GET 	/generateHotelDescriptionScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelDescriptionScript()
+GET		/supplier-hotel-description-as-json  	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelDescriptionJson()
+
+#Hotel Location
+GET		/supplier-hotel-location				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelLocationInformationPage()
+GET 	/generateHotelLocationScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelLocationScript()
+POST	/save-supplier-hotel-location			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelLocation()
+GET		/supplier-hotel-location-as-json  		com.mnt.custom.module.supplier.controllers.Suppliers.getHotelLocationJson()
+
+#Hotel Internal Information
+GET		/supplier-hotel-internal-info			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelInternalInformationPage()
+GET 	/generateHotelInternalInfoScript		com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelInternalInfoScript()
+POST	/save-supplier-hotel-internal-info		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelInternalInfo()
+GET		/supplier-hotel-internal-info-as-json	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelInternalInfoJson()
+
+
+#Hotel Contact Information
+GET		/supplier-hotel-contact-info			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelContactInformationPage()
+GET 	/generateHotelContactInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelContactInfoScript()
+POST	/save-supplier-hotel-contact-info		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelContactInfo()
+GET		/supplier-hotel-contact-info-as-json	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelContactInfoJson()
+
+
+#Hotel Business Communcation
+GET		/supplier-hotel-business-contact-info			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBusinessContactInformationPage()
+GET 	/generateHotelBusinessContactInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelBusinessContactInfoScript()
+POST	/save-supplier-hotel-business-contact-info		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelBusinessContactInfo()
+GET		/supplier-hotel-business-contact-info-as-json	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBusinessContactInfoJson()
+
+
+#Hotel Billing Information
+GET		/supplier-hotel-billing-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBillingInformationPage()
+GET 	/generateHotelBillingInfoScript				com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelBillingInfoScript()
+POST	/save-supplier-hotel-billing-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelBillingInfo()
+GET		/supplier-hotel-business-billing-as-json	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBillingInfoJson()
+
+#Hotel Additional Information
+GET		/supplier-hotel-additional-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAdditionalInformationPage()
+GET 	/generateHotelAdditionalInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelAdditionalInfoScript()
+POST	/save-supplier-hotel-additional-info		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelAdditionalInfo()
+GET		/supplier-hotel-business-additional-as-json	com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAdditionalInfoJson()
+
+#Hotel Amenities
+GET		/supplier-hotel-amenities-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAmenitiesInformationPage()
+GET 	/generateHotelAmenitiesInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelAmenitiesInfoScript()
+POST	/save-supplier-hotel-amenities-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelAmenitiesInfo()
+GET		/supplier-hotel-amenities-as-json			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAmenitiesInfoJson()
+
+#Hotel Business Amenities
+GET		/supplier-hotel-business-amenities-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBusinessAmenitiesInformationPage()
+GET 	/generateHotelBusinessAmenitiesInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelBusinessAmenitiesInfoScript()
+POST	/save-supplier-hotel-business-amenities-info		com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelBusinessAmenitiesInfo()
+GET		/supplier-hotel-business-amenities-as-json			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelBusinessAmenitiesInfoJson()
+
+#Hotel Leisure Amenities
+GET		/supplier-hotel-leisure-amenities-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelLeisureAmenitiesInformationPage()
+GET 	/generateHotelLeisureAmenitiesInfoScript			com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelLeisureAmenitiesInfoScript()
+POST	/save-supplier-hotel-leisure-amenities-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHotelLeisureAmenitiesInfo()
+GET		/supplier-hotel-leisure-amenities-as-json			com.mnt.custom.module.supplier.controllers.Suppliers.getHotelLeisureAmenitiesInfoJson()
+
+
+#Hotel Area Attractions
+GET		/supplier-hotel-attractions-info				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAttractionsInformationPage()
+GET 	/generateHotelAttractionsInfoScript				com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelAttractionsInfoScript()
+POST	/save-supplier-hotel-attractions-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierAttractionsInfo()
+GET		/supplier-hotel-attractions-as-json				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAttractionsInfoJson()
+
+#Hotel Transportation and Directions
+GET		/supplier-hotel-transportation-info					com.mnt.custom.module.supplier.controllers.Suppliers.getHotelTransportationInformationPage()
+GET 	/generateHotelTransportationInfoScript				com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelTransportationInfoScript()
+POST	/save-supplier-hotel-transportation-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierTransportationInfo()
+GET		/supplier-hotel-transportation-as-json				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelTransportationInfoJson()
+
+#Hotel Health and Safety
+GET		/supplier-hotel-health-info					com.mnt.custom.module.supplier.controllers.Suppliers.getHotelHealthInformationPage()
+GET 	/generateHotelHealthInfoScript				com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelHealthInfoScript()
+POST	/save-supplier-hotel-health-info			com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierHealthInfo()
+GET		/supplier-hotel-health-as-json				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelHealthInfoJson()
+
+#Meal Overlay
+GET		/supplier-hotel-meal-info					com.mnt.custom.module.supplier.controllers.Suppliers.getHotelMealInformationPage()
+GET 	/generateHotelMealInfoScript				com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelMealInfoScript()
+POST	/save-supplier-hotel-meal-info				com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierMealInfo()
+GET		/supplier-hotel-meal-as-json				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelMealInfoJson()
+
+#Hotel Additional Mandatory Information
+GET		/supplier-hotel-additional-mandatory-info					com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAdditionalMandatoryInformationPage()
+GET 	/generateHotelAdditionalMandatoryInfoScript					com.mnt.custom.module.supplier.controllers.Suppliers.generateHotelAdditionalMandatoryInfoScript()
+POST	/save-supplier-hotel-additional-mandatory-info				com.mnt.custom.module.supplier.controllers.Suppliers.saveSupplierAdditionalMandatoryInfo()
+GET		/supplier-hotel-additional-mandatory-as-json				com.mnt.custom.module.supplier.controllers.Suppliers.getHotelAdditionalMandatoryInfoJson()
+
+
+#Registration Page
+GET     /register                           	com.mnt.custom.module.registrationPage.controllers.Registration.register()
+GET		/supplier-register-info					com.mnt.custom.module.registrationPage.controllers.Registration.getRegisterInformationPage()
+GET 	/generateRegisterInfoScript				com.mnt.custom.module.registrationPage.controllers.Registration.generateRegisterInfoScript()
+POST	/save-register-info						com.mnt.custom.module.registrationPage.controllers.Registration.saveSupplierRegisterInfo()
+GET		/supplier-register-as-json				com.mnt.custom.module.registrationPage.controllers.Registration.getRegisterJson()
+
+#Room Type
+GET		/room-type-info							com.mnt.custom.module.roomtype.controllers.RoomTypes.getRoomTypes()
+POST	/save-room-type							com.mnt.custom.module.roomtype.controllers.RoomTypes.saveRoomTypes()
+GET		/room-type-as-json						com.mnt.custom.module.roomtype.controllers.RoomTypes.getRoomTypesJson()
+GET 	/generateRoomTypeScript					com.mnt.custom.module.roomtype.controllers.RoomTypes.generateRoomTypesScript()
+GET		/rooms									com.mnt.custom.module.roomtype.controllers.RoomTypes.profile()
+GET		/get-adult-occupancy					com.mnt.custom.module.commons.controllers.Commons.getAdultOccupancy()
+GET		/get-adult-child-occupancy				com.mnt.custom.module.commons.controllers.Commons.getAdultChildOccupancy()
+
+#Manage Hotel Images
+GET		/hotel-images							com.mnt.custom.module.hotelimage.controllers.HotelImages.profile()
+POST	/save-hotel-images						com.mnt.custom.module.hotelimage.controllers.HotelImages.saveHotelImage()
+GET		/get-image-byId/:id						com.mnt.custom.module.hotelimage.controllers.HotelImages.getHotelImage(id : String)
+
+#Specials
+GET		/specials								com.mnt.custom.module.specials.controllers.Specials.profile()
+GET		/special-info							com.mnt.custom.module.specials.controllers.Specials.getSpecials()
+POST	/save-special							com.mnt.custom.module.specials.controllers.Specials.saveSpecials()
+GET		/special-as-json						com.mnt.custom.module.specials.controllers.Specials.getSpecialsJson()
+GET 	/generateSpecialScript					com.mnt.custom.module.specials.controllers.Specials.generateSpecialsScript()
+
+#Yield Management
+GET		/yield									com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.profile()
+GET		/yield-info								com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.getYieldMgmt()
+POST	/save-yield								com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.saveYieldMgmt()
+GET		/yield-as-json							com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.getYieldMgmtJson()
+GET 	/generateYieldScript					com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.generateYieldMgmtScript()
+
+#Supplier Status
+POST     /supplier-status                       	com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.status()
+GET		/supplier-status-info					com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.getSupplierStatusInformationPage()
+GET 	/generateStatusInfoScript				com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.generateSupplierStatusInfoScript()
+POST	/save-status-info						com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.saveSupplierStatusInfo()
+GET		/supplier-status-as-json				com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.getSupplierStatusJson()
+GET		/supplierStatusIndex				com.mnt.custom.module.supplierStatus.controllers.SupplierStatus.statusIndex()
+
+
+# Admin
+GET		/supplierIndex					com.mnt.custom.module.admin.controllers.Status.supplierIndex()
+GET		/supplierSearch					com.mnt.custom.module.admin.controllers.Status.supplierSearch()
+
+#Yeild Management Home
+GET     /yeild-home			                           	com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.index()
+GET		/supplier-yeild-home-info						com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.getYeildHomeInformationPage()
+GET 	/generateYeildHomeInfoScript					com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.generateYeildHomeInfoScript()
+POST	/save-supplier-yeild-home-info					com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.saveSupplierYeildHomeInfo()
+GET		/supplier-yeild-home-as-json					com.mnt.custom.module.yieldmgmt.controllers.YieldMgmts.getYeildHomeInfoJson()
+
+
+#View Your WebPage
+GET     /viewPage			                       	com.mnt.custom.module.viewWebPage.controllers.ViewYourWebPage.profile()
+GET		/supplier-viewPage-info						com.mnt.custom.module.viewWebPage.controllers.ViewYourWebPage.getViewWebPageInformationPage()
+GET 	/generateViewPageInfoScript					com.mnt.custom.module.viewWebPage.controllers.ViewYourWebPage.generateViewWebPageInfoScript()
+POST	/save-supplier-viewPage-info				com.mnt.custom.module.viewWebPage.controllers.ViewYourWebPage.saveSupplierViewWebPageInfo()
+GET		/supplier-viewPage-as-json					com.mnt.custom.module.viewWebPage.controllers.ViewYourWebPage.getViewWebPageInfoJson()

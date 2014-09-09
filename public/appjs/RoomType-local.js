@@ -1,0 +1,3 @@
+RoomType.customPostBind = function(){
+							
+}

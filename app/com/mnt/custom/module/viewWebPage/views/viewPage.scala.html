@@ -1,0 +1,227 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+   <div>
+      <div id="_hotel_name" style="width: 720px; height: 26px; text-align: left">
+         <div class="left_bar1_26px">&nbsp;</div>
+         <div class="center_bar1_26px" style="width: 701px;">
+            <div class="top_bar_titlu">
+               <div style="float: left">@FieldGen(_helper,"propertyName")
+                  &nbsp;
+               </div>
+               <div style="float: left; margin-left: 30px; margin-top: -3px; ">
+                  &nbsp;
+               </div>
+            </div>
+         </div>
+         <div class="right_bar1_26px" style="">&nbsp;</div>
+      </div>
+      <div class="vertical_gradient_80px_content_div width_720px content_font_color">
+         <table width="687">
+            <tbody>
+               <tr>
+                  <td rowspan="2">
+                   </td>
+                  <td style="padding-left: 20px;" colspan="2"><span class="font_color2">@FieldGen(_helper,"address")
+                  <br><br></span>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div style="float: left"></div>
+      <div style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+      <div style="float: left"></div>
+      <br>
+      <div id="hotel_name" style="width: 720px; height: 26px; text-align: left">
+         <div class="left_bar1_26px">&nbsp;</div>
+         <div class="center_bar1_26px" style="width: 701px;">
+            <div class="top_bar_titlu">
+               HOTEL DESCRIPTION
+            </div>
+         </div>
+         <div class="right_bar1_26px" style="">&nbsp;</div>
+      </div>
+      <div class="vertical_gradient_450px_content_div width_720px content_font_color">
+         <br><br>
+         <table class="content_font_color" width="100%" cellpadding="0" cellspacing="0" style="margin-top: 5px; border-collapse: collapse;">
+            <tbody>
+               <tr>
+                  <td height="30" valign="middle" style="" colspan="2"><span class="font_color2">About The Hotel</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td>@FieldGen(_helper,"imageId1")</td>
+                              <td>
+                                 <div id="description1"><font class="normal">@FieldGen(_helper,"profileDescription")</font></div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div id="description2">
+                                    <font class="normal">
+                                       <language id="EN" name="English">@FieldGen(_helper,"propertyName") is a Tourist hotel. Located in @FieldGen(_helper,"locationArea") area. Shopping is @FieldGen(_helper,"shoppingFacility") and the nightlife/restaurants are @FieldGen(_helper,"nightLife") the hotel.</language>
+                                    </font>
+                                 </div>
+                              </td>
+                              <td align="center">
+                                 <table width="80%">
+                                    <tbody>
+                                       <tr>
+                                          <td width="50%" align="left">@FieldGen(_helper,"imageId2")</td>
+                                          <td width="50%" align="right">@FieldGen(_helper,"imageId3")</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="10" colspan="2" style="border-bottom: 1px solid #A3B6C8"></td>
+               </tr>
+               <tr>
+                  <td height="30" valign="middle" style="" colspan="2"><span class="font_color2">Hotel Amenities</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table width="100%" class="normal">
+                        <tbody>
+                           <tr>
+                              <td valign="top" width="180"></td>
+                              <td align="left" valign="top" class="normal">
+                                 @FieldGen(_helper,"hotelAmenities")
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="10" colspan="2" style="border-bottom: 1px solid #A3B6C8"></td>
+               </tr>
+               <tr>
+                  <td height="30" valign="middle" style="" colspan="2"><span class="font_color2">Leisure &amp; Sport Amenities:</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table width="100%" class="normal">
+                        <tbody>
+                           <tr>
+                              <td valign="top" width="180"></td>
+                              <td align="left" valign="top" class="normal" style="">
+                                 @FieldGen(_helper,"hotelLeisureAmenities")
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="10" colspan="2" style="border-bottom: 1px solid #A3B6C8"></td>
+               </tr>
+               <tr>
+                  <td height="30" valign="middle" style="" colspan="2"><span class="font_color2">Business Features &amp; Amenities:</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table width="100%" class="normal">
+                        <tbody>
+                           <tr>
+                           	  <td valign="top" width="180"></td>
+                              <td align="left" valign="top" class="normal">
+                                 @FieldGen(_helper,"hotelBusinessAmenities")
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="10" colspan="2" style="border-bottom: 1px solid #A3B6C8"></td>
+               </tr>
+               <tr>
+                  <td height="30" valign="middle" style="" colspan="2"><span class="font_color2">Area Attractions:</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table width="100%" class="normal">
+                        <tbody>
+                           <tr>
+                              <td align="left" valign="top">
+                                 <ul>
+                                    <li>@FieldGen(_helper,"areaName1") -
+                                       &nbsp;@FieldGen(_helper,"areaDistance1")&nbsp;@FieldGen(_helper,"areaParameter1")
+                                       or
+                                       &nbsp;@FieldGen(_helper,"areaMinutes1")&nbsp;minutes away from the hotel
+                                    </li>
+                                 </ul>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="10" colspan="2" style="border-bottom: 1px solid #A3B6C8"></td>
+               </tr>
+               <tr>
+                  <td height="30" colspan="1" valign="middle" style=""><span class="font_color2">Transportation &amp; Directions To The Hotel: </span></td>
+                  <td align="right" style=""></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <table width="100%" class="normal">
+                        <tbody>
+                           <tr>
+                              <td align="left" valign="top">
+                                 <font class="subtitlu" style="font-size: 11px; color: rgb(159, 75, 89);">Nearest Airports</font>
+                                 <ul>
+                                    <li>@FieldGen(_helper,"airportName1") - directions: @FieldGen(_helper,"airportDirection1") - 
+                                       &nbsp;@FieldGen(_helper,"airportDistance1")&nbsp;@FieldGen(_helper,"airportParameter1")
+                                       or
+                                       &nbsp;@FieldGen(_helper,"airportMinutes1")&nbsp;minutes away from the hotel
+                                    </li>
+                                 </ul>
+                                 <br>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div style="float: left"></div>
+      <div style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+      <div style="float: left"></div>
+      <div style="clear: both"></div>
+   </div>
+   <input type="submit" value="BACK THANKYOU BYE BYE">
+   
+</form>
+
+
+<style>
+.imageWidth1{
+width: 55% !important;
+height: 162px !important;
+}
+
+.imageWidth2{
+margin-left: -25% !important;
+margin-right: -23% !important;
+width: 119% !important;
+height: 158px !important;
+}
+
+.imageWidth{
+width: 27% !important;
+height: 127px !important;
+}
+</style>

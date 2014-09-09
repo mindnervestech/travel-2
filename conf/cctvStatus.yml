@@ -1,0 +1,32 @@
+cctvStatus:
+   - !!models.CCTVStatus 
+    id: 1
+    code: 1
+    name: Entrance
+
+   - !!models.CCTVStatus 
+    id: 2
+    code: 2    
+    name: Lobby
+
+   - !!models.CCTVStatus 
+    id: 3
+    code: 3
+    name: Corridors
+
+   - !!models.CCTVStatus
+    id: 4
+    code: 4
+    name: Fitness Centre
+      
+   - !!models.CCTVStatus
+    id: 5
+    code: 5    
+    name: Indoor Pools
+    
+   - !!models.CCTVStatus
+    id: 6
+    code: 6    
+    name: Outdoor Pools
+    
+  

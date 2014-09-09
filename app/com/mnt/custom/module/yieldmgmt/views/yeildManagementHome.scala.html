@@ -1,0 +1,135 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+   <table cellpadding="3" cellspacing="0" border="0" width="100%">
+      <tbody>
+         <tr>
+            <td colspan="2" valign="top" align="left" width="100%">
+               <font class="subtitlu" style="font-size:11px;">Manage your rates and availability:</font> <font style="font-size:13px">BANGKOK HOTEL LOTUS SUKHUMVIT - THAILAND - BANGKOK</font>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2" height="10"></td>
+         </tr>
+         <tr>
+            <td width="30%"><font class="normalbold" style="color:#9f4b59">*Please Choose a Room Type:</font></td>
+            <td align="left" valign="middle">
+               @FieldGen(_helper,"roomType")
+               <!--<option value="all">All Room Types</option>-->
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2" align="left" valign="top">
+               <font class="normalbold" style="color:#9f4b59">*Please define the period:</font>
+            </td>
+         </tr>
+         <tr>
+            <td align="right" valign="middle" colspan="2">
+               <table>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <table border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                 <tr>
+                                    <td valign="top" align="center">
+                                       <font class="normal" style="font-size:3px"><br></font>
+                                       <font class="normal"><b>From:</b>&nbsp;</font>
+                                    </td>
+                                    <td valign="top" align="center">
+                                       <table border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                             <tr>
+                                                <td valign="middle" align="center">
+                                                   @FieldGen(_helper,"fromMonth")
+                                                </td>
+                                                <td valign="middle" align="center">-</td>
+                                                <td valign="middle" align="right">
+                                                   @FieldGen(_helper,"fromDay")
+                                                </td>
+                                                <td valign="middle" align="center">-</td>
+                                                <td valign="middle" align="center">
+                                                   @FieldGen(_helper,"fromYear")
+                                                </td>
+                                                <td valign="middle" align="center">&nbsp;&nbsp;<a href="javascript:show_calendar('document.view.a', '308', '308');"><img src="../images/calendar.gif" width="14" height="14" border="0" alt="Select Date"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td valign="middle" align="center"><font class="normal"><b>Month</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                                <td valign="middle" align="center"><font class="normal"><b>Day</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                                <td valign="middle" align="center"><font class="normal"><b>Year</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td align="left" valign="middle">
+                           <table border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                 <tr>
+                                    <td valign="top" align="center">
+                                       <font class="normal" style="font-size:3px"><br></font>
+                                       <font class="normal"><b>To and Including:</b>&nbsp;</font>
+                                    </td>
+                                    <td valign="top" align="center">
+                                       <table border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                             <tr>
+                                                <td valign="middle" align="center">
+                                                   @FieldGen(_helper,"toMonth")
+                                                </td>
+                                                <td valign="middle" align="center">-</td>
+                                                <td valign="middle" align="right">
+                                                   @FieldGen(_helper,"toDay")
+                                                </td>
+                                                <td valign="middle" align="center">-</td>
+                                                <td valign="middle" align="center">
+                                                   @FieldGen(_helper,"toYear")
+                                                </td>
+                                                <td valign="middle" align="center">&nbsp;&nbsp;<a href="javascript:show_calendar('document.view.d', '308', '458');"><img src="../images/calendar.gif" width="14" height="14" border="0" alt="Select Date"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td valign="middle" align="center"><font class="normal"><b>Month</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                                <td valign="middle" align="center"><font class="normal"><b>Day</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                                <td valign="middle" align="center"><font class="normal"><b>Year</b></font></td>
+                                                <td valign="middle" align="center"></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2" height="10"></td>
+         </tr>
+         <tr>
+            <td colspan="2" valign="top" align="left" width="100%">
+               <font class="normal">The currency shown below is the default Currency setup in your profile.  If you wish to enter rates in a different currency you may select the appropriate currency from the list </font>
+            </td>
+         </tr>
+         <tr>
+            <td><font class="normalbold">Please Choose Currency:</font></td>
+            <td>
+               @FieldGen(_helper,"currency")
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2" height="10"></td>
+         </tr>
+      </tbody>
+   </table>
+   <input type="submit">				
+</form>

@@ -1,0 +1,314 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td colspan="4" align="center">
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+      <div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+        <div class="left_bar1_26px" style="">&nbsp;</div>
+        <div class="center_bar1_26px" style="width: 701px; _width:701px">
+          <div class="top_bar_titlu" id="" style="">STEP 14 : TRANSPORTATION &amp; DIRECTIONS TO THE HOTEL:</div>
+        </div>
+        <div class="right_bar1_26px" style=""></div>
+      </div>
+      <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">
+        <!-- content-->
+        <table cellspacing="0" cellpadding="3" width="100%">
+          <tbody>
+            <tr>
+              <td colspan="4" height="10"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <font class="normal">Please use this example when filling the 
+                <i>Directions</i> fields: 
+                </font>
+                <font class="normal" style="color:#2B5B8B">North I-95 Road Exit 12</font>
+                <font class="normal">.
+                <br>
+                When using the <i>Distance Km/Miles</i> area and you need to use Decimal like 0.5 use Point/Period.
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normal"><b>Nearest Airport Name</b></font>
+                <table align="center" cellspacing="3" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Airport Name</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Directions</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Distance</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Km/Miles</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Minutes</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">*1</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportName1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportDirection1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportDistance1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportParameter1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportMinutes1")
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">2</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportName2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportDirection2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportDistance2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportParameter2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"airportMinutes2")
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normal"><b>Nearest Rail Stations Name</b></font>
+                <table align="center" cellspacing="3" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Rail Station Name</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Directions</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Distance</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Km/Miles</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Minutes</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">1</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationName1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationDirection1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationDistance1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationParameter1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationMinutes1")
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">2</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationName2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationDirection2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationDistance2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationParameter2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"railWayStationMinutes2")
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normal"><b>Nearest Subway/Tube Name</b></font>
+                <table align="center" cellspacing="3" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Subway/Tube Name</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Directions</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Distance</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Km/Miles</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Minutes</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">1</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayName1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayDirection1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayDistance1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayParameter1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayMinutes1")
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">2</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayName2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayDirection2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayDistance2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayParameter2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"subwayMinutes2")
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" valign="top" align="left" width="100%">
+                <font class="normal"><b>Nearest Cruise Port Name</b></font>
+                <table align="center" cellspacing="3" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Cruise Port Name</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Directions</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Distance</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Km/Miles</font>
+                      </td>
+                      <td align="center">
+                        <font class="normalbold" style="color:#2B5B8B">Minutes</font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">1</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortName1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortDirection1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortDistance1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortParameter1")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortMinutes1")
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle">
+                        <font class="normalbold" style="color:#2B5B8B">2</font>
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortName2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortDirection2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortDistance2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortParameter2")
+                      </td>
+                      <td align="center" valign="middle">
+                        @FieldGen(_helper,"cruisePortMinutes2")
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end content-->	
+      </div>
+      <div class="footer_bottom_wrapper">
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+        <div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+        <div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+      </div>
+    </div>
+    <input type="submit">
+  </form>
+</td>

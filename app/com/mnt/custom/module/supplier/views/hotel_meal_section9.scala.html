@@ -1,0 +1,187 @@
+@(_helper:com.mnt.core.helper.UIGeneratorHelper)
+<td>
+  <form id='@("_form_" + _helper.formName)' name="@_helper.formName" action="@_helper.formAction" method="POST" >
+    <fieldset>
+      <legend style="cursor:pointer">Add/Edit Meal</legend>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" >
+        <tbody>
+          <tr>
+            <td colspan="2" style="padding: 10px;">
+              *Please define the period of time:<br>
+              <div style="text-align: center;">
+                <table cellpadding="1" cellspacing="0" border="0" >
+                  <tbody>
+                    <tr>
+                      <td colspan="2" id="error_2" ></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table cellpadding="1" cellspacing="0" border="0" >
+                          <tbody>
+                            <tr>
+                              <td>From: &nbsp;</td>
+                              <td>
+                                @FieldGen(_helper,"mealFromDate")
+                                <img align="absmiddle" src="http://us.dotwconnect.com/lib/calendar/images/calendar.gif" vspace="0" hspace="0" border="0" alt="Select Date">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <table cellpadding="1" cellspacing="0" border="0" >
+                          <tbody>
+                            <tr>
+                              <td>to and include: &nbsp;</td>
+                              <td>
+                                @FieldGen(_helper,"mealToDate")
+                                <img align="absmiddle" src="http://us.dotwconnect.com/lib/calendar/images/calendar.gif" vspace="0" hspace="0" border="0" alt="Select Date">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>* Meal Type:</td>
+            <td>
+              @FieldGen(_helper,"mealType")
+            </td>
+          </tr>
+          <tr>
+            <td>* Meal Name:</td>
+            <td>
+              @FieldGen(_helper,"mealName")
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <fieldset>
+                <legend style="cursor:pointer">ADULT RATE</legend>
+                <table cellpadding="2" cellspacing="0" border="0" >
+                  <tbody>
+                    <tr>
+                      <td><b>* ADULT RATE:</b></td>
+                      <td>
+                        @FieldGen(_helper,"mealAdultRate")
+                        THB
+                      </td>
+                      <td width="25">&nbsp;</td>
+                      <td>
+                        <b>Include Tax?</b>
+                        @FieldGen(_helper,"isAdultIncludeTax")
+                      </td>
+                      <td width="25">&nbsp;</td>
+                      <td>
+                        <table cellpadding="2" cellspacing="0" border="0" id="adultTaxInclude" >
+                          <tbody>
+                            <tr>
+                              <td><b>*Tax:</b></td>
+                              <td>
+                                @FieldGen(_helper,"mealAdultTax")
+                                @FieldGen(_helper,"mealAdultTaxPercent")
+                              </td>
+                              <td width="20">&nbsp;</td>
+                              <td>*<b>Discount:</b></td>
+                              <td>
+                                @FieldGen(_helper,"mealAdultDiscount")
+                                @FieldGen(_helper,"mealAdultDiscountPercent")
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <fieldset>
+                <legend style="cursor:pointer">CHILD RATES</legend>
+                <table cellpadding="2" cellspacing="0" border="0" id="ml_child_rates_table" width="100%">
+                  <tbody id="ml_child_rates_id">
+                    <tr id="tr_child_meal_row0">
+                      <td>
+                        @repeatStart(_helper,"repeatChildMealRateSections")
+                      <td id="td_child_meal_row0">
+                        <table cellpadding="1" cellspacing="0" border="0"  style="border: #CCCCCC 1px solid;" width="100%">
+                          <tbody>
+                            <tr>
+                              <td width="110">
+                                <table cellpadding="1" cellspacing="0" border="0" >
+                                  <tbody>
+                                    <tr>
+                                      <td align="right">From Age:</td>
+                                      <td>
+                                        @RepeatField(_helper,"repeatChildMealRateSections","childFromAge")
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="right">To Age:</td>
+                                      <td>
+                                        @RepeatField(_helper,"repeatChildMealRateSections","childToAge")
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td width="25">&nbsp;</td>
+                              <td width="160"><b>* Rate:</b>
+                                @RepeatField(_helper,"repeatChildMealRateSections","mealChildRate")
+                                THB
+                              </td>
+                              <td width="25">&nbsp;</td>
+                              <td width="180">
+                                <b>Include Tax?</b>
+                                @RepeatField(_helper,"repeatChildMealRateSections","isChildIncludeTax")
+                              </td>
+                              <td width="25">&nbsp;</td>
+                              <td>
+                                <table cellpadding="2" cellspacing="0" border="0" @RepeatField(_helper,"repeatChildMealRateSections","childTaxInclude")>
+                                  <tbody>
+                                    <tr>
+                                      <td><b>*Tax:</b></td>
+                                      <td>
+                                        @RepeatField(_helper,"repeatChildMealRateSections","mealChildTax")
+                                        @RepeatField(_helper,"repeatChildMealRateSections","mealChildTaxPercent")
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>*<b>Discount:</b></td>
+                                      <td>
+                                        @RepeatField(_helper,"repeatChildMealRateSections","mealChildDiscount")
+                                        @RepeatField(_helper,"repeatChildMealRateSections","mealChildDiscountPercent")
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      @repeatEnd(_helper,"repeatChildMealRateSections")
+                      @renderRepeat(_helper,"repeatChildMealRateSections")
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div id="ml_tmp_row_child_meal_id"></div>
+                <input type="hidden" name="ml_num_child_meals" id="ml_num_child_meals" value="1">
+              </fieldset>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <input type="submit">
+  </form>
+</td>

@@ -1,0 +1,178 @@
+@(data: List[String])
+
+@main("DOTWconnect.com - Connecting Travel Professionals Worldwide : Property Extranet - Manage Images"){
+
+<div id="imageUploadDialog" title="New Dialog" style="display:none;">
+	<div id="uploadImage" style="float: left; margin-top: 278px;">
+		<form id="uploadImageForm" enctype="multipart/form-data">
+			<input type="file" id="image1" name="img1">
+			<input type="hidden" id="selectedSection" name="imgid">
+		</form>
+	</div>
+</div>
+
+@if(data.get(0) == "0"){
+	<div style="float: left;">
+	<div id = "image_holder_section_1">
+		<img id="section_1_image" alt="" src=""  width="150px" height="150px">
+		<input class="uploadNewImage" section="1" type="button" value="Replace Image"/>
+	</div> 
+	</div>
+}else{
+	<div style="float: left;">
+	<div id = "image_holder_section_1">
+		<img id="section_1_image" alt="" src="/get-image-byId/@data.get(0)"  width="150px" height="150px">
+		<input class="uploadNewImage" section="1" type="button" value="Replace Image"/>
+	</div> 
+	</div>
+}
+
+@if(data.get(1) == "0"){
+	<div style="float: left;">
+	<div id = "image_holder_section_2">
+		<img id="section_2_image" alt="" src="" width="150px" height="150px">
+		<input class="uploadNewImage" section="2" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}else{
+	<div style="float: left;">
+	<div id = "image_holder_section_2">
+		<img id="section_2_image" alt="" src="/get-image-byId/@data.get(1)" width="150px" height="150px">
+		<input class="uploadNewImage" section="2" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}
+
+@if(data.get(2) == "0"){
+	<div style="float: left;">
+	<div id = "image_holder_section_3">
+		<img id="section_3_image" alt="" src="" width="150px" height="150px">
+		<input class="uploadNewImage" section="3" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}else{
+	<div style="float: left;">
+	<div id = "image_holder_section_3">
+		<img id="section_3_image" alt="" src="/get-image-byId/@data.get(2)" width="150px" height="150px">
+		<input class="uploadNewImage" section="3" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}
+
+@if(data.get(3) == "0"){
+	<div style="float: left;">
+	<div id = "image_holder_section_4">
+		<img id="section_4_image" alt="" src="" width="150px" height="150px">
+		<input class="uploadNewImage" section="4" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}else{
+	<div style="float: left;">
+	<div id = "image_holder_section_4">
+		<img id="section_4_image" alt="" src="/get-image-byId/@data.get(3)" width="150px" height="150px">
+		<input class="uploadNewImage" section="4" type="button" value="Replace Image"/>
+	</div>
+	</div>
+}
+
+@if(data.get(4) == "0"){
+	<div style="float: left;">
+		<div id = "image_holder_section_5">
+			<img id="section_5_image" alt="" src="" width="150px" height="150px">
+			<input class="uploadNewImage" section="5" type="button" value="Replace Image"/>
+		</div>
+	</div>
+}else{
+	<div style="float: left;">
+		<div id = "image_holder_section_5">
+			<img id="section_5_image" alt="" src="/get-image-byId/@data.get(4)" width="150px" height="150px">
+			<input class="uploadNewImage" section="5" type="button" value="Replace Image"/>
+		</div>
+	</div>
+}
+
+@if(data.get(5) == "0"){
+	<div style="float: left;">
+		<div id = "image_holder_section_6">
+			<img id="section_6_image" alt="" src="" width="150px" height="150px">
+			<input class="uploadNewImage" section="6" type="button" value="Replace Image"/>
+		</div>
+	</div>
+}else{
+	<div style="float: left;">
+		<div id = "image_holder_section_6">
+			<img id="section_6_image" alt="" src="/get-image-byId/@data.get(5)" width="150px" height="150px">
+			<input class="uploadNewImage" section="6" type="button" value="Replace Image"/>
+		</div>
+	</div>
+}
+
+
+
+<script language="JavaScript">
+
+$(document).ready(function(){
+	
+	$('.uploadNewImage').click(function(){
+		sectionToBeUpdated = $(this).attr('section');
+		$('#selectedSection').val(sectionToBeUpdated);
+		//$('#image_holder_section_'+sectionToBeUpdated).hide();
+		$('#imageUploadDialog').dialog({
+		    resizable: false,
+		    height:200,
+		    width:400,
+		    modal: true,
+		    buttons: {
+		      "Submit": function() {
+		        submitImage();
+		        $( this ).dialog( "close" );
+		      },
+		      Cancel: function() {
+		    	$('#image_holder_section_'+sectionToBeUpdated).show();
+		        $( this ).dialog( "close" );
+		      }
+		    }
+		});
+		
+		$('#imageUploadDialog').dialog("open");
+	})
+	
+	function submitImage(){
+			var options = { 
+				    method: 	'post',
+				    url:        '/save-hotel-images', 
+				    semantic : true,
+				    success:    function() {
+				        //$('#uploadImage').hide();
+				    	var sectionno = $('#selectedSection').val();
+				    	$('#section_'+sectionno+'_image').attr('src','/get-image-byId/'+sectionno);
+				    	$('#image_holder_section_'+sectionno).show();
+				    } ,
+				    error:      function(resp) {
+				    	console.log(resp);
+				    	alert('in error');
+				    }
+			}; 
+			
+			
+			$('#uploadImageForm').ajaxSubmit(options);	
+			$('#uploadImageForm').resetForm();
+			return false;
+			
+	}
+	
+});
+
+$(document).ready(function(){
+	
+	
+	$('#replaceimgbtn').click(function(event) {
+        $('#imgupload').css('display','block');
+        $('#exteriorpicturereplace').css('display','none');
+	});
+	
+	
+})
+
+</script>
+}

@@ -1,0 +1,222 @@
+@(isEdit:Boolean)
+
+@main("Welcome to Play 2.1") {
+
+@menu()
+
+<body>
+
+<div class="div_page">
+	<div style="margin-left: 10px;margin-bottom: 20px; width:1010px; float:left;" class="mainContenArea">	
+		<div class="boxWrapper" style="margin-left: 10px;  float: left; ; text-align: center; width: 750px" id="mainProfile">
+			<div id="destination_seleted_div" style=" width: 750px;_width:750px; height: 26px; text-align: left">
+				<div class="left_bar2_26px" style="">&nbsp;</div> 
+				<div class="center_bar2_26px" style="width: 738px; _width:738px">
+				<div class="top_bar_titlu" id="" style="">HOTEL SUPPLIER PROFILE</div>
+			
+			</div>		 			
+			<div class="right_bar2_26px" style=""></div>
+			
+			</div>
+			
+			<div class="vertical_gradient_80px_content_div" style="width:748px;  _width:750px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+				<input type="hidden" id="mode" name="mode" value="@isEdit">
+					<table>
+						<tbody>
+							<tr>
+							  <td align="left" valign="middle" width="100%">
+								<font class="normal">
+								Please complete <b>all</b> information in each of the 14 steps and click <b>Update My Hotel</b>.<br>
+								</font>
+			
+								<font class="normal" style="font-size:4px;"><br><br></font>
+								<font class="normal">
+								Our International Suppliers, please use English letters/characters.  If your keyboard contains any special characters in your local language, please disable these and use English format.</font>
+			
+								<font class="normal" style="font-size:4px;"><br><br></font>
+								<font class="normal">
+			
+								<b><i>System Time Out</i></b>: Once you are logged in and doing updates, our system checks for actual activity. If there is no activity on your part for over two hours, the system will log you off for security reasons. You will need to click on the Update button or your data will be lost. Please make sure you do not leave any screen open for long period of time. <b>We recommend from time to time to click update in order to save your work</b>.
+								</font>
+							 </td>
+				 			</tr>
+				 			<tr><td height="10"></td></tr>
+				 			
+				 			<!-- Section 1 Start -->
+			 	 			<tr id="supplier-section1"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-general-information"
+			 	 				data-server-script="/generateGeneralInformationScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 1 End -->
+			 	 			<!-- Section 2 Start -->
+			 	 			<tr id="supplier-section2"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-description"
+			 	 				data-server-script="/generateHotelDescriptionScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 2 End -->
+			 	 			<!-- Section 3 Start -->
+			 	 			<tr id="supplier-section3"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-location"
+			 	 				data-server-script="/generateHotelLocationScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 3 End -->
+			 	 			<!-- Section 4 Start -->
+			 	 			<tr id="supplier-section4"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-internal-info"
+			 	 				data-server-script="/generateHotelInternalInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 4 End -->
+			 	 			<!-- Section 5 Start -->
+			 	 			<tr id="supplier-section5"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-contact-info"
+			 	 				data-server-script="/generateHotelContactInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 5 End -->
+			 	 			<!-- Section 6 Start -->
+			 	 			<tr id="supplier-section6"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-business-contact-info"
+			 	 				data-server-script="/generateHotelBusinessContactInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 6 End -->
+			 	 			<!-- Section 7 Start -->
+			 	 			<tr id="supplier-section7"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-billing-info"
+			 	 				data-server-script="/generateHotelBillingInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 7 End -->
+			 	 			<!-- Section 8 Start -->
+			 	 			<tr id="supplier-section8"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-additional-info"
+			 	 				data-server-script="/generateHotelAdditionalInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 8 End -->
+			 	 			<!-- Section 9 Start -->
+			 	 			<tr id="supplier-section9"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-additional-mandatory-info"
+			 	 				data-server-script="/generateHotelAdditionalMandatoryInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 9 End -->
+			 	 			<!-- Section 10 Start -->
+			 	 			<tr id="supplier-section10"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-amenities-info"
+			 	 				data-server-script="/generateHotelAmenitiesInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 10 End -->
+			 	 			<!-- Section 11 Start -->
+			 	 			<tr id="supplier-section11"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-business-amenities-info"
+			 	 				data-server-script="/generateHotelBusinessAmenitiesInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 11 End -->
+			 	 			<!-- Section 12 Start -->
+			 	 			<tr id="supplier-section12"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-leisure-amenities-info"
+			 	 				data-server-script="/generateHotelLeisureAmenitiesInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 12 End -->
+			 	 			<!-- Section 13 Start -->
+			 	 			<tr id="supplier-section13"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-attractions-info"
+			 	 				data-server-script="/generateHotelAttractionsInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 13 End -->
+			 	 			<!-- Section 14 Start -->
+			 	 			<tr id="supplier-section14"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-transportation-info"
+			 	 				data-server-script="/generateHotelTransportationInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 14 End -->
+			 	 			<!-- Section 14 Start -->
+			 	 			<tr id="supplier-section14"
+			 	 				data-sectionloader 
+			 	 				data-loaderurl="/supplier-hotel-health-info"
+			 	 				data-server-script="/generateHotelHealthInfoScript"
+			 	 				data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+			 	 				data-remote="false"
+			 	 				>
+			 	 			</tr>
+			 	 			<!-- Section 15 End -->
+			 	 		
+						</tbody>
+					</table>
+					
+			
+				
+			</div>
+			
+		</div>
+	</div>
+</div>	
+
+</body>
+
+
+}
+<style>
+	.buttonStyle{
+		margin-left:64%;
+		width: 10%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+</style>
+<script>
+
+
+</script>

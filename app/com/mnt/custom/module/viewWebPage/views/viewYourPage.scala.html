@@ -1,0 +1,27 @@
+@main("Welcome to Play 2.1") {
+@menu()
+<div style="float:left;width:755px;margin:0px;padding:0px">
+   <form id="hotelpageform" action="hotelpage.php" method="POST" target="_blank" style="padding:0px;margin:0px">\
+   </form>
+   <table width="750" align="left" valign="top" style="margin:0px;padding:0px;margin-left:10px;border-collapse:collapse; background-color:white; ">
+      <tbody>
+         <tr>
+            <td id="mainCell" style="width:750px"
+            	data-sectionloader 
+              	data-loaderurl="/supplier-viewPage-info"
+              	data-server-script="/generateViewPageInfoScript"
+              	data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+              	data-remote="false"
+            >
+            </td>
+         </tr>
+         <tr>
+            <td align="center"><br>
+               <button type="button" style="border: 0px; background-color:transparent; cursor:pointer; text-decoration: none; ">
+               </button>			
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+}

@@ -1,0 +1,3 @@
+BusinessCommunication.customPostBind = function(){
+							
+}

@@ -1,0 +1,2 @@
+HotelLocation.customPostBind = function(){
+}

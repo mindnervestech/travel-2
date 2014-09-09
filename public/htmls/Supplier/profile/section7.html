@@ -1,0 +1,551 @@
+<td colspan="4" align="center">
+
+	<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+				<div class="top_bar_titlu" id="" style="">STEP 7 : BILLING INFORMATION</div>
+		 	</div>		 			
+		 		<div class="right_bar1_26px" style=""></div>
+		 </div>
+		 
+	 <div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->
+     <table cellspacing="0" cellpadding="3" width="100%">
+		<tbody>
+			<tr>
+				<td colspan="4"><div id="hotelsupplier">
+					<fieldset>
+						<legend>Company/Management/ Supplier Information</legend>
+							
+                    <table cellspacing="0" cellpadding="3" width="100%">
+						<input type="hidden" name="oldname" value="">
+						<tbody>
+							
+							<tr>
+								<td colspan="4" height="10"></td>
+							</tr>
+							
+							<tr>
+								<td align="right" colspan="2" nowrap=""><font class="normalbold">Company / Management / Supplier Name:</font>
+								</td>
+								<td colspan="2" align="left">
+									<input data-bind="value: hotel_SupplierName" style="width:350px" type="text" name="hotel_SupplierName" id="hotel_SupplierName" value="" class="casute3">
+									<input type="hidden" name="hotel_SupplierName" value="">
+								</td>
+							</tr>
+							
+							<tr>
+								<td colspan="4" height="10"></td>
+							</tr>
+					
+							<tr>
+								<td colspan="4" align="left" valign="middle">
+									<font class="normalbold" style="color:#2B5B8B">&nbsp;&nbsp;&nbsp;&nbsp;*Invoices/Payments will go to hotel address: </font>
+						  				<input type="radio" name="BillPayment" value="t" checked=""><font class="normal">Yes</font>
+						  				<input type="radio" name="BillPayment" value="f"><font class="normal">No</font>
+													  	
+					  			</td>
+							</tr>
+							
+							<tr>
+								<td colspan="4">
+									<!-- !?!?!?!?!??!?!?!?!? -->
+				  					<table cellspacing="0" id="bill" style="display:none" cellpadding="3" border="0" width="100%">
+										<tbody>
+										
+											<tr>
+												<td valign="middle" align="right">
+													<font class="normalbold" style="color: #2B5B8B">*Country:</font>
+												</td>
+												<td valign="middle">
+													<select class="casute3" disabled="" id="BillCountry" name="BillCountry" >
+                                						<option value="0">-- Choose One --</option>
+                                					</select>
+													<input type="hidden" name="BillCountry" value="178">
+                                				</td>
+												<td valign="middle" align="right" colspan="2">
+													<div id="costatevisible" style="display:none">
+														<font id="billFontObligatoriu" class="normalbold" style="color: #2B5B8B">*State/Province:</font>
+						  									<select disabled="" class="casute3" type="text" name="BillState" id="BillState" >
+                            									<option value="0">-- Choose One --</option>
+						  									</select>
+															<input type="hidden" name="BillState" value="0">                                
+						  							</div>
+						  						</td>
+											</tr>
+											
+											<tr>
+												<td valign="middle" align="right">
+													<font class="normalbold" style="color: #2B5B8B">*City:</font>
+												</td>
+												<td valign="middle">
+													<select class="casute3" disabled="" name="BillCity" id="BillCity">
+														<option value="0">-- Choose One --</option>
+													</select>
+													<input type="hidden" name="BillCity" value="22594">
+												</td>
+												<td valign="middle" align="right" nowrap="">
+													<font class="normalbold" style="color: #2B5B8B">*Street Address:</font>
+												</td>
+												<td valign="middle">
+													<textarea class="casute3" disabled="" style="width:180px;height:30px" maxlength="250" name="BillAddress" id="BillAddress">1 Soi Daeng Udom, Sukhumvit Soi 33 Rd.</textarea>
+													<input type="hidden" name="BillAddress" value="1 Soi Daeng Udom, Sukhumvit Soi 33 Rd.">
+												</td>
+											</tr>
+											
+											<tr>
+												<td valign="middle" align="right">
+													<font class="normal" style="color:#2B5B8B">Zip/Postal Code:</font>
+												</td>
+												<td valign="middle">
+													<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="BillZipCod" value="10110">
+													<input type="hidden" name="BillZipCod" value="10110">
+												</td>
+												<td colspan="2">
+												</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								<!-- !?!?!??!?!?!?!?!??! -->
+								</td>
+							</tr>
+							
+							<tr>
+								<td colspan="4">
+									<fieldset><legend>Accounting Contact:</legend>
+										<table width="100%">
+											<tbody>
+												
+												<tr>
+													<td colspan="4" height="10"></td>
+												</tr>
+ 												
+ 												<tr>
+													<td valign="middle" align="right">
+														<font class="normalbold" style="color:#2B5B8B">*First Name:</font>
+													</td>
+													<td valign="middle">
+														<input data-bind="value: bill_FirstName"0="" class="casute3" style="width:140px" maxlength="40" type="text" name="bill_FirstName" value="">
+													</td>
+													<td valign="middle" align="right">
+														<font class="normalbold" style="color:#2B5B8B">*Last Name:</font>
+													</td>
+													<td valign="middle">
+														<input  data-bind="value: bill_LastName" class="casute3" style="width:140px" maxlength="40" type="text" name="bill_LastName" value="">
+													</td>
+												</tr>
+												
+												<tr>
+													<td valign="middle" align="right">
+														<font class="normalbold" style="color:#2B5B8B">*Title:</font>
+													</td>
+													<td valign="middle">
+														<input data-bind="value: bill_Title"class="casute3" style="width:140px" maxlength="40" type="text" name="bill_Title" value="">
+													</td>
+													<td valign="middle" align="right">
+						  								<font class="normalbold" style="color:#2B5B8B">*Direct E-mail:</font>
+													</td>
+													<td valign="middle" align="left">
+														<input data-bind="value: bill_Email" class="casute3" style="width:220px" maxlength="100" type="text" value="" name="bill_Email">
+													</td>
+												</tr>
+					
+												<tr>
+													<td valign="middle" align="right">
+														<font class="normalbold" style="color:#2B5B8B">*Direct Telephone:</font>
+													</td>
+													<td valign="middle">
+														<input data-bind="value: city_Tel" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="city_Tel">
+														<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+														<input data-bind="value: no_Tel" class="casute3" style="width:67px" type="text" value="" name="no_Tel">
+													</td>
+													<td valign="middle" align="right">
+														<font class="normal" style="color:#2B5B8B">Direct Fax:</font>
+													</td>
+													<td valign="middle">
+														<input data-bind="value: city_Fax" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="city_Fax">
+														<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+														<input data-bind="value: no_Fax" class="casute3" style="width:67px" type="text" value="" name="no_Fax">
+													</td>
+												</tr>
+												
+												<tr>
+													<td>&nbsp;</td>
+													<td align="left" valign="top">
+														<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+													</td>
+													<td>&nbsp;</td>
+													<td align="left" valign="top">
+														<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+													</td>
+												</tr>
+												
+												<tr>
+													<td valign="middle" align="right">
+														<font class="normal" style="color:#2B5B8B">Extension:</font>
+													</td>
+													<td valign="middle">
+														<input data-bind="value: supplier_extension" class="casute3" style="width:48px" maxlength="6" type="text" value="" name="supplier_extension" >
+													</td>
+													<td valign="middle" align="right">
+													</td>
+													<td valign="middle">
+													</td>
+												</tr>
+					
+											</tbody>
+										</table>
+									</fieldset>
+								</td>
+							</tr>
+							
+							<tr>
+								<td colspan="4">
+									<fieldset>
+										<legend>Bank-to-Bank Wire Service</legend>
+											<table width="100%">
+												<tbody>
+													<tr>
+														<td colspan="4">
+															<font class="normal">
+																If you like to be paid via a bank wire, please enter your bank details:
+															</font>
+														</td>
+													</tr>
+
+													<tr>
+														<td colspan="4" align="left" valign="middle">
+															<font class="normalbold" style="color:#2B5B8B">&nbsp;&nbsp;&nbsp;&nbsp;*We ask for the Bank-to-Bank Wire Service: </font>
+						  									<input type="radio" checked="" name="WireServ" value="t" ><font class="normal">Yes</font>
+						  									<input type="radio" name="WireServ" value="f" checked="" ><font class="normal">No</font>
+
+																<!-- @#@#@#@#@#@#@#@#@#@# -->
+				  											<table id="wire" style="display: none;" cellspacing="0" cellpadding="3" border="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td colspan="4" height="10"></td>
+																	</tr>
+
+																	<tr>
+																		<td style="border-top: #d4d4d4 1px solid;" colspan="4">
+						  													<font class="normal"><b>Bank and Account Information:</b> (please enter all fileds below)</font>
+						  												</td>
+																	</tr>
+																	<tr>
+																		<td colspan="4" valign="middle" align="left">
+																			<font class="normal" style="color:#2B5B8B"><b>*The Name On the Account</b> (business name):</font>
+																			<input disabled="" class="casute3" style="width:274px" maxlength="80" type="text" name="BankAccName" value="">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td colspan="4">
+						  													<font class="normalbold" style="color:#2B5B8B">The name of a person the Bank knows with this account, in case of notifications.</font>
+						  												</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Salutation:</font>
+																		</td>
+																		<td valign="middle">
+								  											<select disabled="" class="casute3" name="WireSal">
+								  												<option value="" selected="">-- Choose One --</option>
+								  											</select>
+																		</td>
+																		<td colspan="2">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">First Name:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="WireFirstName" value="">
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color: #2B5B8B">Last Name:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="WireLastName" value="">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color: #2B5B8B">Position in the hotel:</font></td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="WirePos" value=""></td>
+																		<td colspan="2" valign="top" align="right">
+						 													<table align="right" cellspacing="3" cellpadding="0">
+						  														<tbody>
+						  															<tr>
+						  																<td align="left">
+						  																	<font class="normal" style="color:#2B5B8B">The Person's Direct E-mail:</font>
+						  																</td>
+						  															</tr>
+						  															
+						  															<tr>
+						  																<td align="right">
+						  																	<input disabled="" class="casute3" style="width:220px" maxlength="100" type="text" value="" name="WireEmail">
+						  																</td>
+						  															</tr>
+						 														</tbody>
+						 													</table>
+						 												</td>
+																	</tr>
+					
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Direct Telephone:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefTel2W" >
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noTelW" >
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Direct Fax:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefFax2W" >
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noFaxW">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																	</tr>
+
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color:#2B5B8B">*The Bank Name:</font>
+																		</td>
+																		<td valign="middle" colspan="3">
+																			<input disabled="" class="casute3" style="width:276px" maxlength="80" type="text" name="BankName" value="">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color:#2B5B8B">*Bank Account Number:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="50" type="text" name="BankAccount" value="">
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color:#2B5B8B">*Re enter to<br>Verify Account:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="50" type="text" name="reBankAccount" value="">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td colspan="4" valign="middle" align="left">
+																			<font class="normal" style="color: #2B5B8B">Bank Address:</font>
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color: #2B5B8B">*Country:</font>
+																		</td>
+																		<td valign="middle">
+																			<select class="casute3" disabled="" id="BankCountry" name="BankCountry" >
+																			</select>
+																		</td>
+																		<td valign="middle" align="right" colspan="2">
+																			<div id="bankstatevisible" style="display:none">
+																				<font id="bankFontObligatoriu" class="normalbold" style="color: #2B5B8B">*State/Province:</font>
+																					<select class="casute3" disabled="" type="text" name="BankState" id="BankState" >
+                            															<option value="0">-- Choose One --</option>
+						  															</select>
+						  													</div>
+						  												</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color: #2B5B8B">*City:</font>
+																		</td>
+																		<td valign="middle">
+																			<select class="casute3" disabled="" name="BankCity" id="BankCity">
+																				<option value="0">-- Choose One --</option>
+																			</select>
+																		</td>
+																		<td valign="middle" align="right" nowrap="">
+																			<font class="normal" style="color: #2B5B8B">Street Address:</font>
+																		</td>
+																		<td valign="middle">
+																			<textarea disabled="" class="casute3" style="width:140px;height:30px" maxlength="250" name="BankAddress"></textarea>
+																		</td>
+																	</tr>
+																
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Zip/Postal Code:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="BankZipCod" value="">
+																		</td>
+																		<td colspan="2">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color:#2B5B8B">*Bank Swift Code:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="70" type="text" name="BankSwift" value="">
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normalbold" style="color:#2B5B8B">*Re enter to<br>Verify Swift Code:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="70" type="text" name="reBankSwift" value="">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Bank Direct Telephone:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefTel2K" >
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noTelK">
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Bank Fax:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefFax2K">
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noFaxK">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																	</tr>
+
+																	<tr>
+																		<td colspan="4">
+						  													<font class="normalbold" style="color:#2B5B8B">The Name of the Contact Person in Bank:</font>
+						  												</td>
+																	</tr>
+																	
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">First Name:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="BankCntFirstName" value="">
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color: #2B5B8B">Last Name:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="BankCntLastName" value="">
+																		</td>
+																	</tr>
+				
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Salutation:</font>
+																		</td>
+																		<td valign="middle">
+								  											<select disabled="" class="casute3" name="BankCntSal">
+																				<option value="0" selected="">-- Choose One --</option>
+								  											</select>
+								  										</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color: #2B5B8B">Position in the bank:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" style="width:140px" maxlength="30" type="text" name="BankCntPos" id="BankCntPos" value="">
+																		</td>
+																	</tr>
+					
+																	<tr>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Direct Telephone:</font>
+																		</td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefTel2Cnt" >
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noTelCnt" >
+																		</td>
+																		<td valign="middle" align="right">
+																			<font class="normal" style="color:#2B5B8B">Direct Fax:</font></td>
+																		<td valign="middle">
+																			<input disabled="" class="casute3" maxlength="4" style="width:35px" type="text" value="" name="prefFax2Cnt">
+																			<font class="normalbold" style="color:#0079BD;font-size:14px;">-</font>
+																			<input disabled="" class="casute3" style="width:67px" type="text" value="" name="noFaxCnt">
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																		<td></td>
+																		<td align="left" valign="middle">
+																			<font class="normal" style="font-size:9px;font-family:Tahoma,Arial,Verdana,Helvetica;">(City Code) &nbsp; (Number)</font>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															<!-- @#@#@#@#@#@#@@#@#@#@#@ -->
+						  								</td>
+													</tr>
+											</tbody>
+										</table>
+									</fieldset>
+										<div style="display:none" id="acceptInputVatApplicable">
+											<font class="normalbold" style="color:#2B5B8B">&nbsp;&nbsp;&nbsp;&nbsp;*Is the Supplier, VAT Registered?: </font>
+					  						<input disabled="" type="radio" name="inputVatApplicable" id="inputVatApplicableT" value="t" checked="checked"><font class="normal">Yes</font>
+					  						<input disabled="" type="radio" name="inputVatApplicable" id="inputVatApplicableF" value="f"><font class="normal">No</font>
+				  						</div>
+				  				</td>
+				  			</tr>
+						</tbody>
+				</table>
+						</fieldset>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+			<!-- end content-->	
+	</div>
+	
+		<div class="footer_bottom_wrapper">
+	 		<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+				<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+					<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+		</div>
+	</div>	
+	
+</td>

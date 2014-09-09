@@ -1,0 +1,24 @@
+#nightLife
+
+
+
+nightLife:
+   - !!models.NightLife 
+    id: 1
+    code: BR
+    name: Bar
+   
+   - !!models.NightLife
+    id: 2
+    code: PB
+    name: Pub
+   
+   - !!models.NightLife
+    id: 3
+    code: DS
+    name: Disc
+   
+   - !!models.NightLife
+    id: 4
+    code: CS
+    name: Coffee Shop

@@ -1,0 +1,56 @@
+@main("Welcome to Play 2.1") {
+<body>
+  <div id="blockUIPopupContent">
+    <form action="" method="POST" name="ml_frm_meal" id="ml_frm_meal" style="background-color: white;">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%">
+        <tbody>
+          <tr>
+            <td>
+              <div align="center">
+                <img align="center" src="http://us.dotwconnect.com/mytitle.php?titlu=Add+New+Meal+Plan" alt="Add New Meal Plan">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td height="10"></td>
+          </tr>
+          <tr>
+            <td class="error" id="div_ml_errors" style="font-size: 12px; padding: 10px; text-align: left;"></td>
+          </tr>
+          <tr id="supplier-meal-section"
+            data-sectionloader 
+            data-loaderurl="/supplier-hotel-meal-info"
+            data-server-script="/generateHotelMealInfoScript"
+            data-local-script='@routes.Assets.at("htmls/Supplier/profile/general-profile.js")'
+            data-remote="false"
+            >
+          </tr>
+          <tr>
+            <td align="right">
+              <button type="button" style="border: medium none ; background-color: transparent; cursor: pointer; text-decoration: none;">
+              <img src="http://us.dotwconnect.com/new_button.php?height=20&amp;verspace=7&amp;text=CLOSE&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" align="absmiddle" border="0" hspace="0" vspace="0">
+              </button>
+              &nbsp;
+              <button type="button" style="border: medium none ; background-color: transparent; cursor: pointer; text-decoration: none;" >
+              <img src="http://us.dotwconnect.com/new_button.php?height=20&amp;verspace=7&amp;text=NEW CHILD RATE&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" align="absmiddle" border="0" hspace="0" vspace="0">
+              </button>
+              &nbsp;
+              <button type="button" style="border: medium none ; background-color: transparent; cursor: pointer; text-decoration: none;" >
+              <img src="http://us.dotwconnect.com/new_button.php?height=20&amp;verspace=7&amp;text=SAVE&amp;fromcolor=7FB7C6&amp;tocolor=008597&amp;btmcolor=0498AB&amp;height=23&amp;fontsize=8&amp;horspace=20" align="absmiddle" border="0" hspace="0" vspace="0">
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</body>
+}
+<style>
+  .buttonStyle{
+  margin-left:64%;
+  width: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  }
+</style>

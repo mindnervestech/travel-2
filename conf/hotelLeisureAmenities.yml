@@ -1,0 +1,50 @@
+hotelLeisureAmenities:
+   - !!models.HotelLeisureAmenities 
+    id: 1
+    code: 1
+    name: Arcade / Game Room
+
+   - !!models.HotelLeisureAmenities 
+    id: 2
+    code: 2    
+    name: BBQ/Picnic area
+
+   - !!models.HotelLeisureAmenities 
+    id: 3
+    code: 3
+    name: Duty free shop
+
+   - !!models.HotelLeisureAmenities
+    id: 4
+    code: 4
+    name: Fitness Classes
+      
+   - !!models.HotelLeisureAmenities
+    id: 5
+    code: 5    
+    name: Golf Course
+    
+   - !!models.HotelLeisureAmenities
+    id: 6
+    code: 6    
+    name: Gymnasium
+    
+   - !!models.HotelLeisureAmenities
+    id: 7
+    code: 7    
+    name: Jacuzzi
+    
+   - !!models.HotelLeisureAmenities
+    id: 8
+    code: 8
+    name: Jogging Track
+        
+   - !!models.HotelLeisureAmenities
+    id: 9
+    code: 9
+    name: Kids Club
+        
+   - !!models.HotelLeisureAmenities
+    id: 10
+    code: 10    
+    name: Kids Play Ground

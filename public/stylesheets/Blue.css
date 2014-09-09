@@ -1,0 +1,177 @@
+.BUTTON {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FFFFFFFF' ,EndColorStr= '#AA747474' ); BORDER-LEFT: medium none; CURSOR: hand; COLOR: #203f6b; BORDER-BOTTOM: medium none
+}
+.BTNSELECT {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 16px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FFFFFFFF' ,EndColorStr= '#AA747474' ); BORDER-LEFT: medium none; WIDTH: 22px; CURSOR: hand; COLOR: #203f6b; BORDER-BOTTOM: medium none; HEIGHT: 18px
+}
+A {
+	COLOR: blue; TEXT-DECORATION: none
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #203f6b
+}
+IFRAME {
+	BORDER-RIGHT: #6697cf 1px solid; BORDER-TOP: #6697cf 1px solid; BORDER-LEFT: #6697cf 1px solid; BORDER-BOTTOM: #6697cf 1px solid
+}
+TABLE {
+	COLOR: #0a3361
+}
+.NormalText {
+	CURSOR: text; COLOR: #203f6b
+}
+.BackDarkColor {
+	BACKGROUND-COLOR: #1d5495
+}
+.BorderDarkColor {
+	BORDER-RIGHT: #1d5495 thin solid; BORDER-TOP: #1d5495 thin solid; BORDER-LEFT: #1d5495 thin solid; BORDER-BOTTOM: #1d5495 thin solid
+}
+.FooterDarkColor {
+	BACKGROUND-COLOR: #1d5495
+}
+.FontSmallDark {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px
+}
+.FontMediumDark {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+.FontSmallDark {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px
+}
+.FontMediumNormal {
+	FONT-SIZE: 11px
+}
+.FontLarge {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+.TextHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: white
+}
+.TableHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: white
+}
+.FontLargeDark {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+.FontLargeWhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: white
+}
+.FontSmallWhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: white
+}
+.HeadingGradient {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FF15419a' ,EndColorStr= '#FF6593c7' )
+}
+.ImageTopRight {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+}
+.ImageBottomLeft {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+}
+.ImageBottomRight {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
+}
+.DownButton {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#AA747474' ,EndColorStr= '#FFFFFFFF' ); WIDTH: 18px; HEIGHT: 18px
+}
+.UpButton {
+	DISPLAY: none; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=0) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FFFFFFFF' ,EndColorStr= '#AA747474' ); WIDTH: 18px; HEIGHT: 18px
+}
+.UpButton1 {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=0) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FFFFFFFF' ,EndColorStr= '#AA747474' ); WIDTH: 18px; HEIGHT: 18px
+}
+.CloseButton {
+	DISPLAY: none; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=0) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#AA747474' ,EndColorStr= '#FFFFFFFF' ); WIDTH: 18px; HEIGHT: 18px
+}
+.HelpButton {
+	DISPLAY: none; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=0) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#AA747474' ,EndColorStr= '#FFFFFFFF' ); WIDTH: 18px; HEIGHT: 18px
+}
+.TOPBAND {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr= '#FFE2EFFA' ,EndColorStr= '#FF73a6d3' )
+}
+.DATAGRID {
+	BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; FONT-SIZE: 12px; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid; BACKGROUND-COLOR: #dae8f3
+}
+.DATAGRIDWhite {
+	BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; FONT-SIZE: 12px; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid; BACKGROUND-COLOR: white
+}
+.SUBDATAGRID {
+	BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; FONT-SIZE: 12px; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid; BACKGROUND-COLOR: #bac8d3
+}
+.DGALTITEMWhite {
+	BACKGROUND-COLOR: #e7e7e7
+}
+.DGALTITEM {
+	BACKGROUND-COLOR: #bfd9ea
+}
+.DGHEADER {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: white; BACKGROUND-COLOR: #6697cf
+}
+.DGHEADERDARK {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: white; BACKGROUND-COLOR: #1d5495
+}
+.DGHEADER A {
+	COLOR: white; TEXT-DECORATION: none
+}
+.DGPAGER {
+	FONT-WEIGHT: bold; COLOR: white; BACKGROUND-COLOR: #6697cf
+}
+UNKNOWN {
+	COLOR: white; TEXT-DECORATION: none
+}
+.DDLMEDIUM {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 12px; BORDER-LEFT: gray 1px solid; WIDTH: 100%; COLOR: #0a3361; BORDER-BOTTOM: gray 1px solid
+}
+.DDL50P {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 12px; BORDER-LEFT: gray 1px solid; WIDTH: 50%; COLOR: #0a3361; BORDER-BOTTOM: gray 1px solid
+}
+.DDLNORMAL {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 12px; BORDER-LEFT: gray 1px solid; COLOR: #0a3361; BORDER-BOTTOM: gray 1px solid
+}
+.LSTMEDIUM {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; FONT-SIZE: 12px; BORDER-LEFT: gray 1px solid; WIDTH: 100%; COLOR: #0a3361; BORDER-BOTTOM: gray 1px solid; HEIGHT: 100%
+}
+.DGChildElement {
+	BACKGROUND-COLOR: #f2faff
+}
+.TableLayer {
+	BORDER-RIGHT: #6697cf 1px solid; BORDER-TOP: #6697cf 1px solid; Z-INDEX: 101; BORDER-LEFT: #6697cf 1px solid; WIDTH: 0px; CURSOR: hand; BORDER-BOTTOM: #6697cf 1px solid; POSITION: absolute; BACKGROUND-COLOR: white
+}
+.RowNormal {
+	BACKGROUND-COLOR: #ffffcc
+}
+.RowSelected {
+	BACKGROUND-COLOR: #bfd9ea
+}
+.IframeLayer {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; OVERFLOW: hidden; BORDER-LEFT: medium none; WIDTH: 0px; BORDER-BOTTOM: medium none; POSITION: absolute; HEIGHT: 0px
+}
+.FooterTotal {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #bfd9ea
+}
+.GlowingText {
+	FONT-WEIGHT: bold; FILTER: progid:DXImageTransform.Microsoft.Glow (color= 'Blue' ,strength=5); COLOR: white; POSITION: absolute
+}
+.GlowingInfo {
+	FONT-WEIGHT: bold; FILTER: progid:DXImageTransform.Microsoft.Glow (color= '#BFD9EA' ,strength=5); COLOR: white
+}
+.RBL2Items TD {
+	WIDTH: 50%
+}
+.Remarks {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: red
+}
+.Info {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009900
+}
+.information {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #cc3333
+}
+SELECT.DropDownList {
+	Z-INDEX: 1; WIDTH: 100%; POSITION: absolute; HEIGHT: 20px
+}
+INPUT.DropDownList {
+	Z-INDEX: 3; ; WIDTH: expression(this.previousSibling.previousSibling.clientWidth-15); POSITION: absolute; HEIGHT: 19px
+}
+IFRAME.DropDownList {
+	Z-INDEX: 2; ; WIDTH: expression(this.previousSibling.previousSibling.clientWidth); POSITION: absolute; HEIGHT: 16px
+}

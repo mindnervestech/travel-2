@@ -1,0 +1,56 @@
+@(field:com.mnt.core.ui.component.FieldType, _parent:String, _this:String, _namespace:String, notation:String)
+
+
+@field.ctype.name match{
+		     		case "text" => {
+		     			<input type="text"  id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="attr:{name: '@(_parent)' + '[' + $root.@(_parent).indexOf(_1) + '].' +'@(_this)' +'['+ $index() + '].' + '@(field.name)'}, value:@field.name">
+		     		}
+		     		
+		     		case "password" => {
+		     			<input type="text" name='@(field.name + notation)' id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib >
+		     		}
+		     		
+		     		case "checkbox" => {
+		     			<div data-bind="template: { name: '@field.name-template', foreach: @field.select.seed }"></div>
+		     			
+		     		}
+		     		
+		     		case "radio" => {
+		     			<div data-bind="template: { name: '@field.name-template', foreach: @field.select.seed }"></div>
+		     		}
+		     		
+		     		case "file" => {
+		     			<input type="file" name='@field.name' id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib>
+		     		}
+		     		
+		     		case "hidden" => {
+		     			<input type="hidden" name='@field.name' id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="value: @field.name">
+		     		}
+		     		
+		     				     		
+		     		case "button" => {
+		     			<input type="button" name='@field.name' id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="text: @field.name">
+		     		}
+		     		
+		     				     		
+		     		case "textarea" => {
+		     			<textarea id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="attr:{name: '@(_parent)' + '[' + $root.@(_parent).indexOf(_1) + '].' +'@(_this)' +'['+ $index() + '].' + '@(field.name)'}, text: @field.name"></textarea>
+		     		}
+		     		
+		     			     		
+		     		case "select" => {
+		     			@if(field.select != null && !field.select.remote){
+		     				<select  id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="attr:{name: '@(_parent)' + '[' + $root.@(_parent).indexOf(_1) + '].' +'@(_this)' +'['+ $index() + '].' + '@(field.name)'}, options: @field.select.seed, optionsText: 'name', optionsValue: 'code' , value:@field.name" ></select>
+		     			}else{
+		     				<select  id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="attr:{name: '@(_parent)' + '[' + $root.@(_parent).indexOf(_1) + '].' +'@(_this)' +'['+ $index() + '].' + '@(field.name)'}, options: @field.select.seed, optionsText: 'name', optionsValue: 'code' , value:@field.name" ></select>
+		     				<script>
+		     					// not handled yet.
+		     				</script>
+		     			}
+		     		}
+		     		
+		     		case "multiselect" => {
+                                   <select multiple='multiple' name='@(field.name + notation)' id='@("_field_" + _namespace +"_" + field.name)' class='@field.cssClass' @field.htmlAttrib data-bind="options: @field.select.seed, optionsText: 'name', optionsValue: 'code',  selectedOptions:'@field.name' , attr: {name : '@(field.name)_' + $index() + '[]'}" ></select>
+ 
+                    }
+}		     		

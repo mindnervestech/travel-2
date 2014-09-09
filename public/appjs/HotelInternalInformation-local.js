@@ -1,0 +1,2 @@
+HotelInternalInformation.customPostBind = function(){
+}

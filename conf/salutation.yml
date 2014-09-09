@@ -1,0 +1,20 @@
+salutation:
+   - !!models.Salutation
+    id: 1
+    code: Mr
+    name: Mr
+
+   - !!models.Salutation 
+    id: 2
+    code: Ms
+    name: Ms
+
+   - !!models.Salutation 
+    id: 3
+    code: Mrs
+    name: Mrs
+
+   - !!models.Salutation
+    id: 4
+    code: Sir
+    name: Sir

@@ -1,0 +1,229 @@
+<td colspan="4" align="center">
+
+	<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			<div class="top_bar_titlu" id="" style="">STEP 1 : HOTEL GENERAL INFORMATION</div>
+		</div>		 			
+		<div class="right_bar1_26px" style=""></div>
+		
+		</div>
+	 	<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->
+        <table cellspacing="0" cellpadding="3" width="100%" border="0">
+			<tbody>
+				<tr><td colspan="4">
+				<table width="100%" align="center" border="0">
+			        <tbody>
+			        	<tr>
+			        		<td><font class="normalbold" style="color: #2B5B8B">Supplier Code:</font></td>
+			        		<td colspan="3" align="left">
+			        			<input  class="casute3" name="supplier_code" style="width:100px"  type="text"  data-bind="value: supplier_code">
+			        		</td>
+			        	</tr>
+				        <tr>
+				        	<td colspan="4"><font class="normalbold" style="color: #2B5B8B">*Property/Hotel Name:</font></td>
+				        </tr>
+				        <tr>
+				        	<td colspan="4" align="center">
+				        		<input name="supplier_hotel_name" class="casute3" style="width:550px" type="text" data-bind="value: supplier_hotel_name">
+				        	</td>
+				        </tr>
+				        <tr><td colspan="4"><font class="normalbold" style="color: #2B5B8B">Company/Management/ Supplier Name <br>(if different than hotel name):</font></td></tr>
+				        <tr>
+					        <td colspan="4" align="center">
+					            <input type="text" style="width:550px" name="supplier_name" class="casute3"  data-bind="value: supplier_name">
+					        </td>
+				        </tr>
+				        <tr><td colspan="4"><font class="normalbold" style="color: #2B5B8B">*Hotel Street Address:</font></td></tr>
+				        <tr>
+				        	<td colspan="4" align="center">
+				        		<textarea  name="supplier_address" class="casute3" style="width:550px;height:50" cols="40" rows="3" data-bind="text: supplier_address"></textarea>
+				        	</td>
+				        </tr>
+				        <tr>
+				        	<td><font class="normalbold" style="color: #2B5B8B">*Country:</font></td>
+				        	<td>
+				        		<select data-bind="options :availableCountries,selectedOptions: selectedCountry" class="casute3" style="width:170px"  maxlength="40" id="country" name="country">
+				        		</select>
+				        	</td>
+				        	<td colspan="2">
+						        <div id="statevisible" style="display:none">
+							        <font id="FontObligatoriu" class="normalbold" style="color: #2B5B8B">*State/Province:</font>
+							        <select  readonly="" class="casute3" style="width:140px" type="text" name="State" id="State">
+							        	
+							        </select>
+						        </div>
+				        	</td>
+				        </tr>
+				        <tr>
+							<td><font class="normalbold" style="color: #2B5B8B">*City:</font></td>
+							<td>
+								<select  class="casute3" name="City" id="City">
+									<option value="0">-- Choose One --</option>
+								</select>
+							</td>
+				        	<td align="right"><font class="normalbold">Zip/Postal Code:</font></td>
+				        	<td>
+				        		<input  type="text" maxlength="10" name="zipCod" class="casute3" style="width:170px" value="">
+				        	</td>
+				        </tr>
+						
+						<tr>
+							<td valign="middle" align="left">
+								<font class="normalbold" style="color:#2B5B8B">*Is the hotel part of chain?:</font>
+							</td>
+							<td>
+								<input type="radio" checked="" name="Chain" value="1"><font class="normal">Yes</font> 
+								<input type="radio"  name="Chain" value="0"><font class="normal">No</font>
+							</td>
+							<td colspan="2">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div id="ischain" style="display:">
+									<font class="normal">Please choose your hotel chain affiliate from the drop down menu</font>
+										<select class="casute3" name="ChainID" id="ChainID" >
+										</select>
+								
+									<br>
+									<font class="normal">Please choose your hotel brand:</font>
+									<span id="brands">
+										<select class="casute3" name="brandId" id="brandId">
+											<option value="0">-- Choose One --</option>	
+										</select>
+									</span>
+								
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td valign="middle" align="left">
+							<font class="normalbold" style="color:#2B5B8B">Is your property Compliant with all known Health &amp; Safety Laws of your country?:</font></td><td><input type="radio" name="Health" value="1"><font class="normal">Yes</font> <input type="radio" name="Health" checked="" value="0"><font class="normal">No</font></td>
+						</tr>
+						
+			       </tbody>
+			      </table>
+			     </td></tr>
+			     
+			    <tr><td colspan="4"><hr></td></tr>
+			    <tr><td colspan="4" align="left">
+				    <font class="normal">
+				   		Please choose the currency from the drop down menu that you wish to supply the net payable rates in:
+				    </font>
+			    </td></tr>
+			    <tr>
+				    <td colspan="4" align="center">
+					  <div align="left">
+						  <font class="normalbold" style="color: #2B5B8B">*Select Currency: </font>
+						  <select class="casute3disabled" style="width:270px"  maxlength="70" id="TipValuta" name="TipValuta">
+								<option value="0">-- Choose One --</option>
+						  </select>
+							&nbsp;&nbsp;&nbsp;
+					  </div>
+						
+				    </td>
+			    </tr>
+			    
+				<tr>
+			    	<td colspan="4">
+			    		<hr>
+			    	</td>
+			    </tr>
+			    <tr>
+			    	<td colspan="4" align="left">
+			    		<font class="normalbold">Please define the policy for market specific rates:</font>
+			    	</td>
+			    </tr>
+			    <tr>
+			    	<td colspan="4" align="center">
+				  		<div align="left" style="padding-left:15px;">
+				  			<label class="normal" style="color: #2B5B8B" for="agentLocation">
+				  				<input type="radio" id="agentLocation" name="specificRatesPolicy" value="0" data-bind="checked: specificRatesPolicy">
+				  				Based on Travel Agent Location
+				  			</label><br>
+				  			<label class="normal" style="color: #2B5B8B" for="passengerResidency">
+				  				<input type="radio" id="passengerResidency" name="specificRatesPolicy" value="1" data-bind="checked: specificRatesPolicy">
+				  				Based on Passenger Residency
+				  			</label><br>
+				  			<label class="normal" style="color: #2B5B8B" for="passengerNationality">
+								<input type="radio" id="passengerNationality" name="specificRatesPolicy" value="2"  data-bind="checked: specificRatesPolicy">
+				  				Based on Passenger Nationality
+				  			</label>
+						</div>
+			    	</td>
+			    </tr>
+			    
+			    <tr>
+			    	<td colspan="4">
+			    	<hr>
+			    	</td>
+			    </tr>
+				<tr>
+					<td colspan="4" valign="middle" align="left">
+				    	<font class="normal">
+					    Please select the star rating and only use the approved authorized licensed rating given to your property.
+						We reserve the right to change the rating if required
+		
+					    </font>
+				    	<br>
+				    	<br>
+				    	<font class="normalbold" style="color:#2B5B8B">*Please Choose a Star Rating:</font>
+						<select readonly="" class="casute3disabled" style="width:140px" name="rating" id="rating">
+								<option value="0">-- Choose One --</option>
+						</select>
+								
+						<br>
+			    	</td>
+				</tr>
+				<tr>
+					<td colspan="4" height="82" align="left" valign="top">
+					<font class="normal" style="color:#2B5B8B"><div align="justify" id="descriere"><table cellspacing="0" cellpadding="0" border="0&quot;"><tbody><tr><td><img src="../images/star.gif" border="0"><img src="../images/star.gif" border="0"><img src="../images/star.gif" border="0"><img src="../images/star.gif" border="0"></td><td valign="middle"><font class="normal"><b>&nbsp;<!--?php echo ApartmentProfileStars(2); ?--></b></font></td></tr></tbody></table>A First-class accommodation category that highlights luxury, hospitality, and premium customer service related services.  These are outstanding lodging facilities offering fine cuisine, an extensive range of amenities/services.  May be centrally located and easy access to the commercial business areas.</div></font></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<font class="normal">
+
+						Please choose a password that you will remember. Your password should be a minimum of 6 characters long and easy to remember.
+						For security reasons, <b>DO NOT</b> use a simple password like your hotel name.
+						Your Property ID will always be your hotel name exactly as written on the DOTW agreement and as listed above in field labeled Property/Hotel Name (please do not make changes).  <br>
+						<b>Note:</b> Once you click update if you made changes here, the system will log you out and you will need to log back with your new password.
+
+						</font>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="center">
+						<table align="center" width="100%">
+							<tbody>
+								<tr>
+									<td colspan="2" valign="top" align="center">
+									 <table align="center" cellspacing="0" cellpadding="0" width="100%">
+									  <tbody><tr><td align="center"><font class="normalbold" style="color:#2B5B8B">*Password:</font></td></tr>
+									  <tr><td align="center"><input class="casute3" style="width:240px" maxlength="100" type="text" value="" name="passwd"></td></tr>
+									  <tr><td align="center"><font class="normal">(minimum 6 characters) </font></td></tr>
+									 </tbody></table>
+									</td>
+									<td colspan="2" valign="top" align="center" width="100%">
+									 <table align="center" cellspacing="0" cellpadding="0" width="100%">
+									  <tbody><tr><td align="center"><font class="normalbold" style="color:#2B5B8B">*Verify:</font></td></tr>
+									  <tr><td align="center"><input class="casute3" style="width:240px" maxlength="100" type="text" value="" name="rePasswd"></td></tr>
+									 </tbody></table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+ 	</div>
+	<div class="footer_bottom_wrapper">
+ 		<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_left_corner_02.gif" alt=""></div>
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		<div class="margin_wrapper" style="float: left; width: 5px;"><img src="http://us.dotwconnect.com/images/new_design/bottom_right_corner_02.gif" alt=""></div>
+	</div>
+</div>					
+</td>

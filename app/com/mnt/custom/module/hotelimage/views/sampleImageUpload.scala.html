@@ -1,0 +1,389 @@
+@(data: List[String])
+
+@main("DOTWconnect.com - Connecting Travel Professionals Worldwide : Property Extranet - Manage Images"){
+@menu()
+<!-- Dialog Div -->
+<div id="imageUploadDialog" title="Upload New Image" style="display:none;">
+	<div id="uploadImage" style="float: left; margin-top: 278px;">
+		<form id="uploadImageForm" enctype="multipart/form-data">
+			<input type="file" id="image1" name="img1">
+			<input type="hidden" id="selectedSection" name="imgcode">
+			<input type="hidden" id="sectionId" name="imgid">
+		</form>
+	</div>
+</div>
+
+<div id="disabledPageContainerUI" style="display:none;  width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; z-index: 60000; margin: 0px; padding: 0px;"></div>
+<div id="blockUIPopupContent" style="position: absolute; left: 0px; top: 0px;  z-index: 60001; border: #000000 1px solid; padding: 5px; background-color: #FFFFFF;overflow:auto; display: none;"></div>
+
+<div class="div_page">
+ <div style="margin-left: 10px;margin-bottom: 20px; width:1010px; float:left;" class="mainContenArea">	
+				
+ <div class="boxWrapper" style="margin-left: 10px;  float: left; ; text-align: center; width: 750px" id="mainProfile">
+	<div id="destination_seleted_div" style=" width: 750px;_width:750px; height: 26px; text-align: left">
+		<div class="left_bar2_26px" style="">&nbsp;</div> 
+			<div class="center_bar2_26px" style="width: 738px; _width:738px">
+				<div class="top_bar_titlu" id="" style="">MANAGE HOTEL IMAGES</div>
+		 	</div>		 			
+			<div class="right_bar2_26px" style=""></div>
+		</div>
+	 	<div class="vertical_gradient_80px_content_div" style="width:748px;  _width:750px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->
+			<!-- DOI -->
+			 	<table width="700" align="center" height="100%" cellpadding="0" cellspacing="0" border="0">
+
+			 	 <tbody><tr>
+			 	  <td align="left" width="100%"><br>
+										<br><br>
+					<font class="normal">You can manage the choice and quality of images to project your property effectively to the travel trade. 
+					You can also update them as frequently as you wish. 
+					<br><br>
+					For best results, please use images in a<b> JPG</b> format 350x300 resolution and <b>72dpi</b>.<br>
+					File size <b><u>should not</u></b> be more then 50kb.<br><br>
+					For <b>each image</b>, click the <b>browse</b> button ,select the image on your PC, CD or disk and then click <b>Upload</b>.
+
+					</font></td>
+				 </tr>
+
+				 <tr><td height="10" width="100%"></td></tr>
+				 
+				 <!-- Image 1 Div -->
+	<tr><td>
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+		  <tbody><tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 1</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(0) != "HGP"){						
+								<img id="section_1_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_1_image" alt="" src="/get-image-byId/@data.get(0)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="HGP" sectionId="1" type="button" value="Replace Image"/></div>
+							<!--<button type="submit" class="buton" style="width:112px;height:23px;cursor:pointer;" name="buton"><img src="../images/deletepic.gif" border="0" hspace="0" vspace="0"></button>--></td>
+					</tr>
+					
+					<tr><td colspan="2" height="10"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div></td>
+				 </tr>
+                 <tr><td height="10"></td></tr>
+                 
+          
+          <!-- Image 2 Div -->       
+          <tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 2</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+					
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(1) != "HLP"){						
+								<img id="section_2_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_2_image" alt="" src="/get-image-byId/@data.get(1)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="HLP" sectionId="2" type="button" value="Replace Image"/></div>
+							<!--<button type="submit" class="buton" style="width:112px;height:23px;cursor:pointer;" name="buton"><img src="../images/deletepic.gif" border="0" hspace="0" vspace="0"></button>--></td>
+					</tr>
+					
+					<tr><td colspan="2" height="10"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div>			</td>
+				 </tr>
+                 <tr><td height="20"></td></tr>
+                 
+        
+        <!-- Image 3 Div -->
+        <tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 3</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(2) != "HRP"){						
+								<img id="section_3_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_3_image" alt="" src="/get-image-byId/@data.get(2)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}	
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="HRP" sectionId="3" type="button" value="Replace Image"/></div>
+					</tr>
+					
+					<tr><td colspan="2" height="10"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div></td>
+		</tr>
+        <tr><td height="30"></td></tr>
+                 
+          <!-- Image 4 Div -->
+        <tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 4</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(3) != "HASP"){						
+								<img id="section_4_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_4_image" alt="" src="/get-image-byId/@data.get(3)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}	
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="HASP" sectionId="4" type="button" value="Replace Image"/></div>
+					</tr>
+					
+					<tr><td colspan="2" height="40"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div></td>
+		 </tr>
+					 <!-- Image 4 Div -->
+        <tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 5</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(4) != "LSF"){						
+								<img id="section_5_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_5_image" alt="" src="/get-image-byId/@data.get(4)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}	
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="LSF" sectionId="5" type="button" value="Replace Image"/></div>
+					</tr>
+					
+					<tr><td colspan="2" height="50"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div></td>
+		 </tr>
+	</tbody></table>
+	
+	        <tr>
+			 	  <td align="center" valign="top" width="100%">
+					<div class="boxWrapper" style="  ; text-align: center; width: 720px" id="Box6">
+		 			<div id="destination_seleted_div" style=" width: 720px;_width:720px; height: 26px; text-align: left">
+			 			<div class="left_bar1_26px" style="">&nbsp;</div> 
+			 			<div class="center_bar1_26px" style="width: 701px; _width:701px">
+			 			<div class="top_bar_titlu" id="" style="">IMAGE 6</div>
+		 			
+		 			</div>		 			
+		 			<div class="right_bar1_26px" style=""></div>
+		 			
+		 			</div>
+	 				<div class="vertical_gradient_80px_content_div" style="width:718px;  _width:720px; padding-top: 10px; color: #517194; font-size: 8pt; font-weight: bold;">	 	
+	 	<!-- content-->				
+					<table cellpadding="3" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td colspan="2"><font class="normal">Please choose the BEST image of your hotel Lobby. This will be displayed next to your hotel text description.</font></td>
+					</tr>
+					<tr>
+					
+						<td width="40%" valign="middle" align="left">
+							@if(data.get(5) != "MAP"){						
+								<img id="section_6_image" alt="" src='@routes.Assets.at("images/addNewImage.jpg")' width="170" height="130" border="0" hspace="0" vspace="0">
+							}else{
+								<img id="section_6_image" alt="" src="/get-image-byId/@data.get(5)"  width="170" height="130" border="0" hspace="0" vspace="0">
+							}
+						</td>
+						<td width="60%" valign="middle" align="left">
+						<div><input class="uploadNewImage" section="MAP" sectionId="6" type="button" value="Replace Image"/></div>
+							<!--<button type="submit" class="buton" style="width:112px;height:23px;cursor:pointer;" name="buton"><img src="../images/deletepic.gif" border="0" hspace="0" vspace="0"></button>--></td>
+					</tr>
+					
+					<tr><td colspan="2" height="10"></td></tr>
+					</tbody></table>
+					
+			
+			<!-- end content-->	
+		 	</div>
+		<div class="footer_bottom_wrapper">
+		<div class="center_wrapper" style="float: left; width: 710px; height: 5px; _height: 6px; border-bottom: 1px solid #A3B6C8; overflow: hidden">&nbsp;</div>
+		</div></td>
+		</tr>
+        <tr><td height="20"></td></tr>
+			<!-- end content-->	
+	</tbody>
+	</table>
+	</div></div></div>
+</div>
+
+<script language="JavaScript">
+
+$(document).ready(function(){
+	
+	$('.uploadNewImage').click(function(){
+		sectionToBeUpdated = $(this).attr('section');
+		sectionId = $(this).attr('sectionId');
+		
+		$('#selectedSection').val(sectionToBeUpdated);
+		$('#sectionId').val(sectionId);
+		//$('#image_holder_section_'+sectionToBeUpdated).hide();
+		$('#imageUploadDialog').dialog({
+		    resizable: false,
+		    height:130,
+		    width:400,
+		    modal: true,
+		    buttons: {
+		      "Upload Image": function() {
+		        submitImage(sectionId);
+		        $( this ).dialog( "close" );
+		      },
+		      Cancel: function() {
+		    	$('#image_holder_section_'+sectionId).show();
+		        $( this ).dialog( "close" );
+		      }
+		    }
+		});
+		
+		$('#imageUploadDialog').dialog("open");
+	})
+	
+	function submitImage(sectionId){
+			var options = { 
+				    method: 	'post',
+				    url:        '/save-hotel-images', 
+				    semantic : true,
+				    success:    function() {
+				        //$('#uploadImage').hide();
+				    	var sectionno = $('#selectedSection').val();
+				    	$('#section_'+sectionId+'_image').attr('src','/get-image-byId/'+sectionno);
+				    	$('#image_holder_section_'+sectionId).show();
+				    } ,
+				    error:      function(resp) {
+				    	console.log(resp);
+				    	alert('in error');
+				    }
+			}; 
+			
+			
+			$('#uploadImageForm').ajaxSubmit(options);	
+			$('#uploadImageForm').resetForm();
+			return false;
+			
+	}
+	
+});
+
+$(document).ready(function(){
+	
+	
+	$('#replaceimgbtn').click(function(event) {
+        $('#imgupload').css('display','block');
+        $('#exteriorpicturereplace').css('display','none');
+	});
+	
+	
+})
+
+</script>
+
+}
